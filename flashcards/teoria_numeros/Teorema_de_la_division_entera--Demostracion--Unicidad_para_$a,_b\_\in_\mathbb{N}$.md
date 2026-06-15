@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Demostracion: Unicidad para $a, b\ \in \mathbb{N}$
+# Teorema de la division entera: Demostracion: Unicidad para $a, b\ \in \mathbb{N}$
 
 Sean $a, b\ \in \mathbb{N_0},\ b > 0$ y $q_0, r_0\ \in \mathbb{N_0}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
 

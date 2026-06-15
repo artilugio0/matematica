@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Demostracion: Existencia para $a, b\ \in \mathbb{N}$
+# Teorema de la division entera: Demostracion: Existencia para $a, b\ \in \mathbb{N}$
 
 Sean $a, b\ \in \mathbb{N_0}$ con $b > 0$.
 

@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Ejemplos simples
+# Teorema de la division entera: Ejemplos simples
 
 - $a > 0$ y $b > 0$:
 

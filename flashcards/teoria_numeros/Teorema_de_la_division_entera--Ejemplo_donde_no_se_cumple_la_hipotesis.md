@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Ejemplo donde no se cumple la hipotesis
+# Teorema de la division entera: Ejemplo donde no se cumple la hipotesis
 
 Si $b = 0$, no se pueden encontrar $q,\ r$ que cumplan las condiciones del teorema, dado que no hay valor posible para $r$ tal que $0 \leq r < \lvert b \rvert$.
 

@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Tesis
+# Teorema de la division entera: Tesis
 
 - Existen $q, r\ \in \mathbb{Z}$
 - $a = bq + r$

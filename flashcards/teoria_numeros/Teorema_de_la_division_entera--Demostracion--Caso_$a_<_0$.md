@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Demostracion: Caso $a < 0$
+# Teorema de la division entera: Demostracion: Caso $a < 0$
 
 Sean $a\ \in \mathbb{Z}, b\ \in \mathbb{Z}$, con $a < 0$ y $b \neq 0$.
 

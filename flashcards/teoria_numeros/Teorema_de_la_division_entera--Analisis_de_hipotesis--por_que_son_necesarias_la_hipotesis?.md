@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Analisis de hipotesis: por que son necesarias la hipotesis?
+# Teorema de la division entera: Analisis de hipotesis: por que son necesarias la hipotesis?
 
 - $a, b\ \in \mathbb{Z}$: La division tiene sentido cuando $a$ y $b$ son enteros, donde no hay inversos multiplicativos.
 

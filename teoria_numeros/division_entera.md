@@ -1,27 +1,25 @@
-# Divisibilidad
+# Teorema de la division entera
 
-## Teorema de la division entera
-
-### Intuicion
+## Intuicion
 El teorema formaliza el procedimiento conocido de division con resto, y lo extiende para los casos en los que $a$ y $b$ son numeros enteros.
 
-### Hipotesis
+## Hipotesis
 - $a, b\ \in \mathbb{Z}$
 - $b\ \neq 0$
 
-### Tesis
+## Tesis
 - Existen $q, r\ \in \mathbb{Z}$
 - $a = bq + r$
 - $0 \leq r < \lvert b \rvert$
 
-### Demostracion
-#### Estrategia
+## Demostracion
+### Estrategia
 1. Demostrar existencia para $a, b\ \in \mathbb{N}$
 2. Demostrar unicidad para $a, b\ \in \mathbb{N}$
 3. Demostrar el caso $a > 0,\ b < 0$
 4. Demostrar el caso $a < 0$
 
-#### Existencia para $a, b\ \in \mathbb{N}$
+### Existencia para $a, b\ \in \mathbb{N}$
 Sean $a, b\ \in \mathbb{N_0}$ con $b > 0$.
 
 Se considera el conjunto $R = \{ a - bq \mid q\ \in \mathbb{N_0} \wedge a - bq \geq 0 \}$.
@@ -37,7 +35,7 @@ de otra forma se tiene $r_1 = r_0 - b = a - b(q_0 + 1)$, y $0 \leq r_1 < r_0$, p
 De esta forma queda demostrada la existencia de $q_0, r_0$ que cumplen las condiciones del teorema.
 
 
-#### Unicidad para $a, b\ \in \mathbb{N}$
+### Unicidad para $a, b\ \in \mathbb{N}$
 Sean $a, b\ \in \mathbb{N_0},\ b > 0$ y $q_0, r_0\ \in \mathbb{N_0}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
 
 Y sean tambien $q_1, r_1\ \in \mathbb{N_0}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
@@ -50,7 +48,7 @@ De $a = bq_1 + r_1$ y $a = bq_0 + r_0$, tenemos que $r_1 - r_0 = b(q_0-q_1)$. Pe
 Quedando asi demostrada la unicidad de $r$ y $q$.
 
 
-#### Caso $a \geq 0,\ b < 0$
+### Caso $a \geq 0,\ b < 0$
 Sean $a\ \in \mathbb{N_0}, b\ \in \mathbb{Z}$, con $b < 0$.
 
 Existen $q_0, r_0\ \in \mathbb{N_0}$ unicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0\ \in \mathbb{Z}$.
@@ -59,7 +57,7 @@ Definiendo $q_1 = -q_0,\ r_1 = r_0$, se tienen los valores $q_1, r_1$ que demues
 
 La unicidad de $q_1$ y $r_1$ queda garantizada por la unicidad de $q_0$ y $r_0$.
 
-#### Caso $a < 0$
+### Caso $a < 0$
 Sean $a\ \in \mathbb{Z}, b\ \in \mathbb{Z}$, con $a < 0$ y $b \neq 0$.
 
 Existen $r_0\ \in \mathbb{N_0}$ y $q_0\ \in \mathbb{Z}$ unicos tales que $-a = bq_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$.
@@ -74,7 +72,7 @@ Por lo tanto existen valores unicos de $q_1, r_1$ que cumplen las condiciones de
 La unicidad de $q_1$ y $r_1$ queda garantizada por la unicidad de $q_0$ y $r_0$.
 
 
-### Ejemplos simples
+## Ejemplos simples
 - $a > 0$ y $b > 0$:
 
 $$
@@ -112,7 +110,7 @@ a = -16,\ b = -3 \\
 $$
 
 
-### Ejemplos limites
+## Ejemplos limites
 - $a = 0$:
 
 $$
@@ -131,7 +129,7 @@ a = 15,\ b = 5 \\
 \end{aligned}
 $$
 
-### Ejemplo donde no se cumple la hipotesis
+## Ejemplo donde no se cumple la hipotesis
 Si $b = 0$, no se pueden encontrar $q,\ r$ que cumplan las condiciones del teorema, dado que no hay valor posible para $r$ tal que $0 \leq r < \lvert b \rvert$.
 
 - $r$ no cumple la condicion si $a \neq 0$:
@@ -151,7 +149,7 @@ a = 0,\ b = 0 \\
 $$
 
 
-### Analisis de hipotesis: por que son necesarias la hipotesis?
+## Analisis de hipotesis: por que son necesarias la hipotesis?
 - $a, b\ \in \mathbb{Z}$: La division tiene sentido cuando $a$ y $b$ son enteros, donde no hay inversos multiplicativos.
 
 - $b\ \neq 0$: Si $b = 0$, no se pueden hallar valores de $q$ y $r$ que cumplan las condiciones del teorema. $q$ podria tomar cualquier valor, pero no hay valor posible para $r$, ya que eso implicaria $0 < 0$. Intuitivamente esto se traduce en que la division por $0$ no esta definida.

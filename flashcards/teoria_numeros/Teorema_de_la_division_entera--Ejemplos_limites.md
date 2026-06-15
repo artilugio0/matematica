@@ -1,4 +1,4 @@
-# Divisibilidad: Teorema de la division entera: Ejemplos limites
+# Teorema de la division entera: Ejemplos limites
 
 - $a = 0$:
 

@@ -1,8 +1,8 @@
-# Teorema de la division entera: Demostracion: Caso $a \geq 0,\ b < 0$
+# Teorema de la división entera: Demostración: Caso $a \geq 0,\ b < 0$
 
 Sean $a \in \mathbb{N_0}, b \in \mathbb{Z}$, con $b < 0$.
 
-Existen $q_0, r_0 \in \mathbb{N_0}$ unicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0 \in \mathbb{Z}$.
+Existen $q_0, r_0 \in \mathbb{N_0}$ únicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0 \in \mathbb{Z}$.
 
 Definiendo $q_1 = -q_0,\ r_1 = r_0$, se tienen los valores $q_1, r_1$ que demuestran el teorema para el caso $b < 0$.
 

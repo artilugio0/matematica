@@ -1,4 +1,4 @@
-# Teorema de la division entera: Ejemplos limites
+# Teorema de la división entera: Ejemplos límites
 
 - $a = 0$:
 
@@ -9,7 +9,7 @@ a = 0,\ b = 3 \\
 \end{aligned}
 $$
 
-- $a$ es multiplo de $b$
+- $a$ es múltiplo de $b$
 
 $$
 \begin{aligned}

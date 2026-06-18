@@ -1,5 +1,5 @@
-# Teorema de la division entera: Motivacion
+# Teorema de la división entera: Motivación
 
-- El teorema formaliza el procedimiento conocido de division con resto, y lo extiende para los casos en los que $a$ y $b$ son numeros enteros.
-- Permite clasificar a los numeros enteros por su resto en la division por un numero entero dado.
-Esto permite transformar el estudio de los infinitos numeros enteros al estudio de un numero finito de casos.
+- El teorema formaliza el procedimiento conocido de división con resto, y lo extiende para los casos en los que $a$ y $b$ son números enteros.
+- Permite clasificar a los números enteros por su resto en la división por un número entero dado.
+Esto permite transformar el estudio de los infinitos números enteros al estudio de un número finito de casos.

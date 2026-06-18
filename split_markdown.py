@@ -2,6 +2,7 @@
 import sys
 import re
 import argparse
+import unicodedata
 from pathlib import Path
 
 
@@ -63,7 +64,9 @@ def make_heading_text(stack):
 
 
 def heading_to_filename(heading_text):
-    name = re.sub(r"\s*:\s*", ":", heading_text).replace(" ", "_").replace(":", "--")
+    name = unicodedata.normalize("NFKD", heading_text)
+    name = name.encode("ascii", "ignore").decode("ascii")
+    name = re.sub(r"\s*:\s*", ":", name).replace(" ", "_").replace(":", "--")
     name = re.sub(r"[^\w\-.]", "_", name)
     name = re.sub(r"_+", "_", name)
     name = name.strip("_")

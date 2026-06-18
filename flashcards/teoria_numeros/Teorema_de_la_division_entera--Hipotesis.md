@@ -1,4 +1,4 @@
-# Teorema de la division entera: Hipotesis
+# Teorema de la división entera: Hipótesis
 
 - $a, b \in \mathbb{Z}$
 - $b\ \neq 0$

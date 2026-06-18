@@ -1,28 +1,31 @@
 # Teorema de la division entera
 
-## Intuicion
-El teorema formaliza el procedimiento conocido de division con resto, y lo extiende para los casos en los que $a$ y $b$ son numeros enteros.
+## Motivacion
+- El teorema formaliza el procedimiento conocido de division con resto, y lo extiende para los casos en los que $a$ y $b$ son numeros enteros.
+- Permite clasificar a los numeros enteros por su resto en la division por un numero entero dado.
+Esto permite transformar el estudio de los infinitos numeros enteros al estudio de un numero finito de casos.
 
 ## Hipotesis
-- $a, b\ \in \mathbb{Z}$
+- $a, b \in \mathbb{Z}$
 - $b\ \neq 0$
 
 ## Tesis
-- Existen $q, r\ \in \mathbb{Z}$
+Existen $q, r \in \mathbb{Z}$ unicos tales que:
+
 - $a = bq + r$
 - $0 \leq r < \lvert b \rvert$
 
 ## Demostracion
 ### Estrategia
-1. Demostrar existencia para $a, b\ \in \mathbb{N}$
-2. Demostrar unicidad para $a, b\ \in \mathbb{N}$
+1. Demostrar existencia para $a, b \in \mathbb{N}$
+2. Demostrar unicidad para $a, b \in \mathbb{N}$
 3. Demostrar el caso $a > 0,\ b < 0$
 4. Demostrar el caso $a < 0$
 
-### Existencia para $a, b\ \in \mathbb{N}$
-Sean $a, b\ \in \mathbb{N_0}$ con $b > 0$.
+### Existencia para $a, b \in \mathbb{N}$
+Sean $a, b \in \mathbb{N_0}$ con $b > 0$.
 
-Se considera el conjunto $R = \{ a - bq \mid q\ \in \mathbb{N_0} \wedge a - bq \geq 0 \}$.
+Se considera el conjunto $R = \{ a - bq \mid q \in \mathbb{N_0} \wedge a - bq \geq 0 \}$.
 
 El conjunto no esta vacio, dado que $a = a - b0$ pertenece al conjunto.
 
@@ -30,15 +33,15 @@ Por el pricipio del buen orden de $\mathbb{N_0}$, existe un elemento minimo en $
 Por definicion de $q_0$ y $r_0$ se tiene que $a = bq_0 + r_0$, y $q_0, r_0 \geq 0$.
 
 $r_0$ debe ser menor que $b$,
-de otra forma se tiene $r_1 = r_0 - b = a - b(q_0 + 1)$, y $0 \leq r_1 < r_0$, por lo tanto $r_0$ no seria el minimo de $R$, lo cual es una contradiccion.
+de otra forma se tiene $r_1 = r_0 - b = a - b(q_0 + 1)$, por lo que $r_1 \in R$, y $0 \leq r_1 < r_0$, por lo tanto $r_0$ no seria el minimo de $R$, lo cual es una contradiccion.
 
 De esta forma queda demostrada la existencia de $q_0, r_0$ que cumplen las condiciones del teorema.
 
 
-### Unicidad para $a, b\ \in \mathbb{N}$
-Sean $a, b\ \in \mathbb{N_0},\ b > 0$ y $q_0, r_0\ \in \mathbb{N_0}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
+### Unicidad para $a, b \in \mathbb{N}$
+Sean $a, b \in \mathbb{N_0},\ b > 0$ y $q_0, r_0 \in \mathbb{N_0}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
 
-Y sean tambien $q_1, r_1\ \in \mathbb{N_0}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
+Y sean tambien $q_1, r_1 \in \mathbb{N_0}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
 
 Sin perdida de generalidad, se puede asumir $r_0 \leq r_1$, y por lo tanto, $q_1 \leq q_0$.
 
@@ -49,18 +52,18 @@ Quedando asi demostrada la unicidad de $r$ y $q$.
 
 
 ### Caso $a \geq 0,\ b < 0$
-Sean $a\ \in \mathbb{N_0}, b\ \in \mathbb{Z}$, con $b < 0$.
+Sean $a \in \mathbb{N_0}, b \in \mathbb{Z}$, con $b < 0$.
 
-Existen $q_0, r_0\ \in \mathbb{N_0}$ unicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0\ \in \mathbb{Z}$.
+Existen $q_0, r_0 \in \mathbb{N_0}$ unicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0 \in \mathbb{Z}$.
 
 Definiendo $q_1 = -q_0,\ r_1 = r_0$, se tienen los valores $q_1, r_1$ que demuestran el teorema para el caso $b < 0$.
 
 La unicidad de $q_1$ y $r_1$ queda garantizada por la unicidad de $q_0$ y $r_0$.
 
 ### Caso $a < 0$
-Sean $a\ \in \mathbb{Z}, b\ \in \mathbb{Z}$, con $a < 0$ y $b \neq 0$.
+Sean $a \in \mathbb{Z}, b \in \mathbb{Z}$, con $a < 0$ y $b \neq 0$.
 
-Existen $r_0\ \in \mathbb{N_0}$ y $q_0\ \in \mathbb{Z}$ unicos tales que $-a = bq_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$.
+Existen $r_0 \in \mathbb{N_0}$ y $q_0 \in \mathbb{Z}$ unicos tales que $-a = bq_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$.
 
 Luego, $a = b(-q_0) - r_0$. Si $r_0 = 0$, entonces $a = b(-q_0)$ con $q_1 = -q_0,\ r_1 = 0$ cumpliendo el teorema. De no ser asi, se tiene:
 
@@ -132,7 +135,7 @@ $$
 ## Ejemplo donde no se cumple la hipotesis
 Si $b = 0$, no se pueden encontrar $q,\ r$ que cumplan las condiciones del teorema, dado que no hay valor posible para $r$ tal que $0 \leq r < \lvert b \rvert$.
 
-- $r$ no cumple la condicion si $a \neq 0$:
+- $q$ no es unico y $r$ no cumple la condicion si $a \neq 0$:
 $$
 \begin{aligned}
 a = 10,\ b = 0 \\
@@ -140,7 +143,7 @@ a = 10,\ b = 0 \\
 \end{aligned}
 $$
 
-- Si $a = 0$, $r$ tampoco cumple la condicion porque $0 \leq r < \lvert b \rvert$ implica $0 < 0$:
+- Si $a = 0$, $q$ tampoco es unico y $r$ tampoco cumple la condicion porque $0 \leq r < \lvert b \rvert$ implica $0 < 0$:
 $$
 \begin{aligned}
 a = 0,\ b = 0 \\
@@ -150,8 +153,6 @@ $$
 
 
 ## Analisis de hipotesis: por que son necesarias la hipotesis?
-- $a, b\ \in \mathbb{Z}$: La division tiene sentido cuando $a$ y $b$ son enteros, donde no hay inversos multiplicativos.
+- $a, b \in \mathbb{Z}$: La division con resto tiene sentido cuando $a$ y $b$ son enteros, donde no hay inversos multiplicativos. En conjuntos donde si hay inversos multiplicativos para todos los elementos excepto el $0$, siempre se puede efectuar la division sin resto (cuando $b \neq 0$).
 
 - $b\ \neq 0$: Si $b = 0$, no se pueden hallar valores de $q$ y $r$ que cumplan las condiciones del teorema. $q$ podria tomar cualquier valor, pero no hay valor posible para $r$, ya que eso implicaria $0 < 0$. Intuitivamente esto se traduce en que la division por $0$ no esta definida.
-
-

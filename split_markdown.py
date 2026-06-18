@@ -64,6 +64,9 @@ def make_heading_text(stack):
 
 def heading_to_filename(heading_text):
     name = re.sub(r"\s*:\s*", ":", heading_text).replace(" ", "_").replace(":", "--")
+    name = re.sub(r"[^\w\-.]", "_", name)
+    name = re.sub(r"_+", "_", name)
+    name = name.strip("_")
     return name + ".md"
 
 

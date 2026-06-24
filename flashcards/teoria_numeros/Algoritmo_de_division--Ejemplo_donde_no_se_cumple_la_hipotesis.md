@@ -1,4 +1,4 @@
-# Teorema de la división entera: Ejemplo donde no se cumple la hipótesis
+# Algoritmo de división: Ejemplo donde no se cumple la hipótesis
 
 Si $b = 0$, no se pueden encontrar $q,\ r$ que cumplan las condiciones del teorema, dado que no hay valor posible para $r$ tal que $0 \leq r < \lvert b \rvert$.
 

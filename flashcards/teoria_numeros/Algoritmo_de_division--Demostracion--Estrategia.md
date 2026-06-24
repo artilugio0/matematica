@@ -1,4 +1,4 @@
-# Teorema de la división entera: Demostración: Estrategia
+# Algoritmo de división: Demostración: Estrategia
 
 1. Demostrar existencia para $b > 0$
 2. Demostrar unicidad

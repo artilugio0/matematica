@@ -1,4 +1,4 @@
-# Teorema de la división entera: Ejemplos límites
+# Algoritmo de división: Ejemplos límites
 
 - $a = 0$:
 

@@ -1,4 +1,4 @@
-# Teorema de la división entera: Análisis de hipótesis: ¿por qué son necesarias las hipótesis?
+# Algoritmo de división: Análisis de hipótesis: ¿por qué son necesarias las hipótesis?
 
 - $a, b \in \mathbb{Z}$: La división con resto tiene sentido cuando $a$ y $b$ son enteros, donde no hay inversos multiplicativos. En conjuntos donde sí hay inversos multiplicativos para todos los elementos excepto el $0$, siempre se puede efectuar la división sin resto (cuando $b \neq 0$).
 

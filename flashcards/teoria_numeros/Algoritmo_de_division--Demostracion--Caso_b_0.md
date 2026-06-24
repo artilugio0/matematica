@@ -1,4 +1,4 @@
-# Teorema de la división entera: Demostración: Caso $b < 0$
+# Algoritmo de división: Demostración: Caso $b < 0$
 
 Sean $a, b \in \mathbb{Z}$, con $b < 0$.
 

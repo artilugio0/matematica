@@ -1,4 +1,4 @@
-# Teorema de la división entera: Demostración: Unicidad para $b > 0$
+# Algoritmo de división: Demostración: Unicidad para $b > 0$
 
 Sean $a, b \in \mathbb{Z},\ b > 0$ y $q_0, r_0 \in \mathbb{Z}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
 

@@ -1,4 +1,4 @@
-# Teorema de la división entera: Demostración: Existencia: para $b > 0$
+# Algoritmo de división: Demostración: Existencia: para $b > 0$
 
 Sean $a, b \in \mathbb{Z}$ con $b > 0$.
 

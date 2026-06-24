@@ -1,4 +1,4 @@
-# Teorema de la división entera
+# Algoritmo de división
 
 ## Motivación
 - El teorema formaliza el procedimiento conocido de división con resto, y lo extiende para los casos en los que $a$ y $b$ son números enteros.
@@ -145,5 +145,5 @@ $$
 
 
 ## Aplicaciones
-- El cuadrado de un entero tiene resto $0$ o $1$ en la division por $4$
-- El cuadrado de un numero impar es de la forma $8k + 1$
+- El cuadrado de un entero tiene resto $0$ o $1$ en la división por $4$
+- El cuadrado de un número impar es de la forma $8k + 1$

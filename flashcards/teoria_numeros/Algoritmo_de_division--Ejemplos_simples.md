@@ -1,4 +1,4 @@
-# Teorema de la división entera: Ejemplos simples
+# Algoritmo de división: Ejemplos simples
 
 - $a > 0$ y $b > 0$:
 

@@ -1,4 +1,4 @@
-# Teorema de la división entera: Tesis
+# Algoritmo de división: Tesis
 
 Existen $q, r \in \mathbb{Z}$ únicos tales que:
 

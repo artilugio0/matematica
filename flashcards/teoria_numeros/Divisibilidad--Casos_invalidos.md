@@ -1,0 +1,1 @@
+# Divisibilidad: Casos inválidos

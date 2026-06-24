@@ -17,31 +17,31 @@ Existen $q, r \in \mathbb{Z}$ únicos tales que:
 
 ## Demostración
 ### Estrategia
-1. Demostrar existencia para $a, b \in \mathbb{N}$
-2. Demostrar unicidad para $a, b \in \mathbb{N}$
-3. Demostrar el caso $a > 0,\ b < 0$
-4. Demostrar el caso $a < 0$
+1. Demostrar existencia para $b > 0$
+2. Demostrar unicidad
+3. Demostrar para el caso $b < 0$
 
-### Existencia para $a, b \in \mathbb{N}$
-Sean $a, b \in \mathbb{N_0}$ con $b > 0$.
 
-Se considera el conjunto $R = \{ a - bq \mid q \in \mathbb{N_0} \wedge a - bq \geq 0 \}$.
+### Existencia: para $b > 0$
+Sean $a, b \in \mathbb{Z}$ con $b > 0$.
 
-El conjunto no está vacío, dado que $a = a - b0$ pertenece al conjunto.
+Se considera el conjunto $R = \{ a - bq \mid q \in \mathbb{Z} \wedge a - bq \geq 0 \}$.
+
+El conjunto no está vacío porque tomando $q = -\lvert a \rvert$, se tiene $a - bq = a - b(-\lvert a \rvert) = a + b \lvert a \rvert$. Como $b \geq 1$, entonces $a + b\lvert a \rvert \geq 0$, y por lo tanto pertenece a $R$.
 
 Por el principio del buen orden de $\mathbb{N_0}$, existe un elemento mínimo en $R$. Sea $r_0 = a - bq_0$ el elemento mínimo de $R$.
-Por definición de $q_0$ y $r_0$ se tiene que $a = bq_0 + r_0$, y $q_0, r_0 \geq 0$.
+Por definición de $q_0$ y $r_0$ se tiene que $a = bq_0 + r_0$, y $r_0 \geq 0$.
 
 $r_0$ debe ser menor que $b$,
-de otra forma se tiene $r_1 = r_0 - b = a - b(q_0 + 1)$, por lo que $r_1 \in R$, y $0 \leq r_1 < r_0$, por lo tanto $r_0$ no sería el mínimo de $R$, lo cual es una contradicción.
+de otra forma se tiene $r_1 = r_0 - b = a - b(q_0 + 1) \in R$, y $0 \leq r_1 < r_0$. Por lo tanto $r_0$ no sería el mínimo de $R$, lo cual es una contradicción.
 
 De esta forma queda demostrada la existencia de $q_0, r_0$ que cumplen las condiciones del teorema.
 
 
-### Unicidad para $a, b \in \mathbb{N}$
-Sean $a, b \in \mathbb{N_0},\ b > 0$ y $q_0, r_0 \in \mathbb{N_0}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
+### Unicidad para $b > 0$
+Sean $a, b \in \mathbb{Z},\ b > 0$ y $q_0, r_0 \in \mathbb{Z}$ tales que $a = bq_0 + r_0$, con $0 \leq r_0 < b$ (su existencia ya fue demostrada).
 
-Y sean también $q_1, r_1 \in \mathbb{N_0}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
+Y sean también $q_1, r_1 \in \mathbb{Z}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
 
 Sin pérdida de generalidad, se puede asumir $r_0 \leq r_1$, y por lo tanto, $q_1 \leq q_0$.
 
@@ -51,26 +51,12 @@ De $a = bq_1 + r_1$ y $a = bq_0 + r_0$, tenemos que $r_1 - r_0 = b(q_0-q_1)$. Pe
 Quedando así demostrada la unicidad de $r$ y $q$.
 
 
-### Caso $a \geq 0,\ b < 0$
-Sean $a \in \mathbb{N_0}, b \in \mathbb{Z}$, con $b < 0$.
+### Caso $b < 0$
+Sean $a, b \in \mathbb{Z}$, con $b < 0$.
 
-Existen $q_0, r_0 \in \mathbb{N_0}$ únicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0 \in \mathbb{Z}$.
+Existen $q_0, r_0 \in \mathbb{Z}$ únicos tales que $a = (-b)q_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$, y por lo tanto, $a = b(-q_0) + r_0$, con $-q_0 \in \mathbb{Z}$.
 
 Definiendo $q_1 = -q_0,\ r_1 = r_0$, se tienen los valores $q_1, r_1$ que demuestran el teorema para el caso $b < 0$.
-
-La unicidad de $q_1$ y $r_1$ queda garantizada por la unicidad de $q_0$ y $r_0$.
-
-### Caso $a < 0$
-Sean $a \in \mathbb{Z}, b \in \mathbb{Z}$, con $a < 0$ y $b \neq 0$.
-
-Existen $r_0 \in \mathbb{N_0}$ y $q_0 \in \mathbb{Z}$ únicos tales que $-a = bq_0 + r_0$, con $0 \leq r_0 < \lvert b \rvert$.
-
-Luego, $a = b(-q_0) - r_0$. Si $r_0 = 0$, entonces $a = b(-q_0)$ con $q_1 = -q_0,\ r_1 = 0$ cumpliendo el teorema. De no ser así, se tiene:
-
-- Si $b > 0$: $a = b(-q_0 -1) + (b - r_0)$, donde $0 < b - r_0 < \lvert b \rvert$, definiendo $q_1 = -q_0 - 1$ y $r_1 = b - r_0$.
-- Si $b < 0$: $a = b(-q_0 +1) + (-b - r_0)$, donde $0 < -b - r_0 < \lvert b \rvert$, definiendo $q_1 = -q_0 + 1$ y $r_1 = -b - r_0$.
-
-Por lo tanto existen valores únicos de $q_1, r_1$ que cumplen las condiciones del teorema.
 
 La unicidad de $q_1$ y $r_1$ queda garantizada por la unicidad de $q_0$ y $r_0$.
 

@@ -1,6 +1,5 @@
 # Teorema de la división entera: Demostración: Estrategia
 
-1. Demostrar existencia para $a, b \in \mathbb{N}$
-2. Demostrar unicidad para $a, b \in \mathbb{N}$
-3. Demostrar el caso $a > 0,\ b < 0$
-4. Demostrar el caso $a < 0$
+1. Demostrar existencia para $b > 0$
+2. Demostrar unicidad
+3. Demostrar para el caso $b < 0$

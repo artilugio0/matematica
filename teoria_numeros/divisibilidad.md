@@ -11,6 +11,13 @@ Se simboliza: $a \mid b$.
 - La definición de divisibilidad es el punto de partida del estudio de la teoría de números. Otras definiciones importantes como la de _número primo_ se basan en la de divisibilidad.
 - En general la división entre dos números enteros no tiene como resultado otro número entero. La relación de divisibilidad identifica los casos en los que sí es posible realizar la división y obtener un entero como resultado.
 
+## Ejemplos
+
+- $6 \mid 24$
+- $7 \nmid 20$
+- El signo no afecta la divisibilidad: $3 \mid 6$, $-3 \mid 6$, $3 \mid -6$ y $-3 \mid -6$
+- La relación no es simétrica: $3 \mid 12$, pero $12 \nmid 3$
+
 ## Casos límite
 Para todo $a \in \mathbb{Z},\ a \neq 0$:
 

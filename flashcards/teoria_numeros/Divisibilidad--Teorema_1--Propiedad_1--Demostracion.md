@@ -2,5 +2,5 @@
 
 
 - $0 = a0 \Rightarrow a \mid 0$
-- $a = 1a \Rightarrow 1 \mid a$
 - $a = a1 \Rightarrow a \mid a$
+- $a = 1a = (-1)(-a) \Rightarrow 1 \mid a \wedge -1 \mid a$

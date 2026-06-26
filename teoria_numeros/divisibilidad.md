@@ -45,14 +45,14 @@ Propiedades básicas de la divisibilidad.
 #### Enunciado
 
 - $a \mid 0$
-- $1 \mid a$
 - $a \mid a$
+- $\pm 1 \mid a$
 
 #### Demostración
 
 - $0 = a0 \Rightarrow a \mid 0$
-- $a = 1a \Rightarrow 1 \mid a$
 - $a = a1 \Rightarrow a \mid a$
+- $a = 1a = (-1)(-a) \Rightarrow 1 \mid a \wedge -1 \mid a$
 
 ### Propiedad 2
 #### Enunciado

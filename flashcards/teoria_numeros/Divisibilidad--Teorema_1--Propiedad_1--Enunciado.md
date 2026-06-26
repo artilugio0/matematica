@@ -2,5 +2,5 @@
 
 
 - $a \mid 0$
-- $1 \mid a$
 - $a \mid a$
+- $\pm 1 \mid a$

@@ -1,4 +1,4 @@
-# Algoritmo de división: Ejemplos límites
+# Algoritmo de división: Ejemplos destacables
 
 - $a = 0$:
 

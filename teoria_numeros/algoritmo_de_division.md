@@ -104,7 +104,7 @@ a = -16,\ b = -3 \\
 $$
 
 
-## Ejemplos límites
+## Ejemplos destacables
 - $a = 0$:
 
 $$

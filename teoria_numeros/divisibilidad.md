@@ -18,15 +18,15 @@ Se simboliza: $a \mid b$.
 - El signo no afecta la divisibilidad: $3 \mid 6$, $-3 \mid 6$, $3 \mid -6$ y $-3 \mid -6$
 - La relación no es simétrica: $3 \mid 12$, pero $12 \nmid 3$
 
-## Casos límite
+## Ejemplos destacables
 Para todo $a \in \mathbb{Z},\ a \neq 0$:
 
-- $a \mid 0$
-- $a \mid a$
+- $a \mid 0$: $10 \mid 0$
+- $a \mid a$: $10 \mid 10$
 
 Para todo $a \in \mathbb{Z}$:
 
-- $\pm 1 \mid a$
+- $\pm 1 \mid a$: $1 \mid 10$, $-1 \mid 10$
 
 ## Restricciones
 
@@ -34,7 +34,7 @@ Si $a \mid b$, $a$ no puede ser $0$. Hay dos casos a analizar:
 
 Si $a = 0 \wedge b \neq 0$, no existe $c \in \mathbb{Z}$ tal que $b = ac$, porque $ac = 0\ \forall\ c \in \mathbb{Z}$.
 
-Si $a = 0 \wedge b = 0$, $c$ puede tomar cualquier valor y $0 = 0c$ se cumple. Si bien la definición de divisibilidad no requiere que $c$ sea único, este es el único caso en el que se da esta situación.
+Si $a = 0 \wedge b = 0$, $c$ puede tomar cualquier valor y $0 = 0c$ se cumple. Si bien la definición de divisibilidad no requiere que $c$ sea único, este es el único caso en el que se da esta situación. Esta es la razón por la cual la división por $0$ no está definida.
 
 ## Teorema 1
 ### Enunciado

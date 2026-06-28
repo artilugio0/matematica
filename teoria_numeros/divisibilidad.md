@@ -119,6 +119,28 @@ Si $a \mid b \wedge a \mid c$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales 
 Sean $x, y \in \mathbb{Z}$, entonces $bx + cy = a k_1 x + a k_2 y = a(k_1 x + k_2 y) \Rightarrow a \mid (bx + cy)$.
 
 
+### Propiedad 8
+#### Enunciado
+
+$a \mid (b \pm c) \wedge a \mid b \Rightarrow a \mid \pm c$
+
+#### Demostración
+
+Si $a \mid (b \pm c) \wedge a \mid b$, entonces existe $k_1, k_2 \in \mathbb{Z}$ tales que $ak_1 = b \pm c \wedge ak_2 = b$. Sustituyendo en la primera igualdad se tiene que $ak_1 = b \pm c = ak_2 \pm c \Rightarrow a(k_1 - k_2) = \pm c$. Por lo tanto $a \mid \pm c$.
+
+
+### Propiedad 9
+#### Enunciado
+
+$a \mid b \Leftrightarrow ac \mid bc, \forall\ c \in \mathbb{Z}, c \neq 0$
+
+#### Demostración
+
+Si $a \mid b$, entonces existe $k \in \mathbb{Z}$ tal que $ak = b$. Sea $c \in \mathbb{Z}, c \neq 0$, multiplicando la igualdad por $c$ se obtiene $(ac)k = bc$. Por lo tanto $ac \mid bc$.
+
+Si $ac \mid bc$ con $c \neq 0$, entonces existe $k \in \mathbb{Z}$ tal que $ack = bc$. Dado que $c \neq 0$, se puede dividir ambos miembros por $c$ obteniendo $ak = b$. Por lo tanto $a \mid b$.
+
+
 ## Teorema 2
 
 ### Enunciado

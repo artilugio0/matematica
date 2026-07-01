@@ -32,6 +32,8 @@ Su definición y estudio es importante porque es un concepto utilizado en el est
   - $mcd(0, 21) = 21$
   - $mcd(0, -21) = 21$
 - $mcd(\pm 1, a) = 1$:
+  - $mcd(1, 21) = 1$
+  - $mcd(-1, 21) = 1$
 
 ## Restricciones
 

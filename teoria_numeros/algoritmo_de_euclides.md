@@ -1,4 +1,5 @@
-# Teorema 5: Algoritmo de Euclides
+# Algoritmo de Euclides
+Teorema 5
 
 ## Motivación
 

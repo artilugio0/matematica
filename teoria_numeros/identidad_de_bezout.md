@@ -1,5 +1,5 @@
-# Teorema 6: Identidad de Bezout
-
+# Identidad de Bezout
+Teorema 6
 
 ## Motivación
 
@@ -75,28 +75,28 @@ Por lo tanto $d = mcd(a, b)$.
 Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
 
 
-## Teorema 7
+# Teorema 7
 
-### Enunciado
+## Enunciado
 
 Sean $a, b\ \in \mathbb{Z}$ no ambos nulos. 
 
 $mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, con $x, y\ \in \mathbb{Z}$.
 
-### Demostración
+## Demostración
 
 Queda demostrado por la demostración del _Teorema 6_.
 
 
-## Teorema 8
+# Teorema 8
 
-### Enunciado
+## Enunciado
 
 Sea $d \in \mathbb{N}$ y $a, b\ \in \mathbb{Z}$ no ambos nulos.
 
 $mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
 
-### Demostración
+## Demostración
 
 Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
 
@@ -109,26 +109,26 @@ Sea $d \in \mathbb{N}$ tal que $d \mid a \wedge d \mid b$ y para todo entero $c$
 Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Teorema 2 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
 
 
-## Teorema 9
+# Teorema 9
 
-### Enunciado
+## Enunciado
 
 Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c = a \cdot x + b \cdot y$ si y solo si $mcd(a, b) \mid c$.
 
-### Demostración
+## Demostración
 
 Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2 - Propiedad 7_, $mcd(a, b) \mid c$.
 
 Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por el _Teorema 6_, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
 
 
-## Teorema 10
+# Teorema 10
 
-### Enunciado
+## Enunciado
 
 Dados dos enteros $a, b$ no ambos nulos, si existen enteros $x, y$ para los que $mcd(a, b) = a \cdot x + b \cdot y$, entonces $mcd(x, y) = 1$.
 
-### Demostración
+## Demostración
 
 Sea $mcd(a, b) = a \cdot x_0 + b \cdot y_0$.
 

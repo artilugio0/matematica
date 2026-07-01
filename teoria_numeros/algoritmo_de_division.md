@@ -1,4 +1,5 @@
-# Teorema 1: Algoritmo de división
+# Algoritmo de división
+Teorema 1
 
 ## Motivación
 - El teorema formaliza el procedimiento conocido de división con resto, y lo extiende para los casos en los que $a$ y $b$ son números enteros.

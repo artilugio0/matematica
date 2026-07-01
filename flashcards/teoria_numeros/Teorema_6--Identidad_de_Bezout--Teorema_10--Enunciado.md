@@ -1,4 +1,0 @@
-# Teorema 6: Identidad de Bezout: Teorema 10: Enunciado
-
-
-Dados dos enteros $a, b$ no ambos nulos, si existen enteros $x, y$ para los que $mcd(a, b) = a \cdot x + b \cdot y$, entonces $mcd(x, y) = 1$.

@@ -1,4 +1,4 @@
-# Máximo común divisor: Teorema 4: Propiedad 5: Demostración
+# Teorema 4: Propiedad 5: Demostración
 
 
 Sean $a, b \in \mathbb{Z}$, no ambos nulos, y sea $d = mcd(a, a+b)$.

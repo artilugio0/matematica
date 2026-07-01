@@ -1,4 +1,4 @@
-# Máximo común divisor: Teorema 4: Propiedad 1: Demostración
+# Teorema 4: Propiedad 1: Demostración
 
 
 Si $a > 0$ , $a = \lvert a \rvert \cdot 1$. Si $a < 0$, $a = \lvert a \rvert \cdot (-1)$. Entonces $\lvert a \rvert \mid a$.

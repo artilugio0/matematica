@@ -1,4 +1,4 @@
-# Máximo común divisor: Teorema 4: Propiedad 2: Demostración
+# Teorema 4: Propiedad 2: Demostración
 
 
 $\lvert a \rvert \mid 0 \wedge \lvert a \rvert \mid a$. 

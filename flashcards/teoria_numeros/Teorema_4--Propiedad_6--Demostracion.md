@@ -1,4 +1,4 @@
-# Máximo común divisor: Teorema 4: Propiedad 6: Demostración
+# Teorema 4: Propiedad 6: Demostración
 
 
 Sea $d = mcd(a, b + a \cdot k)$.

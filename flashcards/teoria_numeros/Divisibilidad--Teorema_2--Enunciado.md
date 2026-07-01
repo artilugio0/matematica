@@ -1,4 +1,4 @@
 # Divisibilidad: Teorema 2: Enunciado
 
 
-Todo entero no nulo tiene un número finito de divisores
+Propiedades básicas de la divisibilidad.

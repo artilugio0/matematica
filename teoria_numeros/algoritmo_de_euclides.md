@@ -1,4 +1,4 @@
-# Algoritmo de Euclides
+# Teorema 5: Algoritmo de Euclides
 
 ## Motivación
 
@@ -11,11 +11,11 @@ Si $a \mid b$, entonces $mcd(a, b) = \lvert a \rvert$. Si $b \mid a$, entonces $
 
 Se definen: $r_{-1} = a, r_0 = b$
 
-Luego para cada $i \in \mathbb{N}$, usando el _Algoritmo de división_ con los enteros $r_{i-2}, r_{i-1}$, se encuentran $q_{i}, r_{i}$ tales que $r_{i-2} = r_{i-1}q_i + r_i$. Se repite el procedimiento incrementando $i$ hasta llegar a $i = n+1$ tal que $r_{n+1} = 0$. Entonces se tendrá: $r_{n-1} = r_n q_{n+1} + 0$, en este punto se finaliza el algoritmo.
+Luego para cada $i \in \mathbb{N}$, usando el _Teorema 1_ con los enteros $r_{i-2}, r_{i-1}$, se encuentran $q_{i}, r_{i}$ tales que $r_{i-2} = r_{i-1}q_i + r_i$. Se repite el procedimiento incrementando $i$ hasta llegar a $i = n+1$ tal que $r_{n+1} = 0$. Entonces se tendrá: $r_{n-1} = r_n q_{n+1} + 0$, en este punto se finaliza el algoritmo.
 
 El último resto no nulo será el máximo común divisor de $a$ y $b$: $mcd(a, b) = r_n$.
 
-Nota: El algoritmo siempre finaliza porque el _Algoritmo de división_ garantiza que $0 \leq r_i < \lvert r_{i-1} \rvert$. Por lo que se tiene una sucesión estrictamente decreciente de números enteros no negativos que tendrá como máximo $\lvert b \rvert$ elementos.
+Nota: El algoritmo siempre finaliza porque el _Teorema 1_ garantiza que $0 \leq r_i < \lvert r_{i-1} \rvert$. Por lo que se tiene una sucesión estrictamente decreciente de números enteros no negativos que tendrá como máximo $\lvert b \rvert$ elementos.
 
 
 ## Demostración
@@ -41,16 +41,16 @@ $r_{n-2} = r_{n-1} q_n + r_n$
 
 $r_{n-1} = r_n q_{n+1} + 0$
 
-Por definición de divisibilidad, $r_n \mid r_{n-1}$. Entonces, por _Divisibilidad - Teorema 1 - Propiedad 3_, $r_n \mid r_{n-1} q_n$. Entonces, por _Divisibilidad - Teorema 1 - Propiedad 7_, $r_n \mid r_{n-2}$. Iterando de esta forma sobre todos los $r_i$ decreciendo el valor de $i$, se llega a que $r_n \mid a \wedge r_n \mid b$.
+Por definición de divisibilidad, $r_n \mid r_{n-1}$. Entonces, por _Teorema 2 - Propiedad 3_, $r_n \mid r_{n-1} q_n$. Entonces, por _Teorema 2 - Propiedad 7_, $r_n \mid r_{n-2}$. Iterando de esta forma sobre todos los $r_i$ decreciendo el valor de $i$, se llega a que $r_n \mid a \wedge r_n \mid b$.
 
 
 ### Paso 2: $r_n$ es mayor o igual a cualquier otro divisor
 
-Sea $d \in \mathbb{Z}$ tal que $d \mid a \wedge d \mid b$. De $a = b q_1 + r_1$ se tiene que $a + b (-q_1) = r_1$, y por _Divisibilidad - Teorema 1 - Propiedad 7_, $d \mid r_1$. Por el mismo argumento aplicado a cada $r_i$, se tiene que $d \mid r_2$, $d \mid r_3$, ..., $d \mid r_n$.
+Sea $d \in \mathbb{Z}$ tal que $d \mid a \wedge d \mid b$. De $a = b q_1 + r_1$ se tiene que $a + b (-q_1) = r_1$, y por _Teorema 2 - Propiedad 7_, $d \mid r_1$. Por el mismo argumento aplicado a cada $r_i$, se tiene que $d \mid r_2$, $d \mid r_3$, ..., $d \mid r_n$.
 
 Como el procedimiento se aplica al caso en que $a \nmid b$ y $b \nmid a$, se tiene $r_1 \neq 0$, luego $n \geq 1$ y por lo tanto $r_n > 0$, es decir $\lvert r_n \rvert = r_n$.
 
-Por _Divisibilidad - Teorema 1 - Propiedad 6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert = r_n$. Por lo tanto, $d \leq r_n$.
+Por _Teorema 2 - Propiedad 6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert = r_n$. Por lo tanto, $d \leq r_n$.
 
 
 ## Ejemplos
@@ -100,7 +100,7 @@ Por _Divisibilidad - Teorema 1 - Propiedad 6_, $d \leq \lvert d \rvert \leq \lve
 
 ## Análisis de hipótesis: ¿por qué son necesarias las hipótesis?
 
-El máximo común divisor está definido cuando $a$ y $b$ no son ambos nulos, y el _Algoritmo de división_ requiere que $b$ no sea nulo.
+El máximo común divisor está definido cuando $a$ y $b$ no son ambos nulos, y el _Teorema 1_ requiere que $b$ no sea nulo.
 
 
 ## Aplicaciones
@@ -138,7 +138,7 @@ Siguiendo este procedimiento se llega a:
 - $r_{i-2} = a \cdot \alpha_{i-2} + b \cdot \beta_{i-2}$
 - $r_{i-1} = a \cdot \alpha_{i-1} + b \cdot \beta_{i-1}$
 
-Por el algoritmo de división:
+Por el Teorema 1:
 
 - $r_{i-2} = r_{i-1} \cdot q_i + r_i$
 

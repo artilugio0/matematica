@@ -1,4 +1,4 @@
-# Identidad de Bezout
+# Teorema 6: Identidad de Bezout
 
 
 ## Motivación
@@ -41,7 +41,7 @@ Por el principio de buen orden de los números naturales, $D$ tiene un elemento 
 
 Sea $d = min\ D$. Por pertenecer a $D$, existen $x_0,\ y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$.
 
-Usando el _Algoritmo de división_, existen $q, r \in \mathbb{Z}$ tales que $a = d \cdot q + r$, con $0 \leq r < d$ (definición de $D$, $d \geq 1$).
+Usando el _Teorema 1_, existen $q, r \in \mathbb{Z}$ tales que $a = d \cdot q + r$, con $0 \leq r < d$ (definición de $D$, $d \geq 1$).
 
 Reemplazando a $d$ en esta última igualdad, se tiene $a = (a \cdot x_0 + b \cdot y_0) \cdot q + r$, entonces $r = a \cdot (1 - x_0 \cdot q) + b \cdot (-y_0 \cdot q)$. Como $0 \leq r < d$, $r$ debe ser $0$, de otra forma pertenecería a $D$ y sería menor a $d$, lo cual es un absurdo.
 
@@ -54,7 +54,7 @@ Utilizando el mismo argumento, se tiene $d \mid b$. Luego $d$ es divisor común 
 
 Sea $d = min\ D = a \cdot x_0 + b \cdot y_0$, y $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$.
 
-Por _Divisibilidad - Teorema 1 - Propiedad 7_, $c \mid (a \cdot x_0 + b \cdot y_0)$. Por lo tanto $c \mid d$. Y por _Divisibilidad - Teorema 1 - Propiedad 6_, $c \leq \lvert c \rvert \leq \lvert d \rvert = d$. Luego, $c \leq d$.
+Por _Teorema 2 - Propiedad 7_, $c \mid (a \cdot x_0 + b \cdot y_0)$. Por lo tanto $c \mid d$. Y por _Teorema 2 - Propiedad 6_, $c \leq \lvert c \rvert \leq \lvert d \rvert = d$. Luego, $c \leq d$.
 
 Por lo tanto $d = mcd(a, b)$.
 
@@ -75,7 +75,7 @@ Por lo tanto $d = mcd(a, b)$.
 Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
 
 
-## Teorema 1
+## Teorema 7
 
 ### Enunciado
 
@@ -85,10 +85,10 @@ $mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, c
 
 ### Demostración
 
-Queda demostrado por la demostración de la identidad de Bezout.
+Queda demostrado por la demostración del _Teorema 6_.
 
 
-## Teorema 2
+## Teorema 8
 
 ### Enunciado
 
@@ -100,16 +100,16 @@ $mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, 
 
 Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
 
-Sea $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$. Por la identidad de Bezout, existen $x_0, y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$. Por _Divisibilidad - Teorema 1 - Propiedad 7_, $c \mid d$.
+Sea $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$. Por el _Teorema 6_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$. Por _Teorema 2 - Propiedad 7_, $c \mid d$.
 
 Recíproco:
 
 Sea $d \in \mathbb{N}$ tal que $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
 
-Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Divisibilidad - Teorema 1 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
+Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Teorema 2 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
 
 
-## Teorema 3
+## Teorema 9
 
 ### Enunciado
 
@@ -117,12 +117,12 @@ Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c 
 
 ### Demostración
 
-Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Divisibilidad - Teorema 1 - Propiedad 7_, $mcd(a, b) \mid c$.
+Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2 - Propiedad 7_, $mcd(a, b) \mid c$.
 
-Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por la identidad de Bezout, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
+Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por el _Teorema 6_, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
 
 
-## Teorema 4
+## Teorema 10
 
 ### Enunciado
 

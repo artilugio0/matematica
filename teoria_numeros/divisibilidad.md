@@ -36,7 +36,7 @@ Si $a = 0 \wedge b \neq 0$, no existe $c \in \mathbb{Z}$ tal que $b = ac$, porqu
 
 Si $a = 0 \wedge b = 0$, $c$ puede tomar cualquier valor y $0 = 0c$ se cumple. Si bien la definición de divisibilidad no requiere que $c$ sea único, este es el único caso en el que se da esta situación. Esta es la razón por la cual la división por $0$ no está definida.
 
-## Teorema 1
+## Teorema 2
 ### Enunciado
 
 Propiedades básicas de la divisibilidad.
@@ -141,7 +141,7 @@ Si $a \mid b$, entonces existe $k \in \mathbb{Z}$ tal que $ak = b$. Sea $c \in \
 Si $ac \mid bc$ con $c \neq 0$, entonces existe $k \in \mathbb{Z}$ tal que $ack = bc$. Dado que $c \neq 0$, se puede dividir ambos miembros por $c$ obteniendo $ak = b$. Por lo tanto $a \mid b$.
 
 
-## Teorema 2
+## Teorema 3
 
 ### Enunciado
 
@@ -149,4 +149,4 @@ Todo entero no nulo tiene un número finito de divisores
 
 ### Demostración
 
-Sean $a, d \in \mathbb{Z}$, y $a \neq 0, d \neq 0$ tales que $d \mid a$. Por _Teorema 1 - propiedad 6_, $\lvert d \rvert \leq \lvert a \rvert$. Por lo tanto, no puede haber más de $2 \lvert a \rvert$ divisores de $a$, ya que hay $2\lvert a \rvert$ enteros $d$ tales que $-\lvert a \rvert \leq d \leq \lvert a \rvert$, con $d \neq 0$. Como la cantidad de divisores posibles es acotada, es una cantidad finita, lo cual demuestra el teorema.
+Sean $a, d \in \mathbb{Z}$, y $a \neq 0, d \neq 0$ tales que $d \mid a$. Por _Teorema 2 - propiedad 6_, $\lvert d \rvert \leq \lvert a \rvert$. Por lo tanto, no puede haber más de $2 \lvert a \rvert$ divisores de $a$, ya que hay $2\lvert a \rvert$ enteros $d$ tales que $-\lvert a \rvert \leq d \leq \lvert a \rvert$, con $d \neq 0$. Como la cantidad de divisores posibles es acotada, es una cantidad finita, lo cual demuestra el teorema.

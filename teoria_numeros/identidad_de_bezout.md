@@ -75,6 +75,63 @@ Por lo tanto $d = mcd(a, b)$.
 Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
 
 
-## Aplicaciones
+## Teorema 1
 
-- Resolución de ecuaciones diofánticas lineales
+### Enunciado
+
+Sean $a, b\ \in \mathbb{Z}$ no ambos nulos. 
+
+$mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, con $x, y\ \in \mathbb{Z}$.
+
+### Demostración
+
+Queda demostrado por la demostración de la identidad de Bezout.
+
+
+## Teorema 2
+
+### Enunciado
+
+Sea $d \in \mathbb{N}$ y $a, b\ \in \mathbb{Z}$ no ambos nulos.
+
+$mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
+
+### Demostración
+
+Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
+
+Sea $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$. Por la identidad de Bezout, existen $x_0, y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$. Por _Divisibilidad - Teorema 1 - Propiedad 7_, $c \mid d$.
+
+Recíproco:
+
+Sea $d \in \mathbb{N}$ tal que $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
+
+Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Divisibilidad - Teorema 1 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
+
+
+## Teorema 3
+
+### Enunciado
+
+Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c = a \cdot x + b \cdot y$ si y solo si $mcd(a, b) \mid c$.
+
+### Demostración
+
+Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Divisibilidad - Teorema 1 - Propiedad 7_, $mcd(a, b) \mid c$.
+
+Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por la identidad de Bezout, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
+
+
+## Teorema 4
+
+### Enunciado
+
+Dados dos enteros $a, b$ no ambos nulos, si existen enteros $x, y$ para los que $mcd(a, b) = a \cdot x + b \cdot y$, entonces $mcd(x, y) = 1$.
+
+### Demostración
+
+Sea $mcd(a, b) = a \cdot x_0 + b \cdot y_0$.
+
+Como $mcd(x_0, y_0) \mid x_0 \wedge mcd(x_0, y_0) \mid y_0$. Entonces existen $k_1, k_2\ \in \mathbb{Z}$ tales que $mcd(x_0, y_0) \cdot k_1 = x_0$ y $mcd(x_0, y_0) \cdot k_2 = y_0$. Por lo tanto $mcd(a, b) = a \cdot mcd(x_0, y_0) \cdot k_1 + b \cdot mcd(x_0, y_0) \cdot k_2$. Lo que implica que $mcd(x_0, y_0) \mid mcd(a, b)$. Dividiendo ambos miembros por $mcd(x_0, y_0)$ se obtiene $\frac{mcd(a, b)}{mcd(x_0, y_0)} = a \cdot k_1 + b \cdot k_2$.
+
+Dado que $mcd(a, b)$ y $mcd(x_0, y_0)$ son enteros positivos, y que $mcd(a, b)$ es el menor entero de la forma $a \cdot x + b \cdot y$, $\frac{mcd(a, b)}{mcd(x_0, y_0)}$ debe ser igual a $mcd(a, b)$, y por lo tanto $mcd(x_0, y_0) = 1$.

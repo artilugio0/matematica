@@ -28,7 +28,7 @@ Siguiendo este procedimiento se llega a:
 - $r_{i-2} = a \cdot \alpha_{i-2} + b \cdot \beta_{i-2}$
 - $r_{i-1} = a \cdot \alpha_{i-1} + b \cdot \beta_{i-1}$
 
-Por el Teorema 1:
+Por el _Teorema 1.1_:
 
 - $r_{i-2} = r_{i-1} \cdot q_i + r_i$
 

@@ -158,3 +158,17 @@ mcd(a, b) \cdot mcd(a, c) &= (a \cdot x_0 + b \cdot y_0) \cdot (a \cdot x_1 + c 
 $$
 
 Por _Teorema 2 - Propiedad 3_, $a$ divide a los primeros tres términos de la última suma, y por hipótesis $a \mid b \cdot c$, por lo tanto también divide al último término. Luego por _Teorema 2 - Propiedad 7_, $a \mid mcd(a, b) \cdot mcd(a, c)$.
+
+
+# Teorema 12
+
+## Enunciado
+
+Sean $a, b \in \mathbb{Z}$ no ambos nulos.
+$\forall\ k \in \mathbb{N}: mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$
+
+## Demostración
+
+Por definición $mcd(a, b) \mid a \wedge mcd(a, b) \mid b$. Por _Teorema 2 - Propiedad 9_, $k \cdot mcd(a, b) \mid k \cdot a \wedge k \cdot mcd(a, b) \mid k \cdot b$.
+
+Sea $d \in \mathbb{Z}$, tal que $d \mid k \cdot a \wedge d \mid k \cdot b$. Por _Teorema 6_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $k \cdot mcd(a, b) = k \cdot (a \cdot x_0 + b \cdot y_0) = k \cdot a \cdot x_0 + k \cdot b \cdot y_0$. Por _Teorema 2 - Propiedad 7_, $d \mid k \cdot mcd(a, b)$. Luego, por _Teorema 8_, $mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$.

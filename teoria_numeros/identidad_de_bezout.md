@@ -135,3 +135,26 @@ Sea $mcd(a, b) = a \cdot x_0 + b \cdot y_0$.
 Como $mcd(x_0, y_0) \mid x_0 \wedge mcd(x_0, y_0) \mid y_0$. Entonces existen $k_1, k_2\ \in \mathbb{Z}$ tales que $mcd(x_0, y_0) \cdot k_1 = x_0$ y $mcd(x_0, y_0) \cdot k_2 = y_0$. Por lo tanto $mcd(a, b) = a \cdot mcd(x_0, y_0) \cdot k_1 + b \cdot mcd(x_0, y_0) \cdot k_2$. Lo que implica que $mcd(x_0, y_0) \mid mcd(a, b)$. Dividiendo ambos miembros por $mcd(x_0, y_0)$ se obtiene $\frac{mcd(a, b)}{mcd(x_0, y_0)} = a \cdot k_1 + b \cdot k_2$.
 
 Dado que $mcd(a, b)$ y $mcd(x_0, y_0)$ son enteros positivos, y que $mcd(a, b)$ es el menor entero de la forma $a \cdot x + b \cdot y$, $\frac{mcd(a, b)}{mcd(x_0, y_0)}$ debe ser igual a $mcd(a, b)$, y por lo tanto $mcd(x_0, y_0) = 1$.
+
+
+# Teorema 11
+
+## Enunciado
+
+Si $a \mid b \cdot c$, entonces $a \mid mcd(a, b) \cdot mcd(a, c)$.
+
+## Demostración
+
+Sean $a, b, c \in \mathbb{Z}$ tales que $a \mid b \cdot c$.
+
+Usando _Teorema 6_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que $mcd(a, b) = a \cdot x_0 + b \cdot y_0$, y $mcd(a, c) = a \cdot x_1 + c \cdot y_1$.
+
+Multiplicando miembro a miembro:
+$$
+\begin{align}
+mcd(a, b) \cdot mcd(a, c) &= (a \cdot x_0 + b \cdot y_0) \cdot (a \cdot x_1 + c \cdot y_1) \\
+&= a^2 \cdot x_0 \cdot x_1 + a \cdot c \cdot x_0 \cdot y_1 + a \cdot b \cdot x_1 \cdot y_0 + b \cdot c \cdot y_0 \cdot y_1
+\end{align}
+$$
+
+Por _Teorema 2 - Propiedad 3_, $a$ divide a los primeros tres términos de la última suma, y por hipótesis $a \mid b \cdot c$, por lo tanto también divide al último término. Luego por _Teorema 2 - Propiedad 7_, $a \mid mcd(a, b) \cdot mcd(a, c)$.

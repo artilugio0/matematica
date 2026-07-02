@@ -1,5 +1,5 @@
 # Identidad de Bezout
-Teorema 6
+Teorema 5.1
 
 ## Motivación
 
@@ -41,7 +41,7 @@ Por el principio de buen orden de los números naturales, $D$ tiene un elemento 
 
 Sea $d = min\ D$. Por pertenecer a $D$, existen $x_0,\ y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$.
 
-Usando el _Teorema 1_, existen $q, r \in \mathbb{Z}$ tales que $a = d \cdot q + r$, con $0 \leq r < d$ (definición de $D$, $d \geq 1$).
+Usando el _Teorema 1.1_, existen $q, r \in \mathbb{Z}$ tales que $a = d \cdot q + r$, con $0 \leq r < d$ (definición de $D$, $d \geq 1$).
 
 Reemplazando a $d$ en esta última igualdad, se tiene $a = (a \cdot x_0 + b \cdot y_0) \cdot q + r$, entonces $r = a \cdot (1 - x_0 \cdot q) + b \cdot (-y_0 \cdot q)$. Como $0 \leq r < d$, $r$ debe ser $0$, de otra forma pertenecería a $D$ y sería menor a $d$, lo cual es un absurdo.
 
@@ -54,7 +54,7 @@ Utilizando el mismo argumento, se tiene $d \mid b$. Luego $d$ es divisor común 
 
 Sea $d = min\ D = a \cdot x_0 + b \cdot y_0$, y $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$.
 
-Por _Teorema 2 - Propiedad 7_, $c \mid (a \cdot x_0 + b \cdot y_0)$. Por lo tanto $c \mid d$. Y por _Teorema 2 - Propiedad 6_, $c \leq \lvert c \rvert \leq \lvert d \rvert = d$. Luego, $c \leq d$.
+Por _Teorema 2.1 - Propiedad 7_, $c \mid (a \cdot x_0 + b \cdot y_0)$. Por lo tanto $c \mid d$. Y por _Teorema 2.1 - Propiedad 6_, $c \leq \lvert c \rvert \leq \lvert d \rvert = d$. Luego, $c \leq d$.
 
 Por lo tanto $d = mcd(a, b)$.
 
@@ -75,7 +75,7 @@ Por lo tanto $d = mcd(a, b)$.
 Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
 
 
-# Teorema 7
+# Teorema 5.2
 
 ## Enunciado
 
@@ -85,10 +85,10 @@ $mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, c
 
 ## Demostración
 
-Queda demostrado por la demostración del _Teorema 6_.
+Queda demostrado por la demostración del _Teorema 5.1_.
 
 
-# Teorema 8
+# Teorema 5.3
 
 ## Enunciado
 
@@ -100,16 +100,16 @@ $mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, 
 
 Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
 
-Sea $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$. Por el _Teorema 6_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$. Por _Teorema 2 - Propiedad 7_, $c \mid d$.
+Sea $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$. Por el _Teorema 5.1_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $d = a \cdot x_0 + b \cdot y_0$. Por _Teorema 2.1 - Propiedad 7_, $c \mid d$.
 
 Recíproco:
 
 Sea $d \in \mathbb{N}$ tal que $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
 
-Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Teorema 2 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
+Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótesis, $k \mid d$. Por _Teorema 2.1 - Propiedad 6_, $k \leq \lvert k \rvert \leq \lvert d \rvert = d$. Por lo tanto, $d \mid a \wedge d \mid b \wedge d \geq k$, para todo $k$ divisor de $a$ y $b$, es decir, $d = mcd(a, b)$.
 
 
-# Teorema 9
+# Teorema 5.4
 
 ## Enunciado
 
@@ -117,12 +117,12 @@ Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c 
 
 ## Demostración
 
-Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2 - Propiedad 7_, $mcd(a, b) \mid c$.
+Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2.1 - Propiedad 7_, $mcd(a, b) \mid c$.
 
-Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por el _Teorema 6_, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
+Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \mathbb{Z}$ tal que $mcd(a, b) \cdot k = c$. Por el _Teorema 5.1_, existen $x, y\ \in \mathbb{Z}$ tales que $(a \cdot x + b \cdot y) \cdot k = c$. Por lo tanto, $a \cdot (x \cdot k) + b \cdot (y \cdot k) = c$. Luego, existen los enteros $(x \cdot k),\ (y \cdot k)$ que cumplen la condición del teorema.
 
 
-# Teorema 10
+# Teorema 5.5
 
 ## Enunciado
 
@@ -137,7 +137,7 @@ Como $mcd(x_0, y_0) \mid x_0 \wedge mcd(x_0, y_0) \mid y_0$. Entonces existen $k
 Dado que $mcd(a, b)$ y $mcd(x_0, y_0)$ son enteros positivos, y que $mcd(a, b)$ es el menor entero de la forma $a \cdot x + b \cdot y$, $\frac{mcd(a, b)}{mcd(x_0, y_0)}$ debe ser igual a $mcd(a, b)$, y por lo tanto $mcd(x_0, y_0) = 1$.
 
 
-# Teorema 11
+# Teorema 5.6
 
 ## Enunciado
 
@@ -147,7 +147,7 @@ Si $a \mid b \cdot c$, entonces $a \mid mcd(a, b) \cdot mcd(a, c)$.
 
 Sean $a, b, c \in \mathbb{Z}$ tales que $a \mid b \cdot c$.
 
-Usando _Teorema 6_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que $mcd(a, b) = a \cdot x_0 + b \cdot y_0$, y $mcd(a, c) = a \cdot x_1 + c \cdot y_1$.
+Usando _Teorema 5.1_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que $mcd(a, b) = a \cdot x_0 + b \cdot y_0$, y $mcd(a, c) = a \cdot x_1 + c \cdot y_1$.
 
 Multiplicando miembro a miembro:
 $$
@@ -157,10 +157,10 @@ mcd(a, b) \cdot mcd(a, c) &= (a \cdot x_0 + b \cdot y_0) \cdot (a \cdot x_1 + c 
 \end{align}
 $$
 
-Por _Teorema 2 - Propiedad 3_, $a$ divide a los primeros tres términos de la última suma, y por hipótesis $a \mid b \cdot c$, por lo tanto también divide al último término. Luego por _Teorema 2 - Propiedad 7_, $a \mid mcd(a, b) \cdot mcd(a, c)$.
+Por _Teorema 2.1 - Propiedad 3_, $a$ divide a los primeros tres términos de la última suma, y por hipótesis $a \mid b \cdot c$, por lo tanto también divide al último término. Luego por _Teorema 2.1 - Propiedad 7_, $a \mid mcd(a, b) \cdot mcd(a, c)$.
 
 
-# Teorema 12
+# Teorema 5.7
 
 ## Enunciado
 
@@ -169,6 +169,6 @@ $\forall\ k \in \mathbb{N}: mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$
 
 ## Demostración
 
-Por definición $mcd(a, b) \mid a \wedge mcd(a, b) \mid b$. Por _Teorema 2 - Propiedad 9_, $k \cdot mcd(a, b) \mid k \cdot a \wedge k \cdot mcd(a, b) \mid k \cdot b$.
+Por definición $mcd(a, b) \mid a \wedge mcd(a, b) \mid b$. Por _Teorema 2.1 - Propiedad 9_, $k \cdot mcd(a, b) \mid k \cdot a \wedge k \cdot mcd(a, b) \mid k \cdot b$.
 
-Sea $d \in \mathbb{Z}$, tal que $d \mid k \cdot a \wedge d \mid k \cdot b$. Por _Teorema 6_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $k \cdot mcd(a, b) = k \cdot (a \cdot x_0 + b \cdot y_0) = k \cdot a \cdot x_0 + k \cdot b \cdot y_0$. Por _Teorema 2 - Propiedad 7_, $d \mid k \cdot mcd(a, b)$. Luego, por _Teorema 8_, $mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$.
+Sea $d \in \mathbb{Z}$, tal que $d \mid k \cdot a \wedge d \mid k \cdot b$. Por _Teorema 5.1_, existen $x_0, y_0 \in \mathbb{Z}$ tales que $k \cdot mcd(a, b) = k \cdot (a \cdot x_0 + b \cdot y_0) = k \cdot a \cdot x_0 + k \cdot b \cdot y_0$. Por _Teorema 2.1 - Propiedad 7_, $d \mid k \cdot mcd(a, b)$. Luego, por _Teorema 5.3_, $mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$.

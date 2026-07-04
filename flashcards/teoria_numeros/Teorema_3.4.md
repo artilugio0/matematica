@@ -1,4 +1,4 @@
-# Teorema 3.1: Propiedad 4
+# Teorema 3.4
 
 
 $mcd(a, b) = mcd(b, a)$

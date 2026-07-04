@@ -10,12 +10,12 @@ Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cd
 Combinando las igualdades anteriores se tiene:
 
 $$
-\begin{align}
+\begin{aligned}
 a \cdot x + (c \cdot k - a) \cdot y &= a \cdot (x - y) + c \cdot k \cdot y = 1 && (1) \\
 (c \cdot k - b) \cdot x + b \cdot y &= c \cdot k \cdot x + b \cdot (y - x) = 1 && (2)
-\end{align}
+\end{aligned}
 $$
 
-Por _Teorema 2.1 - Propiedad 3_, $mcd(a, c)$ divide a los términos de $(1)$, entonces por _Teorema 2.1 - Propiedad 7_, $mcd(a, c) \mid 1$. Y por _Teorema 2.1 - Propiedad 2_, $mcd(a, c) = 1$.
+Por _Teorema 2.3_, $mcd(a, c)$ divide a los términos de $(1)$, entonces por _Teorema 2.7_, $mcd(a, c) \mid 1$. Y por _Teorema 2.2_, $mcd(a, c) = 1$.
 
-Por _Teorema 2.1 - Propiedad 3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Teorema 2.1 - Propiedad 7_, $mcd(b, c) \mid 1$. Y por _Teorema 2.1 - Propiedad 2_, $mcd(b, c) = 1$.
+Por _Teorema 2.3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Teorema 2.7_, $mcd(b, c) \mid 1$. Y por _Teorema 2.2_, $mcd(b, c) = 1$.

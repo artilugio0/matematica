@@ -12,4 +12,4 @@ Se suele simbolizar de las siguientes formas:
 - $gcd(a, b)$
 - $(a : b)$
 
-Nota: su existencia está garantizada ya que $1 \mid a \wedge 1 \mid b$, y dado que $a$ y $b$ no son ambos nulos. Por _Teorema 2.2_, la cantidad de divisores comunes es finita, y por lo tanto habrá uno que sea el máximo.
+Nota: su existencia está garantizada ya que $1 \mid a \wedge 1 \mid b$, y dado que $a$ y $b$ no son ambos nulos. Por _Teorema 2.10_, la cantidad de divisores comunes es finita, y por lo tanto habrá uno que sea el máximo.

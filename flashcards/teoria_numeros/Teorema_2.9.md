@@ -1,4 +1,4 @@
-# Teorema 2.1: Propiedad 9
+# Teorema 2.9
 
 
 $a \mid b \Leftrightarrow ac \mid bc, \forall\ c \in \mathbb{Z}, c \neq 0$

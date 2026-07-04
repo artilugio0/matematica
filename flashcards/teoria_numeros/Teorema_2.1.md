@@ -1,4 +1,4 @@
-# Teorema 2.1: Propiedad 1
+# Teorema 2.1
 
 
 - $a \mid 0$

@@ -1,4 +1,4 @@
-# Teorema 2.1: Propiedad 8
+# Teorema 2.8
 
 
 $a \mid (b \pm c) \wedge a \mid b \Rightarrow a \mid \pm c$

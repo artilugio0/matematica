@@ -1,4 +1,4 @@
-# Teorema 2.1: Propiedad 4
+# Teorema 2.4
 
 
 $a \mid b \wedge b \mid c \Rightarrow a \mid c$

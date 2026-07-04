@@ -1,4 +1,4 @@
-# Teorema 2.1: Propiedad 6
+# Teorema 2.6
 
 
 $a \mid b \wedge b \neq 0 \Rightarrow \lvert a \rvert \leq \lvert b \rvert$

@@ -1,8 +1,10 @@
 # Teorema 2.2
 
 
-Todo entero no nulo tiene un número finito de divisores.
+$a \mid \pm 1 \Leftrightarrow a = \pm 1$
 
 Demostración:
 
-Sean $a, d \in \mathbb{Z}$, y $a \neq 0, d \neq 0$ tales que $d \mid a$. Por _Teorema 2.1 - propiedad 6_, $\lvert d \rvert \leq \lvert a \rvert$. Por lo tanto, no puede haber más de $2 \lvert a \rvert$ divisores de $a$, ya que hay $2\lvert a \rvert$ enteros $d$ tales que $-\lvert a \rvert \leq d \leq \lvert a \rvert$, con $d \neq 0$. Como la cantidad de divisores posibles es acotada, es una cantidad finita, lo cual demuestra el teorema.
+Si $a \mid \pm 1$, entonces existe $c \in \mathbb{Z}$ tal que $\pm 1 = ac$. Eso implica que $1 = \lvert ac \rvert = \lvert a \rvert \lvert c \rvert$, y que $a \neq 0$ y $c \neq 0$ (sino $\lvert a \rvert \lvert c \rvert = 0$). Entonces $\lvert c \rvert \geq 1$, lo que implica que $\lvert a \rvert \leq 1$. Y dado que $a$ no puede ser $0$, $\lvert a \rvert = 1$, es decir, $a = \pm 1$.
+
+Si $a = \pm 1$, tomando $c = a$ se tiene $1 = ac \wedge -1 = a(-c)$. Por lo tanto $a \mid \pm 1$.

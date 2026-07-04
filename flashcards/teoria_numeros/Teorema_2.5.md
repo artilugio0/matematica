@@ -1,5 +1,7 @@
-# Teorema 2.1: Propiedad 5
+# Teorema 2.5
 
+
+Sean $a, b \in \mathbb{Z}$ no nulos.
 
 $a \mid b \wedge b \mid a \Leftrightarrow a = \pm b$
 

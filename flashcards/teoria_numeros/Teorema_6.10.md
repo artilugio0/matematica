@@ -25,4 +25,8 @@ De esta forma queda demostrado para todo $m, n \in \mathbb{N}$
 
 ($\Leftarrow$)
 
-Si $mcd(a^m, b^n) = 1$, como $a \mid a^m$, por _Teorema 6.6_ $mcd(a, b^n) = 1$. Y dado que $b \mid b^n$, por el mismo teorema $mcd(a, b) = 1$.
+Si $mcd(a^m, b^n) = 1$:
+
+Si $a = 0$, entonces por _Teorema 3.2_, $mcd(a^m, b^n) = mcd(0, b^n) = \lvert b^n \rvert = 1$. Por lo tanto $b = \pm 1$, y por _Teorema 3.3_, $mcd(0, \pm 1) = mcd(a, b) = 1$.
+
+Si $a \neq 0$, como $a \mid a^m$, por _Teorema 6.6_ $mcd(a, b^n) = 1$. Y dado que $b \mid b^n$, por el mismo teorema, $mcd(a, b) = 1$.

@@ -42,16 +42,16 @@ $r_{n-2} = r_{n-1} q_n + r_n$
 
 $r_{n-1} = r_n q_{n+1} + 0$
 
-Por definición de divisibilidad, $r_n \mid r_{n-1}$. Entonces, por _Teorema 2.1 - Propiedad 3_, $r_n \mid r_{n-1} q_n$. Luego, por _Teorema 2.1 - Propiedad 7_, $r_n \mid r_{n-2}$. Iterando de esta forma sobre todos los $r_i$ decreciendo el valor de $i$, se llega a que $r_n \mid a \wedge r_n \mid b$.
+Por definición de divisibilidad, $r_n \mid r_{n-1}$. Entonces, por _Teorema 2.3_, $r_n \mid r_{n-1} q_n$. Luego, por _Teorema 2.7_, $r_n \mid r_{n-2}$. Iterando de esta forma sobre todos los $r_i$ decreciendo el valor de $i$, se llega a que $r_n \mid a \wedge r_n \mid b$.
 
 
 ### Paso 2: $r_n$ es mayor o igual a cualquier otro divisor
 
-Sea $d \in \mathbb{Z}$ tal que $d \mid a \wedge d \mid b$. De $a = b q_1 + r_1$ se tiene que $a + b (-q_1) = r_1$, y por _Teorema 2.1 - Propiedad 7_, $d \mid r_1$. Por el mismo argumento aplicado a cada $r_i$, se tiene que $d \mid r_2$, $d \mid r_3$, ..., $d \mid r_n$.
+Sea $d \in \mathbb{Z}$ tal que $d \mid a \wedge d \mid b$. De $a = b q_1 + r_1$ se tiene que $a + b (-q_1) = r_1$, y por _Teorema 2.7_, $d \mid r_1$. Por el mismo argumento aplicado a cada $r_i$, se tiene que $d \mid r_2$, $d \mid r_3$, ..., $d \mid r_n$.
 
 Como el procedimiento se aplica al caso en que $a \nmid b$ y $b \nmid a$, se tiene $r_1 \neq 0$, luego $n \geq 1$ y por lo tanto $r_n > 0$, es decir $\lvert r_n \rvert = r_n$.
 
-Por _Teorema 2.1 - Propiedad 6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert = r_n$. Por lo tanto, $d \leq r_n$.
+Por _Teorema 2.6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert = r_n$. Por lo tanto, $d \leq r_n$.
 
 
 ## Ejemplos
@@ -90,11 +90,9 @@ Por _Teorema 2.1 - Propiedad 6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert 
   El último $r_i$ no nulo es $r_0 = 9$, por lo tanto $mcd(0, 9) = 9$.
 - Entero negativo: $a = -66, b = 18$:
 
-  $\lvert -66 \rvert = 66 = 18 \cdot 3 + 12$
+  $-66 = 18 \cdot (-4) + 6$
 
-  $18 = 12 \cdot 1 + 6$
-
-  $12 = 6 \cdot 2 + 0$
+  $18 = 6 \cdot 3 + 0$
 
   Entonces, $mcd(-66, 18) = 6$.
 

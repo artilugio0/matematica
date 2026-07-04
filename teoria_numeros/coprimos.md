@@ -52,16 +52,16 @@ Si $a$ y $b$ son coprimos, entonces $mcd(a, b) = 1$. Por _Teorema 5.1_, existen 
 
 ($\Leftarrow$)
 
-Si existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$, por _Teorema 5.4_ $mcd(a, b) \mid 1$. Luego, por _Teorema 2.1 - Propiedad 2_, $mcd(a, b) = \pm 1$. Como $mcd(a, b) > 0$, entonces $mcd(a, b) = 1$.
+Si existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$, por _Teorema 5.4_ $mcd(a, b) \mid 1$. Luego, por _Teorema 2.2_, $mcd(a, b) = \pm 1$. Como $mcd(a, b) > 0$, entonces $mcd(a, b) = 1$.
 
 
 # Teorema 6.2
 
-Si $mcd(a,b) = d$, entonces $mcd(\frac{a}{d}$, $\frac{b}{d}) = 1$.
+Si $mcd(a,b) = d$, entonces $mcd(\frac{a}{d}, \frac{b}{d}) = 1$.
 
 Demostración:
 
-Si $mcd(a,b) = d$, por _Teorema 5.1_, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = d$. Por definición, $d \mid a \wedge d \mid b$, y $d > 0$. Por lo tanto, se puede dividir ambos miembros de la igualdad por $d$ obteniendo $\frac{a}{d} \cdot x + \frac{b}{d} \cdot y = 1$, donde $\frac{a}{d}, \frac{b}{d} \in \mathbb{Z}$. Luego, por _Teorema 6.1_ son coprimos y por lo tanto $mcd(\frac{a}{d}$, $\frac{b}{d}) = 1$.
+Si $mcd(a,b) = d$, por _Teorema 5.1_, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = d$. Por definición, $d \mid a \wedge d \mid b$, y $d > 0$. Por lo tanto, se puede dividir ambos miembros de la igualdad por $d$ obteniendo $\frac{a}{d} \cdot x + \frac{b}{d} \cdot y = 1$, donde $\frac{a}{d}, \frac{b}{d} \in \mathbb{Z}$. Luego, por _Teorema 6.1_ son coprimos y por lo tanto $mcd(\frac{a}{d}, \frac{b}{d}) = 1$.
 
 
 
@@ -81,7 +81,7 @@ Demostración:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando cada miembro por $c$, se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$.
 
-$a \mid a$, y por hipótesis $a \mid b \cdot c$. Entonces por _Teorema 2.1 - Propiedad 7_, $a \mid (a \cdot c \cdot x + b \cdot c \cdot y)$. Por lo tanto $a \mid c$.
+$a \mid a$, y por hipótesis $a \mid b \cdot c$. Entonces por _Teorema 2.7_, $a \mid (a \cdot c \cdot x + b \cdot c \cdot y)$. Por lo tanto $a \mid c$.
 
 
 # Teorema 6.5
@@ -93,10 +93,10 @@ Demostración:
 Como $mcd(a, b) = 1 \wedge mcd(a, c) = 1$, por _Teorema 6.1_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que:
 
 $$
-\begin{align}
-mcd(a, b) &= a \cdot x_0 + b \cdot y_0 = 1\\
+\begin{aligned}
+mcd(a, b) &= a \cdot x_0 + b \cdot y_0 = 1 \\
 mcd(a, c) &= a \cdot x_1 + c \cdot y_1 = 1
-\end{align}
+\end{aligned}
 $$
 
 Multiplicando ambas igualdades se obtiene:
@@ -105,7 +105,7 @@ $$
 a^2 \cdot x_0 \cdot x_1 + a \cdot c \cdot x_0 \cdot y_1 + a \cdot b \cdot x_1 \cdot y_0 + b \cdot c \cdot y_0 \cdot y_1 = 1
 $$
 
-Sea $d \in \mathbb{N}$, tal que $d \mid a \wedge d \mid b \cdot c$. Luego, por _Teorema 2.1 - Propiedad 3_, $d$ divide cada uno de los términos de la ecuación anterior, entonces por _Teorema 2.1 - Propiedad 7_, $d \mid 1$. Como $1 \mid a \wedge 1 \mid b \cdot c$, y para cualquier divisor comun $d$, $d \mid 1$, se tiene por _Teorema 5.3_ que $mcd(a, b \cdot c) = 1$.
+Sea $d \in \mathbb{N}$, tal que $d \mid a \wedge d \mid b \cdot c$. Luego, por _Teorema 2.3_, $d$ divide cada uno de los términos de la ecuación anterior, entonces por _Teorema 2.7_, $d \mid 1$. Como $1 \mid a \wedge 1 \mid b \cdot c$, y para cualquier divisor comun $d$, $d \mid 1$, se tiene por _Teorema 5.3_ que $mcd(a, b \cdot c) = 1$.
 
 
 # Teorema 6.6
@@ -123,11 +123,11 @@ Si $mcd(a, b) = 1$, entonces $mcd(a \cdot c, b) = mcd(c, b)$.
 
 Demostración:
 
-Como $mcd(a, b) = 1$, existen $x_0, y_0 \in \mathbb{Z}$ tales que $a \cdot x_0 + b \cdot y_0 = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x_0 + b \cdot c \cdot y_0 = c$. Por _Teorema 2.1 - Propiedad 3_, $mcd(a \cdot c, b)$ divide a cada termino del lado izquierdo de la igualdad, entonces por _Teorema 2.1 - Propiedad 7_, $mcd(a \cdot c, b) \mid c$.
+Como $mcd(a, b) = 1$, existen $x_0, y_0 \in \mathbb{Z}$ tales que $a \cdot x_0 + b \cdot y_0 = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x_0 + b \cdot c \cdot y_0 = c$. Por _Teorema 2.3_, $mcd(a \cdot c, b)$ divide a cada termino del lado izquierdo de la igualdad, entonces por _Teorema 2.7_, $mcd(a \cdot c, b) \mid c$.
 
 Por lo tanto $mcd(a \cdot c, b) \mid b \wedge mcd(a \cdot c, b) \mid c$.
 
-Sea $d \in \mathbb{N}$ tal que $d \mid b \wedge d \mid c$. Por _Teorema 5.1_, existen $x_1, y_1 \in \mathbb{Z}$ tales que $mcd(a \cdot c, b) = a \cdot c \cdot x_1 + b \cdot y_1$. Por _Teorema 2.1 - Propiedad 3_, $d$ divide a los términos de la derecha de la igualdad, entonces por _Teorema 2.1 - Propiedad 7_, $d \mid mcd(a \cdot c, b)$. Luego, por _Teorema 5.3_, $mcd(a \cdot c, b) = mcd(c, b)$.
+Sea $d \in \mathbb{N}$ tal que $d \mid b \wedge d \mid c$. Por _Teorema 5.1_, existen $x_1, y_1 \in \mathbb{Z}$ tales que $mcd(a \cdot c, b) = a \cdot c \cdot x_1 + b \cdot y_1$. Por _Teorema 2.3_, $d$ divide a los términos de la derecha de la igualdad, entonces por _Teorema 2.7_, $d \mid mcd(a \cdot c, b)$. Luego, por _Teorema 5.3_, $mcd(a \cdot c, b) = mcd(c, b)$.
 
 
 # Teorema 6.8
@@ -141,15 +141,15 @@ Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cd
 Combinando las igualdades anteriores se tiene:
 
 $$
-\begin{align}
+\begin{aligned}
 a \cdot x + (c \cdot k - a) \cdot y &= a \cdot (x - y) + c \cdot k \cdot y = 1 && (1) \\
 (c \cdot k - b) \cdot x + b \cdot y &= c \cdot k \cdot x + b \cdot (y - x) = 1 && (2)
-\end{align}
+\end{aligned}
 $$
 
-Por _Teorema 2.1 - Propiedad 3_, $mcd(a, c)$ divide a los términos de $(1)$, entonces por _Teorema 2.1 - Propiedad 7_, $mcd(a, c) \mid 1$. Y por _Teorema 2.1 - Propiedad 2_, $mcd(a, c) = 1$.
+Por _Teorema 2.3_, $mcd(a, c)$ divide a los términos de $(1)$, entonces por _Teorema 2.7_, $mcd(a, c) \mid 1$. Y por _Teorema 2.2_, $mcd(a, c) = 1$.
 
-Por _Teorema 2.1 - Propiedad 3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Teorema 2.1 - Propiedad 7_, $mcd(b, c) \mid 1$. Y por _Teorema 2.1 - Propiedad 2_, $mcd(b, c) = 1$.
+Por _Teorema 2.3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Teorema 2.7_, $mcd(b, c) \mid 1$. Y por _Teorema 2.2_, $mcd(b, c) = 1$.
 
 
 # Teorema 6.9
@@ -158,7 +158,7 @@ Si $mcd(a, b) = 1 \wedge d \mid a \cdot c \wedge d \mid b \cdot c$, entonces $d 
 
 Demostración:
 
-Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$. Por _Teorema 2.1 - Propiedad 3_, $d$ divide a los términos de la igualdad, entonces por _Teorema 2.1 - Propiedad 7_, $d \mid c$.
+Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$. Por _Teorema 2.3_, $d$ divide a los términos de la igualdad, entonces por _Teorema 2.7_, $d \mid c$.
 
 
 # Teorema 6.10
@@ -187,7 +187,11 @@ De esta forma queda demostrado para todo $m, n \in \mathbb{N}$
 
 ($\Leftarrow$)
 
-Si $mcd(a^m, b^n) = 1$, como $a \mid a^m$, por _Teorema 6.6_ $mcd(a, b^n) = 1$. Y dado que $b \mid b^n$, por el mismo teorema $mcd(a, b) = 1$.
+Si $mcd(a^m, b^n) = 1$:
+
+Si $a = 0$, entonces por _Teorema 3.2_, $mcd(a^m, b^n) = mcd(0, b^n) = \lvert b^n \rvert = 1$. Por lo tanto $b = \pm 1$, y por _Teorema 3.3_, $mcd(0, \pm 1) = mcd(a, b) = 1$.
+
+Si $a \neq 0$, como $a \mid a^m$, por _Teorema 6.6_ $mcd(a, b^n) = 1$. Y dado que $b \mid b^n$, por el mismo teorema, $mcd(a, b) = 1$.
 
 # Teorema 6.11
 
@@ -195,4 +199,4 @@ $mcd(a, a + 1) = 1$.
 
 Demostración:
 
-Por el _Teorema 3.1 - Propiedad 5_, $mcd(a, a + 1) \mid 1$. Entonces, por _Teorema 2.1 - Propiedad 2_, $mcd(a, a + 1) = \pm 1$. Por lo tanto $mcd(a, a + 1) = 1$
+Por el _Teorema 3.5_, $mcd(a, a + 1) \mid 1$. Entonces, por _Teorema 2.2_, $mcd(a, a + 1) = \pm 1$. Por lo tanto $mcd(a, a + 1) = 1$

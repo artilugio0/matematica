@@ -40,17 +40,14 @@ Su definición y estudio es importante porque es un concepto utilizado en el est
 $a$ y $b$ no pueden ser ambos $0$, dado que $0$ tiene infinitos divisores y por lo tanto no hay uno que sea máximo.
 
 # Teorema 3.1
-## Enunciado
 
 Propiedades básicas del máximo común divisor.
 
 ## Propiedad 1
 
-### Enunciado
-
 $mcd(a, a) = \lvert a \rvert$
 
-### Demostración
+Demostración:
 
 Si $a > 0$ , $a = \lvert a \rvert \cdot 1$. Si $a < 0$, $a = \lvert a \rvert \cdot (-1)$. Entonces $\lvert a \rvert \mid a$.
 
@@ -58,13 +55,12 @@ Si $d \mid a$, por _Teorema 2.1 - propiedad 6_: $d \leq \lvert d \rvert \leq \lv
 
 Por lo tanto $mcd(a, a) = \lvert a \rvert$.
 
-## Propiedad 2
 
-### Enunciado
+## Propiedad 2
 
 $mcd(a, 0) = \lvert a \rvert$
 
-### Demostración
+Demostración:
 
 $\lvert a \rvert \mid 0 \wedge \lvert a \rvert \mid a$. 
 
@@ -75,32 +71,27 @@ Por lo tanto $mcd(a, 0) = \lvert a \rvert$.
 
 ## Propiedad 3
 
-### Enunciado
-
 $mcd(\pm 1, a) = 1$
 
-### Demostración
+Demostración:
 
 Si $d \mid a \wedge d \mid \pm 1$, entonces por _Teorema 2.1 - propiedad 2_: $d = \pm 1$. Luego el mayor de los divisores comunes es $1$, por lo tanto $mcd(\pm 1, a) = 1$.
 
-## Propiedad 4
 
-### Enunciado
+## Propiedad 4
 
 $mcd(a, b) = mcd(b, a)$
 
-### Demostración
+Demostración:
 
 Si $mcd(a, b) = d$, entonces $d \mid a \wedge d \mid b$, y para todo $c \in \mathbb{Z}$ tal que $c \mid a \wedge c \mid b$ se cumple que $c \leq d$. Por definición eso implica que $mcd(b, a) = d$. Por lo tanto, $mcd(a, b) = mcd(b, a)$.
 
 
 ## Propiedad 5
 
-### Enunciado
-
 Para $a, b \in \mathbb{Z}$, no ambos nulos: $mcd(a, a+b) \mid b$
 
-### Demostración
+Demostración:
 
 Sean $a, b \in \mathbb{Z}$, no ambos nulos, y sea $d = mcd(a, a+b)$.
 
@@ -109,11 +100,9 @@ Por definición de $d$, $d \mid a \wedge d \mid (a+b)$. Por _Teorema 2.1 - Propi
 
 ## Propiedad 6
 
-### Enunciado
-
 Para $a, b \in \mathbb{Z}$, no ambos nulos: $mcd(a, b) = mcd(a, b + a \cdot k)$, para $k \in \mathbb{Z}$.
 
-### Demostración
+Demostración:
 
 Sea $d = mcd(a, b + a \cdot k)$.
 

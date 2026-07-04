@@ -65,7 +65,7 @@ Si $a = \pm 1$, tomando $c = a$ se tiene $1 = ac \wedge -1 = a(-c)$. Por lo tant
 
 ## Propiedad 3
 
-$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \ cdot d$
+$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \cdot d$
 
 Demostración:
 

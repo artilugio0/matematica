@@ -1,7 +1,7 @@
 # Teorema 2.1: Propiedad 3
 
 
-$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \ cdot d$
+$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \cdot d$
 
 Demostración:
 

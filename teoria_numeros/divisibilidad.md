@@ -68,11 +68,13 @@ Si $a = \pm 1$, tomando $c = a$ se tiene $1 = ac \wedge -1 = a(-c)$. Por lo tant
 ## Propiedad 3
 ### Enunciado
 
-$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$
+$a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \ cdot d$
 
 ### Demostración
 
 Si $a \mid b \wedge c \mid d$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $d = ck_2$. Multiplicando miembro a miembro se tiene $bd = (ac)(k_1 k_2)$. Por lo tanto, $ac \mid bd$.
+
+En particular $1 \mid d$, por lo tanto $a \mid b \cdot d$.
 
 
 ## Propiedad 4

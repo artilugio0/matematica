@@ -1,5 +1,9 @@
-# Teorema 5.6: Demostración
+# Teorema 5.6
 
+
+Si $a \mid b \cdot c$, entonces $a \mid mcd(a, b) \cdot mcd(a, c)$.
+
+**Demostración**:
 
 Sean $a, b, c \in \mathbb{Z}$ tales que $a \mid b \cdot c$.
 

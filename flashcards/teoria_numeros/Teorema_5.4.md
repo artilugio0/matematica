@@ -1,5 +1,9 @@
-# Teorema 5.4: Demostración
+# Teorema 5.4
 
+
+Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c = a \cdot x + b \cdot y$ si y solo si $mcd(a, b) \mid c$.
+
+**Demostración**:
 
 Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2.7_, $mcd(a, b) \mid c$.
 

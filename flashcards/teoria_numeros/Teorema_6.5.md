@@ -3,7 +3,7 @@
 
 Si $mcd(a, b) = 1 \wedge mcd(a, c) = 1 \Rightarrow mcd(a, b \cdot c) = 1$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1 \wedge mcd(a, c) = 1$, por _Teorema 6.1_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que:
 

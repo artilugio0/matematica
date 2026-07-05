@@ -3,7 +3,7 @@
 
 Para $a, b \in \mathbb{Z}$, no ambos nulos: $mcd(a, b) = mcd(a, b + a \cdot k)$, para $k \in \mathbb{Z}$.
 
-Demostración:
+**Demostración**:
 
 Sea $d = mcd(a, b + a \cdot k)$.
 

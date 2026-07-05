@@ -3,7 +3,7 @@
 
 $mcd(a, 0) = \lvert a \rvert$
 
-Demostración:
+**Demostración**:
 
 $\lvert a \rvert \mid 0 \wedge \lvert a \rvert \mid a$. 
 

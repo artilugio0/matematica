@@ -3,7 +3,7 @@
 
 $a \mid b \Leftrightarrow ac \mid bc, \forall\ c \in \mathbb{Z}, c \neq 0$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b$, entonces existe $k \in \mathbb{Z}$ tal que $ak = b$. Sea $c \in \mathbb{Z}, c \neq 0$, multiplicando la igualdad por $c$ se obtiene $(ac)k = bc$. Por lo tanto $ac \mid bc$.
 

@@ -5,7 +5,7 @@
 - $a \mid a$
 - $\pm 1 \mid a$
 
-Demostración:
+**Demostración**:
 
 - $0 = a0 \Rightarrow a \mid 0$
 - $a = a1 \Rightarrow a \mid a$

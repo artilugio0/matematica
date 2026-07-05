@@ -5,7 +5,7 @@ Sean $m, n \in \mathbb{N}$.
 
 $mcd(a, b) = 1$ si y solo si $mcd(a^m, b^n) = 1$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 

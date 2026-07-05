@@ -1,5 +1,9 @@
-# Teorema 5.5: Demostración
+# Teorema 5.5
 
+
+Dados dos enteros $a, b$ no ambos nulos, si existen enteros $x, y$ para los que $mcd(a, b) = a \cdot x + b \cdot y$, entonces $mcd(x, y) = 1$.
+
+**Demostración**:
 
 Sea $mcd(a, b) = a \cdot x_0 + b \cdot y_0$.
 

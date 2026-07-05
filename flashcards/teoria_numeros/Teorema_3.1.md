@@ -3,7 +3,7 @@
 
 $mcd(a, a) = \lvert a \rvert$
 
-Demostración:
+**Demostración**:
 
 Si $a > 0$ , $a = \lvert a \rvert \cdot 1$. Si $a < 0$, $a = \lvert a \rvert \cdot (-1)$. Entonces $\lvert a \rvert \mid a$.
 

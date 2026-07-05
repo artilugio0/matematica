@@ -3,7 +3,7 @@
 
 Si $mcd(a, b) = 1$, entonces $mcd(a \cdot c, b) = mcd(c, b)$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x_0, y_0 \in \mathbb{Z}$ tales que $a \cdot x_0 + b \cdot y_0 = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x_0 + b \cdot c \cdot y_0 = c$. Por _Teorema 2.3_, $mcd(a \cdot c, b)$ divide a cada termino del lado izquierdo de la igualdad, entonces por _Teorema 2.7_, $mcd(a \cdot c, b) \mid c$.
 

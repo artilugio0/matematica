@@ -3,7 +3,7 @@
 
 Para $a, b \in \mathbb{Z}$, no ambos nulos: $mcd(a, a+b) \mid b$
 
-Demostración:
+**Demostración**:
 
 Sean $a, b \in \mathbb{Z}$, no ambos nulos, y sea $d = mcd(a, a+b)$.
 

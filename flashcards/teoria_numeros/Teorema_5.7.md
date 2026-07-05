@@ -1,5 +1,10 @@
-# Teorema 5.7: Demostración
+# Teorema 5.7
 
+
+Sean $a, b \in \mathbb{Z}$ no ambos nulos.
+$\forall\ k \in \mathbb{N}: mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$
+
+**Demostración**:
 
 Por definición $mcd(a, b) \mid a \wedge mcd(a, b) \mid b$. Por _Teorema 2.9_, $k \cdot mcd(a, b) \mid k \cdot a \wedge k \cdot mcd(a, b) \mid k \cdot b$.
 

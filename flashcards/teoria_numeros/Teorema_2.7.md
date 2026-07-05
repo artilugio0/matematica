@@ -3,7 +3,7 @@
 
 $a \mid b \wedge a \mid c \Rightarrow a \mid (bx + cy) \text{,  } \forall\ x, y \in \mathbb{Z}$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge a \mid c$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $c = ak_2$.
 

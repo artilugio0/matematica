@@ -1,5 +1,11 @@
-# Teorema 5.3: Demostración
+# Teorema 5.3
 
+
+Sea $d \in \mathbb{N}$ y $a, b\ \in \mathbb{Z}$ no ambos nulos.
+
+$mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
+
+**Demostración**:
 
 Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
 

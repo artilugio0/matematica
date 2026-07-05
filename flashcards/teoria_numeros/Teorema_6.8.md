@@ -3,7 +3,7 @@
 
 Si $mcd(a, b) = 1 \wedge c \mid (a + b) \Rightarrow mcd(a, c) = mcd(b, c) = 1$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Y dado que $c \mid (a + b)$, existe $k \in \mathbb{Z}$ tal que $c \cdot k = a + b$, por lo tanto, $a = c \cdot k - b$ y $b = c \cdot k - a$.
 

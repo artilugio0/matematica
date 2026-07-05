@@ -3,7 +3,7 @@
 
 $a$ y $b$ son coprimos si y solo si existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 

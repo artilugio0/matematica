@@ -5,7 +5,7 @@ Sea $n \in \mathbb{N}$.
 
 $a^n \mid b^n$ si y solo si $a \mid b$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 

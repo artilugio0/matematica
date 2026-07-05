@@ -77,26 +77,22 @@ Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
 
 # Teorema 5.2
 
-## Enunciado
-
 Sean $a, b\ \in \mathbb{Z}$ no ambos nulos. 
 
 $mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, con $x, y\ \in \mathbb{Z}$.
 
-## Demostración
+**Demostración**:
 
 Queda demostrado por la demostración del _Teorema 5.1_.
 
 
 # Teorema 5.3
 
-## Enunciado
-
 Sea $d \in \mathbb{N}$ y $a, b\ \in \mathbb{Z}$ no ambos nulos.
 
 $mcd(a, b) = d$ si y solo si $d \mid a \wedge d \mid b$ y para todo entero $c$, si $c \mid a \wedge c \mid b$ entonces $c \mid d$.
 
-## Demostración
+**Demostración**:
 
 Si $mcd(a, b) = d$, por definición de máximo común divisor, $d \mid a \wedge d \mid b$.
 
@@ -111,11 +107,9 @@ Sea $k \in \mathbb{Z}$ tal que $k \mid a \wedge k \mid b$, entonces por hipótes
 
 # Teorema 5.4
 
-## Enunciado
-
 Dados dos enteros $a, b$ no ambos nulos, existen enteros $x, y$ para los que $c = a \cdot x + b \cdot y$ si y solo si $mcd(a, b) \mid c$.
 
-## Demostración
+**Demostración**:
 
 Sean $c, x, y\ \in \mathbb{Z}$ tales que $c = a \cdot x + b \cdot y$. Dado que $mcd(a, b)$ divide a $a$ y $b$, por _Teorema 2.7_, $mcd(a, b) \mid c$.
 
@@ -124,11 +118,9 @@ Sea $c \in \mathbb{Z}$ tal que $mcd(a, b) \mid c$. Entonces, existe $k \in \math
 
 # Teorema 5.5
 
-## Enunciado
-
 Dados dos enteros $a, b$ no ambos nulos, si existen enteros $x, y$ para los que $mcd(a, b) = a \cdot x + b \cdot y$, entonces $mcd(x, y) = 1$.
 
-## Demostración
+**Demostración**:
 
 Sea $mcd(a, b) = a \cdot x_0 + b \cdot y_0$.
 
@@ -139,11 +131,9 @@ Dado que $mcd(a, b)$ y $mcd(x_0, y_0)$ son enteros positivos, y que $mcd(a, b)$ 
 
 # Teorema 5.6
 
-## Enunciado
-
 Si $a \mid b \cdot c$, entonces $a \mid mcd(a, b) \cdot mcd(a, c)$.
 
-## Demostración
+**Demostración**:
 
 Sean $a, b, c \in \mathbb{Z}$ tales que $a \mid b \cdot c$.
 
@@ -162,12 +152,10 @@ Por _Teorema 2.3_, $a$ divide a los primeros tres términos de la última suma, 
 
 # Teorema 5.7
 
-## Enunciado
-
 Sean $a, b \in \mathbb{Z}$ no ambos nulos.
 $\forall\ k \in \mathbb{N}: mcd(k \cdot a, k \cdot b) = k \cdot mcd(a, b)$
 
-## Demostración
+**Demostración**:
 
 Por definición $mcd(a, b) \mid a \wedge mcd(a, b) \mid b$. Por _Teorema 2.9_, $k \cdot mcd(a, b) \mid k \cdot a \wedge k \cdot mcd(a, b) \mid k \cdot b$.
 

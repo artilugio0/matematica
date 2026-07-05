@@ -43,7 +43,7 @@ No coprimos:
 
 $a$ y $b$ son coprimos si y solo si existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -59,7 +59,7 @@ Si existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$, por _Teo
 
 Si $mcd(a,b) = d$, entonces $mcd(\frac{a}{d}, \frac{b}{d}) = 1$.
 
-Demostración:
+**Demostración**:
 
 Si $mcd(a,b) = d$, por _Teorema 5.1_, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = d$. Por definición, $d \mid a \wedge d \mid b$, y $d > 0$. Por lo tanto, se puede dividir ambos miembros de la igualdad por $d$ obteniendo $\frac{a}{d} \cdot x + \frac{b}{d} \cdot y = 1$, donde $\frac{a}{d}, \frac{b}{d} \in \mathbb{Z}$. Luego, por _Teorema 6.1_ son coprimos y por lo tanto $mcd(\frac{a}{d}, \frac{b}{d}) = 1$.
 
@@ -69,7 +69,7 @@ Si $mcd(a,b) = d$, por _Teorema 5.1_, existen $x, y \in \mathbb{Z}$ tales que $a
 
 Si $a \mid c \wedge b \mid c \wedge mcd(a, b) = 1$, entonces $a \cdot b \mid c$.
 
-Demostración:
+**Demostración**:
 
 Por _Teorema 6.1_, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$. Luego, como $a \mid c \wedge b \mid c$, existen $k_1, k_2 \in \mathbb{Z}$ tales que $c = a \cdot k_1$ y $c = b \cdot k_2$. Reemplazando en la igualdad anterior se tiene que $a \cdot b \cdot (k_2 \cdot x + k_1 \cdot y) = c$. Por lo tanto, $a \cdot b \mid c$.
 
@@ -77,7 +77,7 @@ Por _Teorema 6.1_, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot 
 
 Si $a \mid b \cdot c$ y $mcd(a,b) = 1$, entonces $a \mid c$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando cada miembro por $c$, se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$.
 
@@ -88,7 +88,7 @@ $a \mid a$, y por hipótesis $a \mid b \cdot c$. Entonces por _Teorema 2.7_, $a 
 
 Si $mcd(a, b) = 1 \wedge mcd(a, c) = 1 \Rightarrow mcd(a, b \cdot c) = 1$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1 \wedge mcd(a, c) = 1$, por _Teorema 6.1_, existen $x_0, x_1, y_0, y_1 \in \mathbb{Z}$ tales que:
 
@@ -112,7 +112,7 @@ Sea $d \in \mathbb{N}$, tal que $d \mid a \wedge d \mid b \cdot c$. Luego, por _
 
 Si $mcd(a, b) = 1 \wedge c \mid a$, entonces $mcd(c, b) = 1$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Y dado que $c \mid a$, existe $k \in \mathbb{Z}$ tal que $c \cdot k = a$. Reemplazando en la primera igualdad, se tiene que $c \cdot k \cdot x + b \cdot y = 1$. Por _Teorema 6.1_, $mcd(c, b) = 1$.
 
@@ -121,7 +121,7 @@ Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cd
 
 Si $mcd(a, b) = 1$, entonces $mcd(a \cdot c, b) = mcd(c, b)$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x_0, y_0 \in \mathbb{Z}$ tales que $a \cdot x_0 + b \cdot y_0 = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x_0 + b \cdot c \cdot y_0 = c$. Por _Teorema 2.3_, $mcd(a \cdot c, b)$ divide a cada termino del lado izquierdo de la igualdad, entonces por _Teorema 2.7_, $mcd(a \cdot c, b) \mid c$.
 
@@ -134,7 +134,7 @@ Sea $d \in \mathbb{N}$ tal que $d \mid b \wedge d \mid c$. Por _Teorema 5.1_, ex
 
 Si $mcd(a, b) = 1 \wedge c \mid (a + b) \Rightarrow mcd(a, c) = mcd(b, c) = 1$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Y dado que $c \mid (a + b)$, existe $k \in \mathbb{Z}$ tal que $c \cdot k = a + b$, por lo tanto, $a = c \cdot k - b$ y $b = c \cdot k - a$.
 
@@ -156,7 +156,7 @@ Por _Teorema 2.3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Te
 
 Si $mcd(a, b) = 1 \wedge d \mid a \cdot c \wedge d \mid b \cdot c$, entonces $d \mid c$.
 
-Demostración:
+**Demostración**:
 
 Como $mcd(a, b) = 1$, existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = 1$. Multiplicando por $c$ se tiene que $a \cdot c \cdot x + b \cdot c \cdot y = c$. Por _Teorema 2.3_, $d$ divide a los términos de la igualdad, entonces por _Teorema 2.7_, $d \mid c$.
 
@@ -167,7 +167,7 @@ Sean $m, n \in \mathbb{N}$.
 
 $mcd(a, b) = 1$ si y solo si $mcd(a^m, b^n) = 1$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -198,7 +198,7 @@ Si $a \neq 0$, como $a \mid a^m$, por _Teorema 6.6_ $mcd(a, b^n) = 1$. Y dado qu
 
 $mcd(a, a + 1) = 1$.
 
-Demostración:
+**Demostración**:
 
 Por el _Teorema 3.5_, $mcd(a, a + 1) \mid 1$. Entonces, por _Teorema 2.2_, $mcd(a, a + 1) = \pm 1$. Por lo tanto $mcd(a, a + 1) = 1$
 
@@ -209,7 +209,7 @@ Sea $n \in \mathbb{N}$.
 
 $a^n \mid b^n$ si y solo si $a \mid b$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 

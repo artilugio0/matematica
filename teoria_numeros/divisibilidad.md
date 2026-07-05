@@ -42,7 +42,7 @@ Si $a = 0 \wedge b = 0$, $c$ puede tomar cualquier valor y $0 = 0c$ se cumple. S
 - $a \mid a$
 - $\pm 1 \mid a$
 
-Demostración:
+**Demostración**:
 
 - $0 = a0 \Rightarrow a \mid 0$
 - $a = a1 \Rightarrow a \mid a$
@@ -52,7 +52,7 @@ Demostración:
 
 $a \mid \pm 1 \Leftrightarrow a = \pm 1$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid \pm 1$, entonces existe $c \in \mathbb{Z}$ tal que $\pm 1 = ac$. Eso implica que $1 = \lvert ac \rvert = \lvert a \rvert \lvert c \rvert$, y que $a \neq 0$ y $c \neq 0$ (sino $\lvert a \rvert \lvert c \rvert = 0$). Entonces $\lvert c \rvert \geq 1$, lo que implica que $\lvert a \rvert \leq 1$. Y dado que $a$ no puede ser $0$, $\lvert a \rvert = 1$, es decir, $a = \pm 1$.
 
@@ -62,7 +62,7 @@ Si $a = \pm 1$, tomando $c = a$ se tiene $1 = ac \wedge -1 = a(-c)$. Por lo tant
 
 $a \mid b \wedge c \mid d \Rightarrow ac \mid bd$. En particular $a \mid b \Rightarrow a \mid b \cdot d$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge c \mid d$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $d = ck_2$. Multiplicando miembro a miembro se tiene $bd = (ac)(k_1 k_2)$. Por lo tanto, $ac \mid bd$.
 
@@ -73,7 +73,7 @@ En particular $1 \mid d$, por lo tanto $a \mid b \cdot d$.
 
 $a \mid b \wedge b \mid c \Rightarrow a \mid c$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge b \mid c$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $c = bk_2$. Reemplazando a $b$ en la segunda igualdad se tiene que $c = a(k_1 k_2)$. Por lo tanto $a \mid c$.
 
@@ -83,7 +83,7 @@ Sean $a, b \in \mathbb{Z}$ no nulos.
 
 $a \mid b \wedge b \mid a \Leftrightarrow a = \pm b$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge b \mid a$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $a = bk_2$. Reemplazando $a$ en la primera igualdad se tiene que $b = b(k_1 k_2)$. Como $b \neq 0$ (porque $b \mid a$), eso implica que $k_1 k_2 = 1$, luego $(k_1 = 1 \wedge k_2 = 1) \lor (k_1 = -1 \wedge k_2 = -1)$. Por lo tanto, $a = b \lor a = -b$, es decir, $a = \pm b$.
 
@@ -95,7 +95,7 @@ Luego, $a \mid b \wedge b \mid a$.
 
 $a \mid b \wedge b \neq 0 \Rightarrow \lvert a \rvert \leq \lvert b \rvert$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge b \neq 0$, entonces existe $c \in \mathbb{Z}$ tal que $b = ac$. Llevándolo a valores absolutos, se tiene que $\lvert b \rvert = \lvert ac \rvert = \lvert a \rvert \lvert c \rvert$. Como $b \neq 0$, debe ser $c \neq 0$, lo que implica que $\lvert c \rvert \geq 1$, y por lo tanto $\lvert a \rvert \leq \lvert a \rvert \lvert c \rvert = \lvert b \rvert$. Es decir, $\lvert a \rvert \leq \lvert b \rvert$.
 
@@ -104,7 +104,7 @@ Si $a \mid b \wedge b \neq 0$, entonces existe $c \in \mathbb{Z}$ tal que $b = a
 
 $a \mid b \wedge a \mid c \Rightarrow a \mid (bx + cy) \text{,  } \forall\ x, y \in \mathbb{Z}$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b \wedge a \mid c$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales que $b = ak_1$ y $c = ak_2$.
 
@@ -115,7 +115,7 @@ Sean $x, y \in \mathbb{Z}$, entonces $bx + cy = a k_1 x + a k_2 y = a(k_1 x + k_
 
 $a \mid (b \pm c) \wedge a \mid b \Rightarrow a \mid \pm c$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid (b \pm c) \wedge a \mid b$, entonces existe $k_1, k_2 \in \mathbb{Z}$ tales que $ak_1 = b \pm c \wedge ak_2 = b$. Sustituyendo en la primera igualdad se tiene que $ak_1 = b \pm c = ak_2 \pm c \Rightarrow a(k_1 - k_2) = \pm c$. Por lo tanto $a \mid \pm c$.
 
@@ -124,7 +124,7 @@ Si $a \mid (b \pm c) \wedge a \mid b$, entonces existe $k_1, k_2 \in \mathbb{Z}$
 
 $a \mid b \Leftrightarrow ac \mid bc, \forall\ c \in \mathbb{Z}, c \neq 0$
 
-Demostración:
+**Demostración**:
 
 Si $a \mid b$, entonces existe $k \in \mathbb{Z}$ tal que $ak = b$. Sea $c \in \mathbb{Z}, c \neq 0$, multiplicando la igualdad por $c$ se obtiene $(ac)k = bc$. Por lo tanto $ac \mid bc$.
 
@@ -135,6 +135,6 @@ Si $ac \mid bc$ con $c \neq 0$, entonces existe $k \in \mathbb{Z}$ tal que $ack 
 
 Todo entero no nulo tiene un número finito de divisores.
 
-Demostración:
+**Demostración**:
 
 Sean $a, d \in \mathbb{Z}$, y $a \neq 0, d \neq 0$ tales que $d \mid a$. Por _Teorema 2.6_, $\lvert d \rvert \leq \lvert a \rvert$. Por lo tanto, no puede haber más de $2 \lvert a \rvert$ divisores de $a$, ya que hay $2\lvert a \rvert$ enteros $d$ tales que $-\lvert a \rvert \leq d \leq \lvert a \rvert$, con $d \neq 0$. Como la cantidad de divisores posibles es acotada, es una cantidad finita, lo cual demuestra el teorema.

@@ -1,29 +1,5 @@
-# Ecuaciones diofánticas lineales
+# Teorema 7.1: Demostración
 
-## Definición
-
-Ecuación lineal donde las incógnitas son números enteros.
-
-# Teorema 7.1
-
-## Enunciado
-
-Sean $a, b, c \in \mathbb{Z}$, con $a$ y $b$ no ambos nulos.
-
-La ecuación $a \cdot x + b \cdot y = c$ tiene solución si y solo si $mcd(a, b) \mid c$. 
-
-También, si la ecuación tiene solución, entonces tiene infinitas soluciones. Si $(x_0, y_0)$ es una solución particular de la ecuación, entonces todas las soluciones están dadas por:
-
-$$
-\begin{align}
-&x = x_0 + \frac{b}{mcd(a, b)} \cdot t \\
-&y = y_0 - \frac{a}{mcd(a, b)} \cdot t \\
-&\text{con } t \in \mathbb{Z}
-\end{align}
-$$
-
-
-## Demostración
 
 Por _Teorema 5.4_, la ecuación tiene solución si y solo si $mcd(a, b) \mid c$.
 
@@ -63,24 +39,3 @@ $$
 Lo que implica que cualquier par de enteros de esa forma es solución de la ecuación para cualquier valor de $t$.
 
 Por lo tanto, queda demostrado que si hay una solución, entonces hay infinitas soluciones, y todas las soluciones son de la forma anteriormente mencionada.
-
-
-## Ejemplos
-
-- $42 \cdot x + 69 \cdot y = 21$:
-
-  Tiene solución dado que $mcd(42, 69) = 3$, y $3 \mid 21$.  
-  Una solución es $x_0 = 35,\ y_0 = -21$.  
-  Todas las soluciones son: $x = 35 + \frac{69}{3} \cdot t$, $y = -21 - \frac{42}{3} \cdot t$, $t \in \mathbb{Z}$.
-
-- $42 \cdot x + 69 \cdot y = 22$:
-
-  No tiene solución, porque $mcd(42, 69) = 3$, y $3 \nmid 22$.  
-
-## Ejemplos destacables
-
-- $0 \cdot x + 3 \cdot y = 18$:
-
-  Tiene solución dado que $mcd(0, 3) = 3$, y $3 \mid 18$.  
-  Una solución es $x_0 = 0,\ y_0 = 6$.  
-  Todas las soluciones son: $x = t$, $y = 6$, $t \in \mathbb{Z}$.

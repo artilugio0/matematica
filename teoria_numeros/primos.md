@@ -57,7 +57,13 @@ Por lo tanto queda demostrado para todo $n \in \mathbb{N}$.
 
 # Teorema 8.4
 
-Si $a \in \mathbb{Z}$ con $a > 1$, su mínimo divisor mayor a 1 es primo.
+Si $a \in \mathbb{Z}$ con $\lvert a \rvert > 1$, su mínimo divisor mayor a 1 es primo.
+
+Demostración:
+
+Si $a$ es primo, por definición su mínimo divisor mayor a $1$ es $\lvert a \rvert$, que es primo.
+
+Si $a$ no es primo, entonces sea $D$ el conjunto de divisores de $a$ mayores a $1$. El conjunto no está vacío, dado que $\lvert a \rvert \in D$. Por lo tanto, tiene un mínimo. Sea $p_1 = min\ D$, $p_1$ debe ser primo, porque si hubiera un divisor de $p_1$ distinto de $1$ y $p_1$, entonces por _Teorema 2.4_ también dividiría a $a$, y por lo tanto por _Teorema 2.6_ habría un divisor de $a$ mayor a $1$ y menor a $p_1$, lo cual es un absurdo. Por lo tanto su mínimo divisor mayor a $1$ debe ser primo.
 
 
 # Teorema 8.5
@@ -77,7 +83,7 @@ Sea $a \in \mathbb{N}$ tal que $a > 1$.
 
 Si $a$ es primo, entonces el teorema se cumple.
 
-Si $a$ no es primo, entonces sea $D$ el conjunto de divisores de $a$ mayores a $1$. El conjunto no está vacío, dado que $a \in D$. Por lo tanto, tiene un mínimo. Sea $p_1 = min\ D$, $p_1$ debe ser primo, porque si hubiera un divisor de $p_1$ distinto de $1$ y $p_1$, entonces por _Teorema 2.4_ también dividiría a $a$, y por lo tanto por _Teorema 2.6_ habría un divisor de $a$ mayor a $1$ y menor a $p_1$, lo cual es un absurdo.
+Si $a$ no es primo y sea $p_1$ su mínimo divisor mayor a $1$. Por _Teorema 8.4_, $p_1$ es primo.
 
 Luego, $a = p_1 \cdot a_1$, con $a_1 \in \mathbb{N}$. Si $a_1$ es primo, entonces el teorema se cumple, sino, aplicando el mismo procedimiento anterior con $a_1$, se llega a que $a = p_1 \cdot p_2 \cdot a_2$, donde $p_2, a_2 \in \mathbb{N}$ y $p_2$ es primo. Se continúa de esta forma hasta llegar a un $a_n = 1$. Esto debe suceder dado que $a_i = p_{i+1} \cdot a_{i+1}$, y por lo tanto $0 < a_{i+1} < a_i$. Como los $a_i$ forman una sucesión estrictamente descendente de números naturales, debe tener un último elemento que será $1$.
 
@@ -227,7 +233,6 @@ Demostración:
 Por definición se tiene que $\binom{p}{k} = \frac{p!}{(p-k)! \cdot k!} = \frac{p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$.
 
 Dado que $k < p$, si $k = 1$ entonces la expresión anterior es un multiplo de $p$, y por lo tanto $p \mid \binom{p}{k}$. Si $k > 1$, dado que $\binom{p}{k} \in \mathbb{N}$, entonces $k! \mid p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Como $k < p$ y $p$ es primo, entonces $p \nmid k!$, luego por _Teorema 8.1_, $mcd(p, k!)$ = 1. Y por _Teorema 6.4_, $k! \mid (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Por lo tanto $\frac{(p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$. Lo que implica que $p \mid \binom{p}{k}$.
-
 
 
 # Teorema

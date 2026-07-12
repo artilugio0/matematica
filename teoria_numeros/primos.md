@@ -39,7 +39,7 @@ Sea $p \in \mathbb{Z}$ primo tal que $p \mid a \cdot b$. Si $p \mid a$, entonces
 
 Sea $p \in \mathbb{Z}$ y $\lvert p \rvert > 1$, tal que si $p \mid a \cdot b$, entonces $p \mid a \lor p \mid b$ para todo $a, b \in \mathbb{Z}$.
 
-Si $p$ no es primo, entonces existe $x \in \mathbb{Z}$ tal que $x \mid p \wedge x \neq \pm 1 \wedge x \neq \pm p$. Por lo tanto, $p = x \cdot k$ para algún $k \in \mathbb{Z}$. Dado que $x \neq \pm 1$, entonces $k \neq \pm p$. Luego $p \mid x \cdot k$, pero $p \nmid x \wedge p \nmid k$, lo cual es un absurdo. Por lo tanto, $p$ debe ser un número primo.
+Si $p$ no es primo, entonces existe $x \in \mathbb{Z}$ tal que $x \mid p \wedge x \neq \pm 1 \wedge x \neq \pm p$. Por lo tanto, $p = x \cdot k$ para algún $k \in \mathbb{Z}$. Dado que $x \neq \pm 1$, entonces $k \neq \pm p$. Luego, $p \mid x \cdot k$, pero dado que $\lvert x \rvert, \lvert k \rvert < \lvert p \rvert$ (por _Teorema 2.6_ y ser distintos de $\pm p$), $p \nmid x \wedge p \nmid k$, lo cual es un absurdo por contradecir la hipótesis. Por lo tanto, $p$ debe ser un número primo.
 
 
 # Teorema 8.3
@@ -123,7 +123,7 @@ Luego, $p_k$ no se encuentra en la lista inicial de números primos. Por lo tant
 
 # Teorema 8.8
 
-Sea $b \in \mathbb{N}$.
+Sea $a \in \mathbb{Z}$ tal que $\lvert a \rvert > 1$ y $b, n \in \mathbb{N}$.
 
 $a = \pm b^n$ si y solo si en su forma canónica las potencias de cada primo divisor de $a$ son multiplos de $n$.
 
@@ -184,8 +184,11 @@ Si $a \mid b$, dado que cada $p_i^{\alpha_i} \mid a$, por _Teorema 2.4_, cada $p
 
 ($\Leftarrow$)
 
-Si cada $p_i^{\alpha_i}$ divide a $b$, dado que $mcd(p_i^{\alpha_i}, p_j^{\alpha_j}) = 1$ para $i \neq j$, por _Teorema 6.5_, $mcd(p_1^{\alpha_1}, p_2^{\alpha_2} \cdot p_3^{\alpha_3})= 1$. Por _Teorema 6.3_, $p_2^{\alpha_2} \cdot p_3^{\alpha_3} \mid b$, y por el mismo teorema entonces $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot p_3^{\alpha_3} \mid b$. Aplicando el mismo procedimiento reiteradas veces se llega a que $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ...\ \cdot p_k^{\alpha_k} \mid b$.
+Si cada $p_i^{\alpha_i}$ divide a $b$, dado que $mcd(p_i^{\alpha_i}, p_j^{\alpha_j}) = 1$ para $i \neq j$, por _Teorema 6.3_, $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \mid b$.
 
+Luego, como $mcd(p_3^{\alpha_3}, p_1^{\alpha_1}) = 1$ y $mcd(p_3^{\alpha_3}, p_2^{\alpha_2}) = 1$, entonces por _Teorema 6.5_, $mcd(p_3^{\alpha_3}, p_1^{\alpha_1} \cdot p_2^{\alpha_2}) = 1$. Y por _Teorema 6.3_, $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot p_3^{\alpha_3} \mid b$.
+
+Aplicando el mismo procedimiento con cada factor restante se llega a que $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ...\ \cdot p_k^{\alpha_k} \mid b$, por lo tanto $a \mid b$.
 
 # Teorema 8.11
 
@@ -223,7 +226,7 @@ Demostración:
 
 Por definición se tiene que $\binom{p}{k} = \frac{p!}{(p-k)! \cdot k!} = \frac{p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$.
 
-Dado que $k < p$, si $k = 1$ entonces la expresión anterior es un multiplo de $p$, y por lo tanto $p \mid \binom{p}{k}$. Si $k > 1$, dado que $\binom{p}{k} \in \mathbb{N}$, entonces $k! \mid p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Como $k < p$ y $p$ es primo, entonces ningún factor de $k!$ divide a $p$, por lo que $mcd(p, k!)$ = 1. Y por _Teorema 6.4_, $k! \mid (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Por lo tanto $\frac{(p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$. Lo que implica que $p \mid \binom{p}{k}$.
+Dado que $k < p$, si $k = 1$ entonces la expresión anterior es un multiplo de $p$, y por lo tanto $p \mid \binom{p}{k}$. Si $k > 1$, dado que $\binom{p}{k} \in \mathbb{N}$, entonces $k! \mid p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Como $k < p$ y $p$ es primo, entonces $p \nmid k!$, luego por _Teorema 8.1_, $mcd(p, k!)$ = 1. Y por _Teorema 6.4_, $k! \mid (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Por lo tanto $\frac{(p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$. Lo que implica que $p \mid \binom{p}{k}$.
 
 
 

@@ -14,7 +14,7 @@ Los números primos cumplen un rol fundamental en la teoría de números. Es un 
 
 Sean $a, p \in \mathbb{Z}$ y $p$ primo. $p \nmid a$ si y solo si $mcd(p, a) = 1$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -29,7 +29,7 @@ Si $mcd(p, a)$ = 1, entonces $p$ no puede ser un divisor de $a$, de otra forma $
 
 Sea $p \in \mathbb{Z}$ tal que $\lvert p \rvert > 1$. $p$ es primo si y solo si se cumple: si $p \mid a \cdot b$, entonces $p \mid a \lor p \mid b$ para todo $a, b \in \mathbb{Z}$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -46,7 +46,7 @@ Si $p$ no es primo, entonces existe $x \in \mathbb{Z}$ tal que $x \mid p \wedge 
 
 Sea $p \in \mathbb{Z}$ un número primo. Si $p \mid q_1 \cdot q_2 \cdot\ ...\cdot\ q_n$, donde cada $q_i$ es primo, entonces $p = \pm q_m$ con $1 \leq m \leq n$.
 
-Demostración:
+**Demostración**:
 
 Se demuestra por inducción sobre $n$. Si $p \mid q_1$, entonces $p = \pm 1 \lor p = \pm q_1$. Pero $p$ no puede ser $\pm 1$ porque es primo. Entonces $p = \pm q_1$.
 
@@ -59,7 +59,7 @@ Por lo tanto queda demostrado para todo $n \in \mathbb{N}$.
 
 Si $a \in \mathbb{Z}$ con $\lvert a \rvert > 1$, su mínimo divisor mayor a 1 es primo.
 
-Demostración:
+**Demostración**:
 
 Si $a$ es primo, por definición su mínimo divisor mayor a $1$ es $\lvert a \rvert$, que es primo.
 
@@ -70,20 +70,17 @@ Si $a$ no es primo, entonces sea $D$ el conjunto de divisores de $a$ mayores a $
 
 Teorema fundamental de la aritmética.
 
-## Enunciado
-
 Sea $a \in \mathbb{N}$ tal que $a > 1$.
 
 $a$ es primo o puede representarse como un producto de números primos positivos de forma única, sin tener en cuenta el orden de los factores.
 
-
-## Demostración
+**Demostración**:
 
 Sea $a \in \mathbb{N}$ tal que $a > 1$.
 
 Si $a$ es primo, entonces el teorema se cumple.
 
-Si $a$ no es primo y sea $p_1$ su mínimo divisor mayor a $1$. Por _Teorema 8.4_, $p_1$ es primo.
+Si $a$ no es primo, sea $p_1$ su mínimo divisor mayor a $1$. Por _Teorema 8.4_, $p_1$ es primo.
 
 Luego, $a = p_1 \cdot a_1$, con $a_1 \in \mathbb{N}$. Si $a_1$ es primo, entonces el teorema se cumple, sino, aplicando el mismo procedimiento anterior con $a_1$, se llega a que $a = p_1 \cdot p_2 \cdot a_2$, donde $p_2, a_2 \in \mathbb{N}$ y $p_2$ es primo. Se continúa de esta forma hasta llegar a un $a_n = 1$. Esto debe suceder dado que $a_i = p_{i+1} \cdot a_{i+1}$, y por lo tanto $0 < a_{i+1} < a_i$. Como los $a_i$ forman una sucesión estrictamente descendente de números naturales, debe tener un último elemento que será $1$.
 
@@ -107,7 +104,7 @@ Sea $a \in \mathbb{Z}$ tal que $\lvert a \rvert > 1$. $a$ puede representarse co
 
 A dicha representación se la llama _forma canónica_.
 
-Demostración:
+**Demostración**:
 
 Si $a > 1$, por _Teorema 8.5_, puede expresarse de forma única como un producto de números primos. Si los factores se ordenan de menor a mayor y se agrupan los factores iguales como potencias se llega al resultado deseado.
 
@@ -118,7 +115,7 @@ Si $a < -1$, se aplica el mismo procedimiento con $\lvert a \rvert$, luego $a = 
 
 Teorema de Euclides: existen infinitos números primos.  
 
-Demostración:
+**Demostración**:
 
 Sea $p_1, p_2,\ ...\ ,p_n$ una lista finita de números primos.
 
@@ -131,9 +128,9 @@ Luego, $p_k$ no se encuentra en la lista inicial de números primos. Por lo tant
 
 Sea $a \in \mathbb{Z}$ tal que $\lvert a \rvert > 1$ y $b, n \in \mathbb{N}$.
 
-$a = \pm b^n$ si y solo si en su forma canónica las potencias de cada primo divisor de $a$ son multiplos de $n$.
+$a = \pm b^n$ si y solo si en su forma canónica las potencias de cada primo divisor de $a$ son múltiplos de $n$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -159,15 +156,15 @@ Sea $a \in \mathbb{Z}$ tal que su representación canónica es $a = \pm p_1^{\al
 
 $d \mid a$ si y solo si $d = \pm p_1^{\beta_1} \cdot p_2^{\beta_2} \cdot\ ... \cdot p_k^{\beta_k}$ con $0 \leq \beta_i \leq \alpha_i$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
 Para llegar a una contradicción, se asume que $d$ tiene un factor en su representación canónica que no cumple las condiciones del teorema. Esto puede ocurrir en dos formas, que tenga un $p_i^{\beta_i}$ donde $p_i$ no es un factor primo que aparezca en la representación canónica de $a$, o que $p_i = p_j$ con $1 \leq j \leq k$ y $\beta_i > \alpha_j$.
 
-Si $p_i$ no es un factor primo de $a$, entonces por el contrarrecíproco de _Teorema 8.3_, $p_i \nmid a$. Pero dado que $p_i \mid d \wedge d \mid a$, entonces por _Teorema 2.4_, $p_i \mid a$, llegando a un absudo.
+Si $p_i$ no es un factor primo de $a$, entonces por el contrarrecíproco de _Teorema 8.3_, $p_i \nmid a$. Pero dado que $p_i \mid d \wedge d \mid a$, entonces por _Teorema 2.4_, $p_i \mid a$, llegando a un absurdo.
 
-Si $p_i$ es un factor primo de $a$ pero $\beta_i > \alpha_j$, dado que $p_i^{\beta_i} \mid d \wedge d \mid a$, entonces por _Teorema 2.4_, $p_i^{\beta_i} \mid a$. Luego $a = p_i^{\beta_i} \cdot c$ para algun $c \in \mathbb{Z}$. Si se toma la representación canónica de $c$, el exponente de $p_i$ será mayor o igual a $0$, y por lo tanto el exponente de $p_i$ de $a$ será mayor o igual a $\beta_i$, y por lo tanto mayor a $\alpha_j$, llegando a un absurdo.
+Si $p_i$ es un factor primo de $a$ pero $\beta_i > \alpha_j$, dado que $p_i^{\beta_i} \mid d \wedge d \mid a$, entonces por _Teorema 2.4_, $p_i^{\beta_i} \mid a$. Luego $a = p_i^{\beta_i} \cdot c$ para algún $c \in \mathbb{Z}$. Si se toma la representación canónica de $c$, el exponente de $p_i$ será mayor o igual a $0$, y por lo tanto el exponente de $p_i$ de $a$ será mayor o igual a $\beta_i$, y por lo tanto mayor a $\alpha_j$, llegando a un absurdo.
 
 Por lo tanto $d = \pm p_1^{\beta_1} \cdot p_2^{\beta_2} \cdot\ ... \cdot p_k^{\beta_k}$ con $0 \leq \beta_i \leq \alpha_i$.
 
@@ -182,7 +179,7 @@ Sea $a = \pm p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ... \cdot p_k^{\alpha_k}
 
 $a \mid b$ si y solo si cada $p_i^{\alpha_i}$ divide a $b$.
 
-Demostración:
+**Demostración**:
 
 ($\Rightarrow$)
 
@@ -202,7 +199,7 @@ Sea $a \in \mathbb{N}$ tal que $a = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ .
 
 $a$ tiene exactamente $(\alpha_1 + 1) \cdot (\alpha_2 + 1) \cdot\ ...\ \cdot (\alpha_k + 1)$ divisores positivos distintos.
 
-Demostración:
+**Demostración**:
 
 Sea $d \in \mathbb{N}$ tal que $d \mid a$, por _Teorema 8.9_, $d = p_1^{\beta_1} \cdot p_2^{\beta_2} \cdot\ ... \cdot p_k^{\beta_k}$ con $0 \leq \beta_i \leq \alpha_i$. Dado que cada $\beta_i$ puede tomar $\alpha_i + 1$ valores enteros distintos, entonces la cantidad de posibles combinaciones para todos los $\beta_i$ será $(\alpha_1 + 1) \cdot (\alpha_2 + 1) \cdot\ ...\ \cdot (\alpha_k + 1)$. Por _Teorema 8.5_, eso determina exactamente la cantidad de valores distintos que puede tomar $d$.
 
@@ -213,7 +210,7 @@ Sean $a, b \in \mathbb{N}$.
 
 El máximo común divisor de $a$ y $b$ es el producto de los factores primos comunes de $a$ y $b$ elevados a la menor potencia con la que aparece en las respectivas representaciones canónicas.
 
-Demostración:
+**Demostración**:
 
 Sea $d = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ... \cdot p_k^{\alpha_k}$ tal que cada $p_i$ es un primo que aparece en las formas canónicas de $a$ y $b$ y $\alpha_i$ la menor de las potencias que tiene $p_i$ en ambas formas canónicas.
 
@@ -228,23 +225,46 @@ Sean $p, k \in \mathbb{N}$, siendo $p$ un número primo y $k < p$.
 
 $p \mid \binom{p}{k}$
 
-Demostración:
+**Demostración**:
 
 Por definición se tiene que $\binom{p}{k} = \frac{p!}{(p-k)! \cdot k!} = \frac{p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$.
 
-Dado que $k < p$, si $k = 1$ entonces la expresión anterior es un multiplo de $p$, y por lo tanto $p \mid \binom{p}{k}$. Si $k > 1$, dado que $\binom{p}{k} \in \mathbb{N}$, entonces $k! \mid p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Como $k < p$ y $p$ es primo, entonces $p \nmid k!$, luego por _Teorema 8.1_, $mcd(p, k!)$ = 1. Y por _Teorema 6.4_, $k! \mid (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Por lo tanto $\frac{(p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$. Lo que implica que $p \mid \binom{p}{k}$.
+Dado que $k < p$, si $k = 1$ entonces la expresión anterior es un múltiplo de $p$, y por lo tanto $p \mid \binom{p}{k}$. Si $k > 1$, dado que $\binom{p}{k} \in \mathbb{N}$, entonces $k! \mid p \cdot (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Como $k < p$ y $p$ es primo, entonces $p \nmid k!$, luego por _Teorema 8.1_, $mcd(p, k!)$ = 1. Y por _Teorema 6.4_, $k! \mid (p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)$. Por lo tanto $\frac{(p-1) \cdot (p-2) \cdot\ ...\ \cdot (p-k+2) \cdot (p-k+1)}{k!} \in \mathbb{N}$. Lo que implica que $p \mid \binom{p}{k}$.
 
 
-# Teorema
+# Teorema 8.14
 
-Si $a > 1$ es compuesto si y solo si es divisible por un primo < a raiz de a
+Sea $a \in \mathbb{N}$, tal que $a > 1$.
+
+$a$ es compuesto si y solo si es divisible por un primo menor o igual a $\sqrt{a}$.
+
+**Demostración**:
+
+($\Rightarrow$)
+
+Si $a$ es compuesto, entonces tiene al menos un divisor $d \in \mathbb{N}$ tal que $1 < d < a$. Si $d \leq \sqrt{a}$, dado que $d > 1$, por _Teorema 8.5_ $d$ tiene al menos un divisor $p$ primo. Luego, por _Teorema 2.4_ $p \mid a$ y por _Teorema 2.6_, dado que $p \mid d$, $p \leq \sqrt{a}$.
+
+Si $d > \sqrt{a}$, dado que $d \mid a$, existe un $k \in \mathbb{N}$ tal que $a = d \cdot k$. Y como $d < a$, entonces $k > 1$. Si $k > \sqrt{a}$, entonces $a = d \cdot k > \sqrt{a} \cdot \sqrt{a} = a$, lo cual es absurdo. Por lo tanto $k \leq \sqrt{a}$. Luego, como $k \mid a$, por el argumento antes presentado, existe un primo $p$ tal que $p \mid a$ y $p \leq \sqrt{a}$.
+
+($\Leftarrow$)
+
+Si $a$ es divisible por un primo menor o igual a $\sqrt{a}$, entonces por definición $a$ no es primo. Por lo tanto $a$ es compuesto.
+
+# Teorema 8.15
+
+Teorema de Dirichlet: Sean $a, b \in \mathbb{N}$ coprimos. La progresión aritmética $a, a + 1 \cdot b, a + 2 \cdot b, a + 3 \cdot b\, ...$ contiene infinitos primos.
+
+Demostración fuera del alcance de este documento.
 
 
-# Teorema
+# Teorema 8.16
 
-Dirichlet
+Sea $\pi(n)$ la función que cuenta los números primos menores o iguales a $n$.
 
+$$
+\begin{aligned}
+\lim_{n \to \infty}{\frac{\pi(n)}{\frac{n}{log(n)}}} = 1
+\end{aligned}
+$$
 
-# Teorema
-
-T. numeros primos
+Demostración fuera del alcance de este documento.

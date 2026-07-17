@@ -17,7 +17,7 @@ Nota: su existencia está garantizada ya que $1 \mid a \wedge 1 \mid b$, y dado 
 
 ## Motivación
 
-Su definición y estudio es importante porque es un concepto utilizado en el estudio de teoría de números, estructuras algebráicas, combinatoria, etc.
+Su definición y estudio es importante porque es un concepto utilizado en el estudio de teoría de números, estructuras algebraicas, combinatoria, etc.
 
 ## Ejemplos
 
@@ -109,3 +109,14 @@ Por definición, $d \mid (b + a \cdot k)$. Y como $d \mid a \cdot k$, Por _Teore
 Por lo tanto, $d$ es divisor común de $a$ y $b$.
 
 Sea $d'$ un divisor común de $a$ y $b$. Por _Teorema 2.7_, $d' \mid (b + a \cdot k)$. Por lo tanto, $d'$ es un divisor común de $a$ y $b + a \cdot k$. Como $d = mcd(a, b + a \cdot k)$, se tiene que $d' \leq d$. Por lo tanto $d$ es mayor o igual a cualquier otro divisor de $a$, $b$. Lo que implica que $d = mcd(a, b)$.
+
+
+# Teorema 3.7
+
+$mcd(a, b) = mcd(\lvert a \rvert, \lvert b \rvert)$
+
+**Demostración**:
+
+$mcd(a, b) \mid \lvert a \rvert \wedge mcd(a, b) \mid \lvert b \rvert$.
+
+Sea $m \in \mathbb{Z}$ un divisor común de $\lvert a \rvert$ y $\lvert b \rvert$. Como $\lvert a \rvert \mid a \wedge \lvert b \rvert \mid b$, entonces $m$ es divisor común de $a$ y $b$. Por lo tanto, $m \leq mcd(a, b)$. Luego, por definición de máximo común divisor, $mcd(a, b) = mcd(\lvert a \rvert, \lvert b \rvert)$.

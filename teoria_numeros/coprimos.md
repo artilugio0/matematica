@@ -9,7 +9,7 @@ $a$ y $b$ son coprimos si $mcd(a, b) = 1$.
 
 ## Motivación
 
-Los números coprimos tienen propiedades importantes relacionadas a divisibilidad que no son válidas en general, lo que los vuelve importantes en la teoría de números y otras areas de la matemática.
+Los números coprimos tienen propiedades importantes relacionadas a divisibilidad que no son válidas en general, lo que los vuelve importantes en la teoría de números y otras áreas de la matemática.
 
 
 ## Ejemplos

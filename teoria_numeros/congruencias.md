@@ -113,18 +113,26 @@ Si $a \equiv b\ (mod\ n)$ y $b \equiv c\ (mod\ n)$, entonces $n \mid a - b$ y $n
 
 $a \equiv b\ (mod\ n)$ y $c \equiv d\ (mod\ n)$ entonces $a + c \equiv b + d\ (mod\ n)$.
 
+En particular, si $c \equiv d\ (mod\ n)$, entonces $a + c \equiv a + d\ (mod\ n)$.
+
 **Demostración**:
 
 $a \equiv b\ (mod\ n)$ y $c \equiv d\ (mod\ n)$ entonces $n \mid a - b$ y $n \mid c - d$. Por _Teorema 2.7_, $n \mid (a + c) - (b + d)$. Luego, $a + c \equiv b + d\ (mod\ n)$.
+
+En particular, por _Teorema 10.3_, $a \equiv a\ (mod\ n)$. Si $c \equiv d\ (mod\ n)$, aplicando el resultado anterior, $a + c \equiv a + d\ (mod\ n)$.
 
 
 # Teorema 10.7
 
 $a \equiv b\ (mod\ n)$ y $c \equiv d\ (mod\ n)$ entonces $a \cdot c \equiv b \cdot d\ (mod\ n)$.
 
+En particular, si $c \equiv d\ (mod\ n)$, entonces $a \cdot c \equiv a \cdot d\ (mod\ n)$.
+
 **Demostración**:
 
 Si $a \equiv b\ (mod\ n)$ y $c \equiv d\ (mod\ n)$, entonces $n \mid a - b$ y $n \mid c - d$. Luego, existen $k, k' \in \mathbb{Z}$ tales que $n \cdot k = a - b$ y $n \cdot k' = c - d$. Multiplicando la primera igualdad por $c$ se tiene que $n \cdot k \cdot c = a \cdot c - b \cdot c$, entonces $n \cdot k \cdot c + b \cdot c = a \cdot c$. Restando $b \cdot d$ se llega a que $n \cdot k \cdot c + b \cdot (c - d) = a \cdot c - b \cdot d$. Dado que $n$ divide a ambos términos del lado izquierdo de la igualdad, por _Teorema 2.7_, $n \mid a \cdot c - b \cdot d$. Luego, $a \cdot c \equiv b \cdot d\ (mod\ n)$.
+
+En particular, por _Teorema 10.3_, $a \equiv a\ (mod\ n)$. Si $c \equiv d\ (mod\ n)$, aplicando el resultado anterior, $a \cdot c \equiv a \cdot d\ (mod\ n)$.
 
 
 # Teorema 10.8

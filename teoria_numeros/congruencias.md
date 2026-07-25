@@ -155,7 +155,7 @@ Si $a \equiv b\ (mod\ n)$, por _Teorema 10.3_, $c \equiv c\ (mod\ n)$. Luego por
 
 # Teorema 10.10
 
-Sea $k \in \mathbb{N}$.
+Sea $k \in \mathbb{N}_0$.
 
 $a \equiv b\ (mod\ n)$, entonces $a^k \equiv b^k\ (mod\ n)$.
 
@@ -273,3 +273,23 @@ $c \cdot a \equiv c \cdot b\ (mod\ n) \Rightarrow a \equiv b\ (mod\ \frac{n}{mcd
 **Demostración**:
 
 Si $c \cdot a \equiv c \cdot b\ (mod\ n)$, dado que $mcd(n, c) \mid c$ y $mcd(n, c) \mid n$, por _Teorema 10.20_, $\frac{c}{mcd(n, c)} \cdot a \equiv \frac{c}{mcd(n, c)} \cdot b\ (mod\ \frac{n}{mcd(n, c)})$. Por _Teorema 6.2_, $mcd(\frac{c}{mcd(n, c)}, \frac{n}{mcd(n, c)}) = 1$, entonces por _Teorema 10.14_, $a \equiv b\ (mod\ \frac{n}{mcd(n, c)})$.
+
+
+# Teorema 10.22
+
+Si $mcd(n_1, n_2) = 1$, $a \equiv b\ (mod\ n_1)$ y $a \equiv b\ (mod\ n_2)$, entonces $a \equiv b\ (mod\ n_1 \cdot n_2)$.
+
+**Demostración**:
+
+Si $a \equiv b\ (mod\ n_1)$ y $a \equiv b\ (mod\ n_2)$, por _Teorema 10.13_, $a \equiv b\ (mod\ mcm(n_1, n_2))$. Luego, si $mcd(n_1, n_2) = 1$, entonces por _Teorema 9.11_, $mcm(n_1, n_2) = n_1 \cdot n_2$. Por lo tanto, $a \equiv b\ (mod\ n_1 \cdot n_2)$.
+
+
+# Teorema 10.23
+
+Sea $P(x) = \sum\limits_{k=0}^{m} C_k \cdot x^k$ un polinomio con coeficientes enteros.
+
+Si $a \equiv b\ (mod\ n)$, entonces $P(a) \equiv P(b)\ (mod\ n)$.
+
+**Demostración**:
+
+Si $a \equiv b\ (mod\ n)$, sea $k \in \mathbb{Z}$ tal que $0 \leq k \leq m$. Por _Teorema 10.10_, $a^k \equiv b^k\ (mod\ n)$. Y _Teorema 10.9_, $C_k \cdot a^k \equiv C_k \cdot b^k\ (mod\ n)$. Luego, aplicando el _Teorema 10.6_ $m$ veces, $C_0 \cdot a^0 + C_1 \cdot a^1 +\ ...\ + C_m \cdot a^m \equiv C_0 \cdot b^0 + C_1 \cdot b^1 +\ ...\ + C_m \cdot b^m\ (mod\ n)$. Por lo tanto, $P(a) \equiv P(b)\ (mod\ n)$.

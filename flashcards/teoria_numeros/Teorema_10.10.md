@@ -1,7 +1,7 @@
 # Teorema 10.10
 
 
-Sea $k \in \mathbb{N}$.
+Sea $k \in \mathbb{N}_0$.
 
 $a \equiv b\ (mod\ n)$, entonces $a^k \equiv b^k\ (mod\ n)$.
 

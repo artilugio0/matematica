@@ -91,7 +91,7 @@ $(A^T)_{ij} = (A)_{ji}$
 
 Sea $A \in \mathbb{K}^{n \times n}$.
 
-$tr(A) = \sum\limits_{i = 1}^n (A)_{ii}$
+$\operatorname{tr}(A) = \sum\limits_{i = 1}^n (A)_{ii}$
 
 
 # Matriz Identidad
@@ -197,7 +197,7 @@ $A =
 \end{pmatrix}$
 
 
-# Matriz Triangular inferior
+# Matriz Triangular Inferior
 
 $A \in \mathbb{K}^{n \times n}$ es triangular inferior $\Leftrightarrow (A)_{ij} = 0$ si $i < j$.
 
@@ -229,7 +229,7 @@ Ejemplo:
 TODO
 
 
-# Matriz Simetrica
+# Matriz Simétrica
 
 $A \in \mathbb{K}^{n \times n}$ es simétrica $\Leftrightarrow A = A^T$.
 
@@ -243,7 +243,7 @@ $A =
 \end{pmatrix}$
 
 
-# Matriz Antisimetrica
+# Matriz Antisimétrica
 
 $A \in \mathbb{K}^{n \times n}$ es antisimétrica $\Leftrightarrow A = -A^T$.
 
@@ -277,7 +277,7 @@ TODO
 
 # Matriz Conjugada
 
-$A \in \mathbb{C}^{m \times n}$, su matriz conjugada se define como $\overline{A} \in \mathbb{C}^{m \times n} \mid (\overline{A})_{ij} = \overline{A_{ij}}$.
+$A \in \mathbb{C}^{m \times n}$, su matriz conjugada se define como $\overline{A} \in \mathbb{C}^{m \times n} \mid (\overline{A})_{ij} = \overline{(A)_{ij}}$.
 
 Ejemplo:
 
@@ -397,7 +397,7 @@ $$
 (A + B)_{ij} &= (A)_{ij} + (B)_{ij} \\
              &= (A)_{ij} + (-(A)_{ij}) \\
              &= 0 \\
-             &= N_{ij} \\
+             &= (N)_{ij} \\
 \end{aligned}
 $$
 
@@ -451,66 +451,66 @@ Por lo tanto, $A + B = B + A$.
 
 # Teorema 1.5
 
-Sean $A, B \in \mathbb{K}^{m \times n}$ y $c \in \mathbb{K}$.
+Sean $A, B \in \mathbb{K}^{m \times n}$ y $\lambda \in \mathbb{K}$.
 
-$c \cdot (A + B) = c \cdot A + c \cdot B$
+$\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-(c \cdot (A+B))_{ij} &= c \cdot (A + B)_{ij} \\
-                     &= c \cdot ((A)_{ij} + (B)_{ij}) \\
-                     &= c \cdot (A)_{ij} + c \cdot (B)_{ij} \\
-                     &= (c \cdot A)_{ij} + (c \cdot B)_{ij} \\
-                     &= (c \cdot A + c \cdot B)_{ij} \\
+(\lambda \cdot (A+B))_{ij} &= \lambda \cdot (A + B)_{ij} \\
+                     &= \lambda \cdot ((A)_{ij} + (B)_{ij}) \\
+                     &= \lambda \cdot (A)_{ij} + \lambda \cdot (B)_{ij} \\
+                     &= (\lambda \cdot A)_{ij} + (\lambda \cdot B)_{ij} \\
+                     &= (\lambda \cdot A + \lambda \cdot B)_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $c \cdot (A + B) = c \cdot A + c \cdot B$.
+Por lo tanto, $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$.
 
 
 # Teorema 1.6
 
-Sea $A \in \mathbb{K}^{m \times n}$ y $c, c' \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
 
-$(c + c') \cdot A = c \cdot A + c' \cdot A$
+$(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-((c + c') \cdot A)_{ij} &= (c + c') \cdot (A)_{ij} \\
-                        &= c \cdot (A)_{ij} + c' \cdot (A)_{ij} \\
-                        &= (c \cdot (A) + c' \cdot (A))_{ij} \\
+((\lambda + \lambda') \cdot A)_{ij} &= (\lambda + \lambda') \cdot (A)_{ij} \\
+                        &= \lambda \cdot (A)_{ij} + \lambda' \cdot (A)_{ij} \\
+                        &= (\lambda \cdot A + \lambda' \cdot A)_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $(c + c') \cdot A = c \cdot A + c' \cdot A$.
+Por lo tanto, $(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$.
 
 
 # Teorema 1.7
 
-Sea $A \in \mathbb{K}^{m \times n}$ y $c, c' \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
 
-$(c \cdot c') \cdot A = c \cdot (c' \cdot A)$
+$(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-((c \cdot c') \cdot A)_{ij} &= (c \cdot c') \cdot (A)_{ij} \\
-                        &= c \cdot (c' \cdot (A)_{ij}) \\
-                        &= (c \cdot (c' \cdot (A)))_{ij} \\
+((\lambda \cdot \lambda') \cdot A)_{ij} &= (\lambda \cdot \lambda') \cdot (A)_{ij} \\
+                        &= \lambda \cdot (\lambda' \cdot (A)_{ij}) \\
+                        &= (\lambda \cdot (\lambda' \cdot A))_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $(c \cdot c') \cdot A = c \cdot (c' \cdot A)$.
+Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.
 
 
 # Teorema 1.8
 
-Sea $A \in \mathbb{K}^{m \times n}$ y $1 \in \mathbb{K}$ el neutro multiplicativo de $\mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $1 \in \mathbb{K}$ el neutro multiplicativo de $\mathbb{K}$.
 
 $1 \cdot A = A$
 
@@ -523,7 +523,7 @@ Por lo tanto, $1 \cdot A = A$.
 
 # Teorema 1.9
 
-Sea $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
 
 $0 \cdot A = N$
 
@@ -536,7 +536,7 @@ Por lo tanto, $0 \cdot A = N$.
 
 # Teorema 1.10
 
-Sea $A \in \mathbb{K}^{m \times n}$ y $-1 \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $-1 \in \mathbb{K}$.
 
 $(-1) \cdot A = -A$
 
@@ -544,9 +544,9 @@ $(-1) \cdot A = -A$
 
 $((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
 
-Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = N_{ij}$.
+Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
 
-Por lo tanto, $(-1) \cdot A = -A$.
+Por lo tanto, por _Teorema 1.3_, $(-1) \cdot A = -A$.
 
 
 # Teorema 1.11
@@ -589,7 +589,7 @@ $$
 \end{aligned}
 $$
 
-Donde la segunda igualdad se da porque $(I_m)_{ij}$ es $0$ cuando $i \neq j$.
+Donde la segunda igualdad se da porque $(I_m)_{ik}$ es $0$ cuando $i \neq k$.
 
 De igual forma,
 
@@ -620,10 +620,10 @@ Por lo tanto $I_m \cdot A = A \cdot I_n = A$.
 
 $$
 \begin{aligned}
-(A \cdot (B + C))_{ij} &= \sum\limits_{k = 1}^{n} A_{ik} \cdot (B + C)_{kj} \\
-                       &= \sum\limits_{k = 1}^{n} A_{ik} \cdot (B_{kj} + C_{kj}) \\
-                       &= \sum\limits_{k = 1}^{n} (A_{ik} \cdot B_{kj} + A_{ik} \cdot C_{kj}) \\
-                       &= \sum\limits_{k = 1}^{n} A_{ik} \cdot B_{kj} + \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (C)_{kj} \\
+(A \cdot (B + C))_{ij} &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B + C)_{kj} \\
+                       &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot ((B)_{kj} + (C)_{kj}) \\
+                       &= \sum\limits_{k = 1}^{n} ((A)_{ik} \cdot (B)_{kj} + (A)_{ik} \cdot (C)_{kj}) \\
+                       &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{kj} + \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (C)_{kj} \\
                        &= (A \cdot B)_{ij} + (A \cdot C)_{ij} \\
                        &= (A \cdot B + A \cdot C)_{ij} \\
 \end{aligned}
@@ -647,46 +647,110 @@ Por lo tanto, $(A + B) \cdot C = A \cdot C + B \cdot C$.
 
 # Teorema 1.14
 
-Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$, y $c \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$, y $\lambda \in \mathbb{K}$.
 
-$(c \cdot A) \cdot B = c \cdot (A \cdot B) = A \cdot (c \cdot B)$
+$(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B) = A \cdot (\lambda \cdot B)$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-((c \cdot A) \cdot B)_{ij} &= \sum\limits_{k = 1}^{n} (c \cdot A)_{ik} \cdot (B)_{kj} \\
-                           &= \sum\limits_{k = 1}^{n} (c \cdot (A)_{ik}) \cdot (B)_{kj} \\
-                           &= \sum\limits_{k = 1}^{n} c \cdot ((A)_{ik} \cdot (B)_{kj}) \\
-                           &= c \cdot \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{kj} \\
-                           &= c \cdot (A \cdot B)_{ij} \\
-                           &= (c \cdot (A \cdot B))_{ij} \\
+((\lambda \cdot A) \cdot B)_{ij} &= \sum\limits_{k = 1}^{n} (\lambda \cdot A)_{ik} \cdot (B)_{kj} \\
+                           &= \sum\limits_{k = 1}^{n} (\lambda \cdot (A)_{ik}) \cdot (B)_{kj} \\
+                           &= \sum\limits_{k = 1}^{n} \lambda \cdot ((A)_{ik} \cdot (B)_{kj}) \\
+                           &= \lambda \cdot \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{kj} \\
+                           &= \lambda \cdot (A \cdot B)_{ij} \\
+                           &= (\lambda \cdot (A \cdot B))_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $(c \cdot A) \cdot B = c \cdot (A \cdot B)$.
+Por lo tanto, $(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B)$.
 
 $$
 \begin{aligned}
-((c \cdot A) \cdot B)_{ij} &= \sum\limits_{k = 1}^{n} (c \cdot A)_{ik} \cdot (B)_{kj} \\
-                           &= \sum\limits_{k = 1}^{n} (c \cdot (A)_{ik}) \cdot (B)_{kj} \\
-                           &= \sum\limits_{k = 1}^{n} ((A)_{ik} \cdot c) \cdot (B)_{kj} \\
-                           &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (c \cdot (B)_{kj}) \\
-                           &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (c \cdot B)_{kj} \\
-                           &= (A \cdot (c \cdot B))_{ij}
+((\lambda \cdot A) \cdot B)_{ij} &= \sum\limits_{k = 1}^{n} (\lambda \cdot A)_{ik} \cdot (B)_{kj} \\
+                           &= \sum\limits_{k = 1}^{n} (\lambda \cdot (A)_{ik}) \cdot (B)_{kj} \\
+                           &= \sum\limits_{k = 1}^{n} ((A)_{ik} \cdot \lambda) \cdot (B)_{kj} \\
+                           &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (\lambda \cdot (B)_{kj}) \\
+                           &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (\lambda \cdot B)_{kj} \\
+                           &= (A \cdot (\lambda \cdot B))_{ij}
 \end{aligned}
 $$
 
-Por lo tanto, $(c \cdot A) \cdot B = A \cdot (c \cdot B)$.
+Por lo tanto, $(\lambda \cdot A) \cdot B = A \cdot (\lambda \cdot B)$.
 
-Luego, $(c \cdot A) \cdot B = c \cdot (A \cdot B) = A \cdot (c \cdot B)$ .
+Luego, $(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B) = A \cdot (\lambda \cdot B)$.
+
+
+# Teorema 1.15
+
+Sean $A, B \in \mathbb{K}^{m \times n}$.
+
+$(A + B)^T = A^T + B^T$
+
+**Demostración**:
+
+Sean $i \in \mathbb{N}_n,\ j \in \mathbb{N}_m$.
+
+$((A + B)^T)_{ij} = (A + B)_{ji} = (A)_{ji} + (B)_{ji} = (A^T)_{ij} + (B^T)_{ij} = (A^T + B^T)_{ij}$
+
+Por lo tanto, $(A + B)^T = A^T + B^T$.
+
+
+# Teorema 1.16
+
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda \in \mathbb{K}$.
+
+$(\lambda \cdot A)^T = \lambda \cdot (A^T)$
+
+**Demostración**:
+
+Sean $i \in \mathbb{N}_n,\ j \in \mathbb{N}_m$.
+
+$((\lambda \cdot A)^T)_{ij} = (\lambda \cdot A)_{ji} = \lambda \cdot (A)_{ji} = \lambda \cdot (A^T)_{ij} = (\lambda \cdot (A^T))_{ij}$
+
+Por lo tanto, $(\lambda \cdot A)^T = \lambda \cdot (A^T)$.
+
+
+# Teorema 1.17
+
+Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$.
+
+$(A \cdot B)^T = B^T \cdot A^T$
+
+**Demostración**:
+
+Sean $i \in \mathbb{N}_p,\ j \in \mathbb{N}_m$.
+
+$$
+\begin{aligned}
+((A \cdot B)^T)_{ij} &= (A \cdot B)_{ji} \\
+                     &= \sum\limits_{k = 1}^{n} (A)_{jk} \cdot (B)_{ki} \\
+                     &= \sum\limits_{k = 1}^{n} (A^T)_{kj} \cdot (B^T)_{ik} \\
+                     &= \sum\limits_{k = 1}^{n} (B^T)_{ik} \cdot (A^T)_{kj} \\
+                     &= (B^T \cdot A^T)_{ij}
+\end{aligned}
+$$
+
+Por lo tanto, $(A \cdot B)^T = B^T \cdot A^T$.
+
+
+# Teorema 1.18
+
+Sea $A \in \mathbb{K}^{m \times n}$.
+
+$(A^T)^T = A$
+
+**Demostración**:
+
+Sean $i \in \mathbb{N}_m,\ j \in \mathbb{N}_n$.
+
+$((A^T)^T)_{ij} = (A^T)_{ji} = (A)_{ij}$
+
+Por lo tanto, $(A^T)^T = A$.
+
 
 # Resto
-
-- (A+B)t = At + Bt
-- (cA)t = c(At)
-- (AB)t = (Bt)(At)
-- (At)t = A
 
 - tr(A+B) = tr(A) + tr(B)
 - tr(cA) = c tr(A)

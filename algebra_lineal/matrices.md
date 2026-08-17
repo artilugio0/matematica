@@ -750,12 +750,65 @@ $((A^T)^T)_{ij} = (A^T)_{ji} = (A)_{ij}$
 Por lo tanto, $(A^T)^T = A$.
 
 
-# Resto
+# Teorema 1.19
 
-- tr(A+B) = tr(A) + tr(B)
-- tr(cA) = c tr(A)
-- tr(At) = tr(A)
-- tr(AB) = tr(BA)
+Sean $A, B \in \mathbb{K}^{n \times n}$.
+
+$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)$
+
+**Demostración**:
+
+$\operatorname{tr}(A + B) = \sum\limits_{i = 1}^{n} (A + B)_{ii} = \sum\limits_{i = 1}^{n} ((A)_{ii} + (B)_{ii}) = \sum\limits_{i = 1}^{n} (A)_{ii} + \sum\limits_{i = 1}^{n} (B)_{ii} = \operatorname{tr}(A) + \operatorname{tr}(B)$
+
+
+# Teorema 1.20
+
+Sean $A \in \mathbb{K}^{n \times n}$, y $\lambda \in \mathbb{K}$.
+
+$\operatorname{tr}(\lambda \cdot A) = \lambda \cdot \operatorname{tr}(A)$
+
+**Demostración**:
+
+$\operatorname{tr}(\lambda \cdot A)
+= \sum\limits_{i = 1}^{n} (\lambda \cdot A)_{ii}
+= \sum\limits_{i = 1}^{n} \lambda \cdot (A)_{ii}
+= \lambda \cdot \sum\limits_{i = 1}^{n} (A)_{ii}
+= \lambda \cdot \operatorname{tr}(A)$
+
+
+# Teorema 1.21
+
+Sea $A \in \mathbb{K}^{n \times n}$.
+
+$\operatorname{tr}(A^T) = \operatorname{tr}(A)$
+
+**Demostración**:
+
+$\operatorname{tr}(A^T)
+= \sum\limits_{i = 1}^{n} (A^T)_{ii}
+= \sum\limits_{i = 1}^{n} (A)_{ii}
+= \operatorname{tr}(A)$
+
+
+# Teorema 1.22
+
+Sean $A, B \in \mathbb{K}^{n \times n}$.
+
+$\operatorname{tr}(A \cdot B) = \operatorname{tr}(B \cdot A)$
+
+**Demostración**:
+
+$$
+\begin{aligned}
+\operatorname{tr}(A \cdot B) &= \sum\limits_{i = 1}^{n} (A \cdot B)_{ii} \\
+                             &= \sum\limits_{i = 1}^{n} (\sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{ki}) \\
+                             &= \sum\limits_{k = 1}^{n} (\sum\limits_{i = 1}^{n} (A)_{ik} \cdot (B)_{ki}) \\
+                             &= \sum\limits_{k = 1}^{n} (\sum\limits_{i = 1}^{n} (B)_{ki} \cdot (A)_{ik}) \\
+                             &= \sum\limits_{k = 1}^{n} (B \cdot A)_{kk} \\
+                             &= \operatorname{tr}(B \cdot A) \\
+\end{aligned}
+$$
+
 
 # Grupo lineal general
 

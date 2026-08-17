@@ -1,8 +1,18 @@
 #!/usr/bin/env sh
 
-rm -f flashcards/teoria_numeros/*.md
+decks=(
+    "teoria_numeros"
+    "algebra_lineal"
+)
 
-for F in $(ls teoria_numeros/*.md)
+
+for DECK in ${decks[@]}
 do
-    python split_markdown.py $F flashcards/teoria_numeros/
+    rm -fr "./flashcards/${DECK}"
+    mkdir "./flashcards/${DECK}"
+
+    for F in $(ls "${DECK}"/*.md)
+    do
+        python split_markdown.py "${F}" "flashcards/${DECK}/"
+    done
 done

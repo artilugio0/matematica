@@ -1,20 +1,18 @@
 # Teorema 1.5
 
 
-Sean $A, B \in \mathbb{K}^{m \times n}$ y $\lambda \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
 
-$\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$
+$(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-(\lambda \cdot (A+B))_{ij} &= \lambda \cdot (A + B)_{ij} \\
-                     &= \lambda \cdot ((A)_{ij} + (B)_{ij}) \\
-                     &= \lambda \cdot (A)_{ij} + \lambda \cdot (B)_{ij} \\
-                     &= (\lambda \cdot A)_{ij} + (\lambda \cdot B)_{ij} \\
-                     &= (\lambda \cdot A + \lambda \cdot B)_{ij} \\
+((\lambda \cdot \lambda') \cdot A)_{ij} &= (\lambda \cdot \lambda') \cdot (A)_{ij} \\
+                        &= \lambda \cdot (\lambda' \cdot (A)_{ij}) \\
+                        &= (\lambda \cdot (\lambda' \cdot A))_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$.
+Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.

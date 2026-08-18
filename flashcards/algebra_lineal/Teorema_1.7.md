@@ -1,18 +1,12 @@
 # Teorema 1.7
 
 
-Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
 
-$(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$
+$0 \cdot A = N$
 
 **Demostración**:
 
-$$
-\begin{aligned}
-((\lambda \cdot \lambda') \cdot A)_{ij} &= (\lambda \cdot \lambda') \cdot (A)_{ij} \\
-                        &= \lambda \cdot (\lambda' \cdot (A)_{ij}) \\
-                        &= (\lambda \cdot (\lambda' \cdot A))_{ij} \\
-\end{aligned}
-$$
+$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (N)_{ij}$
 
-Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.
+Por lo tanto, $0 \cdot A = N$.

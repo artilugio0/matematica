@@ -1,18 +1,12 @@
 # Teorema 1.6
 
 
-Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $1 \in \mathbb{K}$ el neutro multiplicativo de $\mathbb{K}$.
 
-$(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$
+$1 \cdot A = A$
 
 **Demostración**:
 
-$$
-\begin{aligned}
-((\lambda + \lambda') \cdot A)_{ij} &= (\lambda + \lambda') \cdot (A)_{ij} \\
-                        &= \lambda \cdot (A)_{ij} + \lambda' \cdot (A)_{ij} \\
-                        &= (\lambda \cdot A + \lambda' \cdot A)_{ij} \\
-\end{aligned}
-$$
+$(1 \cdot A)_{ij} = (1 \cdot (A)_{ij}) = (A)_{ij}$
 
-Por lo tanto, $(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$.
+Por lo tanto, $1 \cdot A = A$.

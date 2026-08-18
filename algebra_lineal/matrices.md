@@ -451,6 +451,66 @@ Por lo tanto, $A + B = B + A$.
 
 # Teorema 1.5
 
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
+
+$(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$
+
+**Demostración**:
+
+$$
+\begin{aligned}
+((\lambda \cdot \lambda') \cdot A)_{ij} &= (\lambda \cdot \lambda') \cdot (A)_{ij} \\
+                        &= \lambda \cdot (\lambda' \cdot (A)_{ij}) \\
+                        &= (\lambda \cdot (\lambda' \cdot A))_{ij} \\
+\end{aligned}
+$$
+
+Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.
+
+
+# Teorema 1.6
+
+Sean $A \in \mathbb{K}^{m \times n}$ y $1 \in \mathbb{K}$ el neutro multiplicativo de $\mathbb{K}$.
+
+$1 \cdot A = A$
+
+**Demostración**:
+
+$(1 \cdot A)_{ij} = (1 \cdot (A)_{ij}) = (A)_{ij}$
+
+Por lo tanto, $1 \cdot A = A$.
+
+
+# Teorema 1.7
+
+Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
+
+$0 \cdot A = N$
+
+**Demostración**:
+
+$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (N)_{ij}$
+
+Por lo tanto, $0 \cdot A = N$.
+
+
+# Teorema 1.8
+
+Sean $A \in \mathbb{K}^{m \times n}$ y $-1 \in \mathbb{K}$.
+
+$(-1) \cdot A = -A$
+
+**Demostración**:
+
+$((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
+
+Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
+
+Por lo tanto, por _Teorema 1.3_, $(-1) \cdot A = -A$.
+
+
+# Teorema 1.9
+
 Sean $A, B \in \mathbb{K}^{m \times n}$ y $\lambda \in \mathbb{K}$.
 
 $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$
@@ -470,7 +530,7 @@ $$
 Por lo tanto, $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$.
 
 
-# Teorema 1.6
+# Teorema 1.10
 
 Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
 
@@ -487,66 +547,6 @@ $$
 $$
 
 Por lo tanto, $(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$.
-
-
-# Teorema 1.7
-
-Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
-
-$(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$
-
-**Demostración**:
-
-$$
-\begin{aligned}
-((\lambda \cdot \lambda') \cdot A)_{ij} &= (\lambda \cdot \lambda') \cdot (A)_{ij} \\
-                        &= \lambda \cdot (\lambda' \cdot (A)_{ij}) \\
-                        &= (\lambda \cdot (\lambda' \cdot A))_{ij} \\
-\end{aligned}
-$$
-
-Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.
-
-
-# Teorema 1.8
-
-Sean $A \in \mathbb{K}^{m \times n}$ y $1 \in \mathbb{K}$ el neutro multiplicativo de $\mathbb{K}$.
-
-$1 \cdot A = A$
-
-**Demostración**:
-
-$(1 \cdot A)_{ij} = (1 \cdot (A)_{ij}) = (A)_{ij}$
-
-Por lo tanto, $1 \cdot A = A$.
-
-
-# Teorema 1.9
-
-Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
-
-$0 \cdot A = N$
-
-**Demostración**:
-
-$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (N)_{ij}$
-
-Por lo tanto, $0 \cdot A = N$.
-
-
-# Teorema 1.10
-
-Sean $A \in \mathbb{K}^{m \times n}$ y $-1 \in \mathbb{K}$.
-
-$(-1) \cdot A = -A$
-
-**Demostración**:
-
-$((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
-
-Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
-
-Por lo tanto, por _Teorema 1.3_, $(-1) \cdot A = -A$.
 
 
 # Teorema 1.11

@@ -1,14 +1,18 @@
 # Teorema 1.10
 
 
-Sean $A \in \mathbb{K}^{m \times n}$ y $-1 \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n}$ y $\lambda, \lambda' \in \mathbb{K}$.
 
-$(-1) \cdot A = -A$
+$(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$
 
 **Demostración**:
 
-$((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
+$$
+\begin{aligned}
+((\lambda + \lambda') \cdot A)_{ij} &= (\lambda + \lambda') \cdot (A)_{ij} \\
+                        &= \lambda \cdot (A)_{ij} + \lambda' \cdot (A)_{ij} \\
+                        &= (\lambda \cdot A + \lambda' \cdot A)_{ij} \\
+\end{aligned}
+$$
 
-Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
-
-Por lo tanto, por _Teorema 1.3_, $(-1) \cdot A = -A$.
+Por lo tanto, $(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$.

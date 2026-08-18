@@ -1,12 +1,20 @@
 # Teorema 1.9
 
 
-Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
+Sean $A, B \in \mathbb{K}^{m \times n}$ y $\lambda \in \mathbb{K}$.
 
-$0 \cdot A = N$
+$\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$
 
 **Demostración**:
 
-$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (N)_{ij}$
+$$
+\begin{aligned}
+(\lambda \cdot (A+B))_{ij} &= \lambda \cdot (A + B)_{ij} \\
+                     &= \lambda \cdot ((A)_{ij} + (B)_{ij}) \\
+                     &= \lambda \cdot (A)_{ij} + \lambda \cdot (B)_{ij} \\
+                     &= (\lambda \cdot A)_{ij} + (\lambda \cdot B)_{ij} \\
+                     &= (\lambda \cdot A + \lambda \cdot B)_{ij} \\
+\end{aligned}
+$$
 
-Por lo tanto, $0 \cdot A = N$.
+Por lo tanto, $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$.

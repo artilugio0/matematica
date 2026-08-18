@@ -778,20 +778,6 @@ $\operatorname{tr}(\lambda \cdot A)
 
 # Teorema 1.21
 
-Sea $A \in \mathbb{K}^{n \times n}$.
-
-$\operatorname{tr}(A^T) = \operatorname{tr}(A)$
-
-**Demostración**:
-
-$\operatorname{tr}(A^T)
-= \sum\limits_{i = 1}^{n} (A^T)_{ii}
-= \sum\limits_{i = 1}^{n} (A)_{ii}
-= \operatorname{tr}(A)$
-
-
-# Teorema 1.22
-
 Sean $A, B \in \mathbb{K}^{n \times n}$.
 
 $\operatorname{tr}(A \cdot B) = \operatorname{tr}(B \cdot A)$
@@ -808,6 +794,20 @@ $$
                              &= \operatorname{tr}(B \cdot A) \\
 \end{aligned}
 $$
+
+
+# Teorema 1.22
+
+Sea $A \in \mathbb{K}^{n \times n}$.
+
+$\operatorname{tr}(A^T) = \operatorname{tr}(A)$
+
+**Demostración**:
+
+$\operatorname{tr}(A^T)
+= \sum\limits_{i = 1}^{n} (A^T)_{ii}
+= \sum\limits_{i = 1}^{n} (A)_{ii}
+= \operatorname{tr}(A)$
 
 
 # Grupo lineal general

@@ -5,7 +5,7 @@ Sean $m, n \in \mathbb{N}$ y $\mathbb{K}$ un cuerpo.
 
 Una **matriz de $m \times n$ sobre el cuerpo $\mathbb{K}$** es una función $A: \mathbb{N}_m \times \mathbb{N}_n \to \mathbb{K}$.
 
-Nota: $\mathbb{N}_h = \{1, 2,\ ...\ , h - 1, h\}$
+Nota: $\mathbb{N}_h = \{1, 2,\ \dots\ , h - 1, h\}$
 
 **Notación**:
 

@@ -1,7 +1,7 @@
 # Teorema 1.14
 
 
-Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$, y $\lambda \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$ y $\lambda \in \mathbb{K}$.
 
 $(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B) = A \cdot (\lambda \cdot B)$
 

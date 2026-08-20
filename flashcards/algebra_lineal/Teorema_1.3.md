@@ -7,7 +7,7 @@ A la matriz $B$ se la denota por $-A$.
 
 **Demostración**:
 
-Sea $A \in \mathbb{K}^{m \times n}$, se define $B \in \mathbb{K}^{m \times n} \mid (B)_{ij} = -(A)_{ij}$.
+Sea $A \in \mathbb{K}^{m \times n}$. Se define $B \in \mathbb{K}^{m \times n} \mid (B)_{ij} = -(A)_{ij}$.
 
 $$
 \begin{aligned}
@@ -18,7 +18,7 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $A + B = N$.
+Por lo tanto, $A + B = N$.
 
 $$
 \begin{aligned}
@@ -28,9 +28,9 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $B + A = N$.
+Por lo tanto, $B + A = N$.
 
-Sean $B, B' \in \mathbb{K}^{m \times n}$ tal que $A + B = B + A = N \wedge A + B' = B' + A = N$.
+Sean $B, B' \in \mathbb{K}^{m \times n}$ tales que $A + B = B + A = N \wedge A + B' = B' + A = N$.
 
 Entonces
 $$
@@ -44,4 +44,4 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto la matriz $B$ es única.
+Por lo tanto, la matriz $B$ es única.

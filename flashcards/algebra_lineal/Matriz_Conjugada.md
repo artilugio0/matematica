@@ -5,16 +5,20 @@ $A \in \mathbb{C}^{m \times n}$, su matriz conjugada se define como $\overline{A
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 0  & 2 + i & 3 - 2i \\
 -2 & 4i    & -1 \\
 -3 & 1     & 1 + i \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
-$\overline{A} =
+$$
+\overline{A} =
 \begin{pmatrix}
 0  & 2 - i & 3 + 2i \\
 -2 & -4i   & -1 \\
 -3 & 1     & 1 - i \\
-\end{pmatrix}$
+\end{pmatrix}
+$$

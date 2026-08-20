@@ -5,4 +5,13 @@ $A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \m
 
 Ejemplo:
 
-TODO
+$$
+\begin{pmatrix}
+2  & 4 \\
+-1 & -2 \\
+\end{pmatrix}^2 =
+\begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+$$

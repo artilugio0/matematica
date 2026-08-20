@@ -5,9 +5,11 @@ $A \in \mathbb{K}^{n \times n}$ es diagonal $\Leftrightarrow (A)_{ij} = 0$ si $i
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 2 & 0 \\
 0 & 0 & 3 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$

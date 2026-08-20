@@ -16,7 +16,7 @@ $$
 \end{aligned}
 $$
 
-Donde la segunda igualdad se da porque $(I_m)_{ik}$ es $0$ cuando $i \neq k$.
+La segunda igualdad se da porque $(I_m)_{ik}$ es $0$ cuando $i \neq k$.
 
 De igual forma,
 
@@ -29,4 +29,4 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $I_m \cdot A = A \cdot I_n = A$.
+Por lo tanto, $I_m \cdot A = A \cdot I_n = A$.

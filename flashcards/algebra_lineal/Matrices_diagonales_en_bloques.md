@@ -1,1 +1,0 @@
-# Matrices diagonales en bloques

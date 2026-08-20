@@ -17,4 +17,4 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $(A + B) + C = A + (B + C)$.
+Por lo tanto, $(A + B) + C = A + (B + C)$.

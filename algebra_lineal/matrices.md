@@ -4,7 +4,7 @@ Sean $m, n \in \mathbb{N}$ y $\mathbb{K}$ un cuerpo.
 
 Una **matriz de $m \times n$ sobre el cuerpo $\mathbb{K}$** es una función $A: \mathbb{N}_m \times \mathbb{N}_n \to \mathbb{K}$.
 
-Nota: $\mathbb{N}_h = \{1, 2,\ ...\ , h - 1, h\}$
+Nota: $\mathbb{N}_h = \{1, 2,\ \dots\ , h - 1, h\}$
 
 **Notación**:
 
@@ -71,12 +71,13 @@ Se define $A \cdot B \in \mathbb{K}^{m \times p}$ tal que:
 $(A \cdot B)_{ij} = \sum\limits_{k=1}^{n} (A)_{ik} \cdot (B)_{kj}$
 
 
-# Interpretaciones de producto de matrices
+# Interpretaciones del producto de matrices
 
 TODO:
 
 - Por filas
 - Por columnas
+
 
 # Traspuesta
 
@@ -91,43 +92,51 @@ $(A^T)_{ij} = (A)_{ji}$
 
 Sea $A \in \mathbb{K}^{n \times n}$.
 
-$\operatorname{tr}(A) = \sum\limits_{i = 1}^n (A)_{ii}$
+$\text{tr}(A) = \sum\limits_{i = 1}^n (A)_{ii}$
 
 
 # Matriz Identidad
 
-$I_n \in \mathbb{K}^{n \times n} \mid (I_n)_{ij} =
+$$
+I_n \in \mathbb{K}^{n \times n} \mid (I_n)_{ij} =
 \begin{cases}
 1 & \text{si } i = j \\
 0 & \text{si } i \neq j \\
-\end{cases}$
+\end{cases}
+$$
 
 Ejemplo:
 
-$I_3 =
+$$
+I_3 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
-# Matrices canónicas
+# Matrices Canónicas
 
-$E^{kl} \in \mathbb{K}^{m \times n} \mid (E^{kl})_{ij} =
+$$
+E^{kl} \in \mathbb{K}^{m \times n} \mid (E^{kl})_{ij} =
 \begin{cases}
 1 & \text{si } i = k \wedge j = l \\
 0 & \text{si } i \neq k \lor j \neq l \\
-\end{cases}$
+\end{cases}
+$$
 
 Ejemplo:
 
-$E^{24} =
+$$
+E^{24} =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Nula
@@ -136,12 +145,14 @@ $N \in \mathbb{K}^{m \times n} \mid (N)_{ij} = 0$
 
 Ejemplo:
 
-$N \in \mathbb{R}^{3 \times 4} \mid N =
+$$
+N \in \mathbb{R}^{3 \times 4} \mid N =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Escalar
@@ -150,12 +161,14 @@ $\lambda \cdot I_n \in \mathbb{K}^{n \times n}$, con $\lambda \in \mathbb{K}$.
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 5 & 0 & 0 \\
 0 & 5 & 0 \\
 0 & 0 & 5 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Diagonal
@@ -164,60 +177,125 @@ $A \in \mathbb{K}^{n \times n}$ es diagonal $\Leftrightarrow (A)_{ij} = 0$ si $i
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 2 & 0 \\
 0 & 0 & 3 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Cuadrada
 
 Una matriz es cuadrada si tiene la misma cantidad de filas que de columnas.
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 2 & 3 \\
 0 & 2 & 0 \\
 1 & 0 & 3 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Triangular Superior
 
 $A \in \mathbb{K}^{n \times n}$ es triangular superior $\Leftrightarrow (A)_{ij} = 0$ si $i > j$.
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 0 & 3 & 4\\
 0 & 4 & 5 & 0\\
 0 & 0 & 0 & 1\\
 0 & 0 & 0 & 7\\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Triangular Inferior
 
 $A \in \mathbb{K}^{n \times n}$ es triangular inferior $\Leftrightarrow (A)_{ij} = 0$ si $i < j$.
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 0 & 0 & 0\\
 2 & 4 & 0 & 0\\
 5 & 0 & 0 & 0\\
 1 & 2 & 3 & 7\\
-\end{pmatrix}$
+\end{pmatrix}
+$$
+
+
+# Potencias de matrices
+
+Sean $A \in \mathbb{K}^{n \times n}$ y $p \in \mathbb{N}$.
+
+Se definen:
+
+$A^0 = I_n$
+
+$A^p = A^{p - 1} \cdot A$
+
+
+# Polinomio de matrices
+
+Sean los escalares $a_0, a_1,\ \dots\ , a_k \in \mathbb{K}$ y $A \in \mathbb{K}^{n \times n}$.
+
+Dado el polinomio $P(x) = a_0 + a_1 \cdot x + a_2 \cdot x^2 +\ \dots\ + a_k \cdot x^k$, se define:
+
+$P(A) = a_0 \cdot I_n + a_1 \cdot A + a_2 \cdot A^2 +\ \dots\ + a_k \cdot A^k$
 
 
 # Matriz Idempotente
 
 $A \in \mathbb{K}^{n \times n}$ es idempotente $\Leftrightarrow A^2 = A$.
 
+Ejemplos:
+
+$$
+\begin{pmatrix}
+1 & 0 \\
+2 & 0 \\
+\end{pmatrix}^2 =
+\begin{pmatrix}
+1 & 0 \\
+2 & 0 \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+\frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{1}{2} \\
+\end{pmatrix}^2 =
+\begin{pmatrix}
+\frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{1}{2} \\
+\end{pmatrix}
+$$
+
 
 # Matriz Involutiva
 
 $A \in \mathbb{K}^{n \times n}$ es involutiva $\Leftrightarrow A^2 = I_n$.
+
+Ejemplo:
+
+$$
+\begin{pmatrix}
+2  & 3 \\
+-1 & -2 \\
+\end{pmatrix}^2 =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
 
 # Matriz Nilpotente
@@ -226,7 +304,16 @@ $A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \m
 
 Ejemplo:
 
-TODO
+$$
+\begin{pmatrix}
+2  & 4 \\
+-1 & -2 \\
+\end{pmatrix}^2 =
+\begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+$$
 
 
 # Matriz Simétrica
@@ -235,12 +322,14 @@ $A \in \mathbb{K}^{n \times n}$ es simétrica $\Leftrightarrow A = A^T$.
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 1 & 2 & 3 \\
 2 & 2 & 0 \\
 3 & 0 & 3 \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Antisimétrica
@@ -249,21 +338,14 @@ $A \in \mathbb{K}^{n \times n}$ es antisimétrica $\Leftrightarrow A = -A^T$.
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 0 & 2 & 3 \\
 -2 & 0 & -1 \\
 -3 & 1 & 0 \\
-\end{pmatrix}$
-
-
-# Matriz Real Ortogonal
-
-$A \in \mathbb{R}^{n \times n}$ es ortogonal $\Leftrightarrow A^{-1} = A^T$.
-
-Ejemplo:
-
-TODO
+\end{pmatrix}
+$$
 
 
 # Matriz Real Normal
@@ -272,7 +354,28 @@ $A \in \mathbb{R}^{n \times n}$ es normal $\Leftrightarrow A \cdot A^T = A^T \cd
 
 Ejemplo:
 
-TODO
+$$
+\begin{pmatrix}
+0  & 2 \\
+-2 & 0 \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+0 & -2 \\
+2 & 0 \\
+\end{pmatrix} =
+\begin{pmatrix}
+0 & -2 \\
+2 & 0 \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+0  & 2 \\
+-2 & 0 \\
+\end{pmatrix} =
+\begin{pmatrix}
+4 & 0 \\
+0 & 4 \\
+\end{pmatrix}
+$$
 
 
 # Matriz Conjugada
@@ -281,19 +384,23 @@ $A \in \mathbb{C}^{m \times n}$, su matriz conjugada se define como $\overline{A
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 0  & 2 + i & 3 - 2i \\
 -2 & 4i    & -1 \\
 -3 & 1     & 1 + i \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
-$\overline{A} =
+$$
+\overline{A} =
 \begin{pmatrix}
 0  & 2 - i & 3 + 2i \\
 -2 & -4i   & -1 \\
 -3 & 1     & 1 - i \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Traspuesta Conjugada
@@ -302,39 +409,60 @@ $A \in \mathbb{C}^{m \times n}$, su matriz traspuesta conjugada se define como $
 
 Ejemplo:
 
-$A =
+$$
+A =
 \begin{pmatrix}
 0  & 2 + i & 3 - 2i & i \\
 -2 & 4i    & -1     & 3 \\
 -3 & 1     & 1 + i  & 2 + i\\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
-$A^H =
+$$
+A^H =
 \begin{pmatrix}
 0      & -2   & -3 \\
 2 - i  & -4i  & 1 \\
 3 + 2i & -1   & 1 - i \\
 -i     & 3   & 2 - i \\
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 
 # Matriz Hermitiana
 
 $A \in \mathbb{C}^{n \times n}$ es hermitiana $\Leftrightarrow A = A^H$.
 
+Ejemplo:
+
+$$
+\begin{pmatrix}
+1     & 1 + i \\
+1 - i & 2 \\
+\end{pmatrix} = \\
+\begin{pmatrix}
+1     & 1 + i \\
+1 - i & 2 \\
+\end{pmatrix}^H
+$$
+
 
 # Matriz Antihermitiana
 
 $A \in \mathbb{C}^{n \times n}$ es antihermitiana $\Leftrightarrow A = -A^H$.
 
-
-# Matriz Unitaria
-
-$A \in \mathbb{C}^{n \times n}$ es unitaria $\Leftrightarrow A^{-1} = A^H$.
-
 Ejemplo:
 
-TODO
+$$
+\begin{pmatrix}
+0      & 1 + i \\
+-1 + i & 0 \\
+\end{pmatrix} = - \\
+\begin{pmatrix}
+0      & 1 + i \\
+-1 + i & 0 \\
+\end{pmatrix}^H
+$$
 
 
 # Matriz Compleja Normal
@@ -343,7 +471,94 @@ $A \in \mathbb{C}^{n \times n}$ es normal $\Leftrightarrow A \cdot A^H = A^H \cd
 
 Ejemplo:
 
-TODO
+$$
+\begin{pmatrix}
+1 & 1 \\
+i & -i \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+1 & -i \\
+1 & i \\
+\end{pmatrix} =
+\begin{pmatrix}
+1 & -i \\
+1 & i \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+1 & 1 \\
+i & -i \\
+\end{pmatrix} =
+\begin{pmatrix}
+2 & 0 \\
+0 & 2 \\
+\end{pmatrix}
+$$
+
+
+# Matriz Inversa
+
+Sea $A \in \mathbb{K}^{n \times n}$.
+
+Una matriz $A^{-1} \in \mathbb{K}^{n \times n}$ es inversa de $A$ si cumple que $A \cdot A^{-1} = A^{-1} \cdot A = I_n$.
+
+Si existe una matriz inversa de $A$, entonces se dice que $A$ es invertible.
+
+
+# Grupo lineal general
+
+$GL(n, \mathbb{K}) = \{A \in \mathbb{K}^{n \times n} \mid A \text{ es invertible}\}$
+
+
+# Matriz Real Ortogonal
+
+$A \in \mathbb{R}^{n \times n}$ es ortogonal $\Leftrightarrow A^{-1} = A^T$.
+
+Ejemplo:
+
+$$
+\begin{pmatrix}
+0  & 1 \\
+-1 & 0 \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
+
+
+# Matriz Unitaria
+
+$A \in \mathbb{C}^{n \times n}$ es unitaria $\Leftrightarrow A^{-1} = A^H$.
+
+Ejemplo:
+
+$$
+\begin{pmatrix}
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \\
+\frac{\sqrt{2}}{2}i & -\frac{\sqrt{2}}{2}i \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}i \\
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}i \\
+\end{pmatrix} =
+\begin{pmatrix}
+\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2}i \\
+\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}i \\
+\end{pmatrix} \cdot
+\begin{pmatrix}
+\frac{\sqrt{2}}{2}  & \frac{\sqrt{2}}{2} \\
+\frac{\sqrt{2}}{2}i & -\frac{\sqrt{2}}{2}i \\
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
 
 # Teorema 1.1
@@ -364,7 +579,7 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $(A + B) + C = A + (B + C)$.
+Por lo tanto, $(A + B) + C = A + (B + C)$.
 
 
 # Teorema 1.2
@@ -390,7 +605,7 @@ A la matriz $B$ se la denota por $-A$.
 
 **Demostración**:
 
-Sea $A \in \mathbb{K}^{m \times n}$, se define $B \in \mathbb{K}^{m \times n} \mid (B)_{ij} = -(A)_{ij}$.
+Sea $A \in \mathbb{K}^{m \times n}$. Se define $B \in \mathbb{K}^{m \times n} \mid (B)_{ij} = -(A)_{ij}$.
 
 $$
 \begin{aligned}
@@ -401,7 +616,7 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $A + B = N$.
+Por lo tanto, $A + B = N$.
 
 $$
 \begin{aligned}
@@ -411,9 +626,9 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $B + A = N$.
+Por lo tanto, $B + A = N$.
 
-Sean $B, B' \in \mathbb{K}^{m \times n}$ tal que $A + B = B + A = N \wedge A + B' = B' + A = N$.
+Sean $B, B' \in \mathbb{K}^{m \times n}$ tales que $A + B = B + A = N \wedge A + B' = B' + A = N$.
 
 Entonces
 $$
@@ -427,7 +642,7 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto la matriz $B$ es única.
+Por lo tanto, la matriz $B$ es única.
 
 
 # Teorema 1.4
@@ -506,7 +721,7 @@ $((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
 
 Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
 
-Por lo tanto, por _Teorema 1.3_, $(-1) \cdot A = -A$.
+Por lo tanto, por el _Teorema 1.3_, $(-1) \cdot A = -A$.
 
 
 # Teorema 1.9
@@ -589,7 +804,7 @@ $$
 \end{aligned}
 $$
 
-Donde la segunda igualdad se da porque $(I_m)_{ik}$ es $0$ cuando $i \neq k$.
+La segunda igualdad se da porque $(I_m)_{ik}$ es $0$ cuando $i \neq k$.
 
 De igual forma,
 
@@ -602,7 +817,7 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto $I_m \cdot A = A \cdot I_n = A$.
+Por lo tanto, $I_m \cdot A = A \cdot I_n = A$.
 
 
 # Teorema 1.13
@@ -647,7 +862,7 @@ Por lo tanto, $(A + B) \cdot C = A \cdot C + B \cdot C$.
 
 # Teorema 1.14
 
-Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$, y $\lambda \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{m \times n},\ B \in \mathbb{K}^{n \times p}$ y $\lambda \in \mathbb{K}$.
 
 $(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B) = A \cdot (\lambda \cdot B)$
 
@@ -754,44 +969,44 @@ Por lo tanto, $(A^T)^T = A$.
 
 Sean $A, B \in \mathbb{K}^{n \times n}$.
 
-$\operatorname{tr}(A + B) = \operatorname{tr}(A) + \operatorname{tr}(B)$
+$\text{tr}(A + B) = \text{tr}(A) + \text{tr}(B)$
 
 **Demostración**:
 
-$\operatorname{tr}(A + B) = \sum\limits_{i = 1}^{n} (A + B)_{ii} = \sum\limits_{i = 1}^{n} ((A)_{ii} + (B)_{ii}) = \sum\limits_{i = 1}^{n} (A)_{ii} + \sum\limits_{i = 1}^{n} (B)_{ii} = \operatorname{tr}(A) + \operatorname{tr}(B)$
+$\text{tr}(A + B) = \sum\limits_{i = 1}^{n} (A + B)_{ii} = \sum\limits_{i = 1}^{n} ((A)_{ii} + (B)_{ii}) = \sum\limits_{i = 1}^{n} (A)_{ii} + \sum\limits_{i = 1}^{n} (B)_{ii} = \text{tr}(A) + \text{tr}(B)$
 
 
 # Teorema 1.20
 
-Sean $A \in \mathbb{K}^{n \times n}$, y $\lambda \in \mathbb{K}$.
+Sean $A \in \mathbb{K}^{n \times n}$ y $\lambda \in \mathbb{K}$.
 
-$\operatorname{tr}(\lambda \cdot A) = \lambda \cdot \operatorname{tr}(A)$
+$\text{tr}(\lambda \cdot A) = \lambda \cdot \text{tr}(A)$
 
 **Demostración**:
 
-$\operatorname{tr}(\lambda \cdot A)
+$\text{tr}(\lambda \cdot A)
 = \sum\limits_{i = 1}^{n} (\lambda \cdot A)_{ii}
 = \sum\limits_{i = 1}^{n} \lambda \cdot (A)_{ii}
 = \lambda \cdot \sum\limits_{i = 1}^{n} (A)_{ii}
-= \lambda \cdot \operatorname{tr}(A)$
+= \lambda \cdot \text{tr}(A)$
 
 
 # Teorema 1.21
 
 Sean $A, B \in \mathbb{K}^{n \times n}$.
 
-$\operatorname{tr}(A \cdot B) = \operatorname{tr}(B \cdot A)$
+$\text{tr}(A \cdot B) = \text{tr}(B \cdot A)$
 
 **Demostración**:
 
 $$
 \begin{aligned}
-\operatorname{tr}(A \cdot B) &= \sum\limits_{i = 1}^{n} (A \cdot B)_{ii} \\
+\text{tr}(A \cdot B) &= \sum\limits_{i = 1}^{n} (A \cdot B)_{ii} \\
                              &= \sum\limits_{i = 1}^{n} (\sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{ki}) \\
                              &= \sum\limits_{k = 1}^{n} (\sum\limits_{i = 1}^{n} (A)_{ik} \cdot (B)_{ki}) \\
                              &= \sum\limits_{k = 1}^{n} (\sum\limits_{i = 1}^{n} (B)_{ki} \cdot (A)_{ik}) \\
                              &= \sum\limits_{k = 1}^{n} (B \cdot A)_{kk} \\
-                             &= \operatorname{tr}(B \cdot A) \\
+                             &= \text{tr}(B \cdot A) \\
 \end{aligned}
 $$
 
@@ -800,37 +1015,139 @@ $$
 
 Sea $A \in \mathbb{K}^{n \times n}$.
 
-$\operatorname{tr}(A^T) = \operatorname{tr}(A)$
+$\text{tr}(A^T) = \text{tr}(A)$
 
 **Demostración**:
 
-$\operatorname{tr}(A^T)
+$\text{tr}(A^T)
 = \sum\limits_{i = 1}^{n} (A^T)_{ii}
 = \sum\limits_{i = 1}^{n} (A)_{ii}
-= \operatorname{tr}(A)$
+= \text{tr}(A)$
 
 
-# Grupo lineal general
+# Teorema 1.23
 
-# Matriz Inversa
+Sean $A, B \in \mathbb{K}^{n \times n}$ matrices triangulares del mismo tipo, $\lambda \in \mathbb{K}$ y $p \in \mathbb{Z}$, $p \geq 0$.
 
-# Calculo Matriz Inversa
+$A + B$, $\lambda \cdot A$, $A \cdot B$, $A^p$ son matrices triangulares del mismo tipo que $A$ y $B$.
 
-# Potencias de matrices
+**Demostración**:
 
-# Polinomio de matrices
+Sean $A, B$ matrices triangulares superiores.
 
-# Teoremas de triangulares
-- A+B, cA, AB triangulares si A, B son triangulares del mismo tipo
-- Polinomios de triangulares, triangulares
-- Inversible si y solo si no hay 0 en la diagonal
+**Suma**: $(A + B)_{ij} = (A)_{ij} + (B)_{ij}$. Si $i > j$, entonces $(A)_{ij} = 0$ y $(B)_{ij} = 0$, luego $(A + B)_{ij} = 0$. Por lo tanto, $A + B$ es triangular superior.
 
-# Matrices en bloques
+**Producto por escalar**: $(\lambda \cdot A)_{ij} = \lambda \cdot (A)_{ij}$. Si $i > j$, entonces $(A)_{ij} = 0$, luego $\lambda \cdot (A)_{ij} = 0$. Por lo tanto, $\lambda \cdot A$ es triangular superior.
 
-# Matrices cuadradas en bloques
+**Multiplicación**:
+Si $i > j$:
 
-# Matrices diagonales en bloques
+$$
+\begin{aligned}
+(A \cdot B)_{ij} &= \sum\limits_{k = 1}^{n} (A)_{ik} \cdot (B)_{kj} \\
+             &= \sum\limits_{k = 1}^{i - 1} (A)_{ik} \cdot (B)_{kj} + \sum\limits_{k = i}^{n} (A)_{ik} \cdot (B)_{kj} \\
+             &= 0 + 0 \\
+             &= 0 \\
+\end{aligned}
+$$
 
-# Contraejemplos matrices
-Conmutatividad en multiplicacion
-Divisores de 0
+La tercera línea se da porque en la primera sumatoria se cumple que $i > i - 1 \geq k$, por lo tanto $(A)_{ik} = 0$, y en la segunda sumatoria $k \geq i > j$, por lo tanto $(B)_{kj} = 0$.
+
+Por lo tanto, $A \cdot B$ es triangular superior.
+
+**Potencia**:
+
+Se demuestra por inducción sobre el exponente. $A^0 = I_n$ por definición, que es una matriz diagonal y por lo tanto triangular superior. Si se cumple que $A^k$ es triangular superior (con $k \in \mathbb{Z}$, $k \geq 0$), $A^{k+1} = A^k \cdot A$ es un producto de dos matrices triangulares superiores y por lo demostrado anteriormente $A^{k+1}$ es triangular superior. Por lo tanto, $A^{p}$ es triangular superior para todo $p \geq 0$.
+
+Para el caso en el que las matrices $A, B$ son triangulares inferiores, las demostraciones son análogas.
+
+
+# Teorema 1.24
+
+Sean $A \in \mathbb{K}^{n \times n}$ una matriz triangular y $P(x)$ un polinomio con coeficientes en $\mathbb{K}$.
+
+$P(A)$ es triangular del mismo tipo que $A$.
+
+**Demostración**:
+
+$P(A) = a_0 \cdot I_n + a_1 \cdot A + a_2 \cdot A^2 +\ \dots\ + a_k \cdot A^k$, y por el _Teorema 1.23_, el primer término es triangular superior e inferior dado que es una matriz diagonal. También el resto de los términos en la suma son triangulares del mismo tipo que $A$. Por el mismo teorema, la suma de todos los términos también es triangular del mismo tipo. Por lo tanto, $P(A)$ es triangular del mismo tipo que $A$.
+
+
+# Matriz por bloques
+
+Sea $A \in \mathbb{K}^{m \times n}$.
+
+Sean $p, q \in \mathbb{N}$ y $m_1,\ \dots\ , m_p \in \mathbb{N}$, $n_1,\ \dots\ , n_q \in \mathbb{N}$ tales que $\sum\limits_{r = 1}^{p} m_r = m$ y $\sum\limits_{r = 1}^{q} n_r = n$.
+
+Se definen $M_k = \sum\limits_{r = 1}^{k} m_r$ y $N_l = \sum\limits_{r = 1}^{l} n_r$ (nótese que $M_0 = N_0 = 0$).
+
+Se define el bloque $A_{kl} \in \mathbb{K}^{m_k \times n_l}$, con $1 \leq k \leq p$ y $1 \leq l \leq q$, como la submatriz de $A$ tal que $(A_{kl})_{ij} = (A)_{(M_{k-1} + i) (N_{l-1}+j)}$, para $1 \leq i \leq m_k$ y $1 \leq j \leq n_l$.
+
+Una matriz por bloques de $A$ es una representación de $A$ de la forma:
+
+$$
+A = \begin{pmatrix}
+A_{11} & A_{12} & \dots & A_{1q} \\
+A_{21} & A_{22} & \dots & A_{2q} \\
+\vdots & \vdots & \ddots & \vdots \\
+A_{p1} & A_{p2} & \dots & A_{pq}
+\end{pmatrix}
+$$
+
+En esta representación los bloques que comparten fila tienen la misma cantidad de filas y los que comparten columna tienen la misma cantidad de columnas.
+
+Ejemplo:
+
+Sea $A \in \mathbb{K}^{3 \times 4}$ tal que
+
+$$
+A = \left(
+\begin{array}{cc|c|c}
+1 &  2 &  3 & 4 \\
+5 &  6 &  7 & 8 \\ \hline
+9 & 10 & 11 & 12
+\end{array}
+\right)
+$$
+
+Con $p = 2, q = 3, m_1 = 2, m_2 = 1$, y $n_1 = 2, n_2 = 1, n_3 = 1$. Los bloques son:
+
+$$
+A_{11} = \begin{pmatrix}
+1 &  2 \\
+5 &  6 \\
+\end{pmatrix}
+\qquad
+A_{12} = \begin{pmatrix}
+3 \\
+7 \\
+\end{pmatrix}
+\qquad
+A_{13} = \begin{pmatrix}
+4 \\
+8 \\
+\end{pmatrix}
+$$
+
+$$
+A_{21} = \begin{pmatrix}
+9 &  10 \\
+\end{pmatrix}
+\qquad
+A_{22} = \begin{pmatrix}
+11 \\
+\end{pmatrix}
+\qquad
+A_{23} = \begin{pmatrix}
+12 \\
+\end{pmatrix}
+$$
+
+
+# Matrices TODO
+
+- Matrices cuadradas por bloques
+- Matrices diagonales por bloques
+- Contraejemplos matrices
+  - Conmutatividad en la multiplicación
+  - Divisores de 0

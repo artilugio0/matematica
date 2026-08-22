@@ -1136,6 +1136,93 @@ A_{23} = \begin{pmatrix}
 $$
 
 
+# Matriz cuadrada por bloques
+
+Una matriz por bloques $A \in \mathbb{K}^{m \times n}$ de $p \times q$ bloques es cuadrada por bloques si, siendo cada bloque $A_{kl} \in \mathbb{K}^{m_k \times n_l}$, se cumple que:
+
+- $A$ es una matriz cuadrada: $m = n$
+- $A$ tiene la misma cantidad de filas de bloques que de columnas de bloques: $p = q$
+- Los bloques en la diagonal principal son cuadrados: $\forall\ k \in \mathbb{N}_p:\ m_k = n_k$
+
+Ejemplo:
+
+$$
+A = \left(
+\begin{array}{cc|cc|c}
+1   & 2   & 3   & 4   & 5  \\
+6   & 7   & 8   & 9   & 10 \\ \hline
+11  & 12  & 13  & 14  & 15 \\
+16  & 17  & 18  & 19  & 20 \\ \hline
+21  & 22  & 23  & 24  & 25 \\
+\end{array}
+\right)
+$$
+
+
+# Matriz diagonal por bloques
+
+Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es diagonal por bloques si los bloques fuera de la diagonal son matrices nulas:
+
+$$
+\forall\ k, l \in \mathbb{N}_p \mid k \neq l: A_{kl} = N
+$$
+
+Ejemplo:
+
+$$
+D = \left(
+\begin{array}{cc|cc|c}
+1  & 2  & 0   & 0   & 0  \\
+6  & 7  & 0   & 0   & 0  \\ \hline
+0  & 0  & 13  & 14  & 0  \\
+0  & 0  & 18  & 19  & 0  \\ \hline
+0  & 0  & 0   & 0   & 25 \\
+\end{array}
+\right)
+$$
+
+
+# Matriz triangular por bloques
+
+Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular superior por bloques si los bloques debajo de los bloques de la diagonal son matrices nulas:
+
+$$
+\forall\ k, l \in \mathbb{N}_p \mid k > l: A_{kl} = N
+$$
+
+Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular inferior por bloques si los bloques sobre los bloques de la diagonal son matrices nulas:
+
+$$
+\forall\ k, l \in \mathbb{N}_p \mid k < l: A_{kl} = N
+$$
+
+Ejemplo:
+
+$$
+U = \left(
+\begin{array}{cc|cc|c}
+1  & 2  & 3   & 4   & 5  \\
+6  & 7  & 8   & 9   & 10 \\ \hline
+0  & 0  & 13  & 14  & 15 \\
+0  & 0  & 18  & 19  & 20 \\ \hline
+0  & 0  & 0   & 0   & 25 \\
+\end{array}
+\right)
+$$
+
+$$
+L = \left(
+\begin{array}{cc|cc|c}
+1  & 2  & 0  & 0  & 0  \\
+6  & 7  & 0  & 0  & 0  \\ \hline
+11 & 12 & 13 & 14 & 0  \\
+16 & 17 & 18 & 19 & 0  \\ \hline
+21 & 22 & 23 & 24 & 25 \\
+\end{array}
+\right)
+$$
+
+
 # Teorema 1.25
 
 Sean $A \in \mathbb{K}^{m \times n}$ una matriz de $p \times q$ bloques, donde cada bloque es $A_{kl} \in \mathbb{K}^{m_k \times n_l}$, y $B \in \mathbb{K}^{n \times r}$ una matriz de $q \times s$ bloques donde cada bloque es $B_{lt} \in \mathbb{K}^{n_l \times r_t}$.
@@ -1175,14 +1262,85 @@ Cada paso se justifica de la siguiente forma:
 Por lo tanto, por definición de matriz por bloques, $C$ es una matriz de $p \times s$ bloques donde cada bloque $C_{kt} = \sum\limits_{l = 1}^{q} A_{kl} \cdot B_{lt} \in \mathbb{K}^{m_k \times r_t}$.
 
 
+# Contraejemplos
+
+- $A \cdot B \neq B \cdot A$:
+  $$
+  \begin{pmatrix}
+  1 & 2 \\
+  3 & 4 \\
+  \end{pmatrix} \cdot 
+  \begin{pmatrix}
+  4 & 3 \\
+  2 & 1 \\
+  \end{pmatrix} \neq
+  \begin{pmatrix}
+  4 & 3 \\
+  2 & 1 \\
+  \end{pmatrix} \cdot 
+  \begin{pmatrix}
+  1 & 2 \\
+  3 & 4 \\
+  \end{pmatrix}
+  $$
+
+- $A \cdot B = N \wedge A \neq N \wedge B \neq N$:
+  $$
+  \begin{pmatrix}
+  1 & 2 \\
+  3 & 6 \\
+  \end{pmatrix} \cdot 
+  \begin{pmatrix}
+  -2 & -4 \\
+  1  & 2 \\
+  \end{pmatrix} =
+  \begin{pmatrix}
+  0 & 0 \\
+  0 & 0 \\
+  \end{pmatrix}
+  $$
+
+- $(A + B)^2 \neq A^2 + 2 \cdot A \cdot B + B^2$:
+  $$
+  \left(
+  \begin{pmatrix}
+  1 & 1 \\
+  0 & 1 \\
+  \end{pmatrix} +
+  \begin{pmatrix}
+  1 & 0 \\
+  1 & 1 \\
+  \end{pmatrix}
+  \right)^2 =
+  \begin{pmatrix}
+  5 & 4 \\
+  4 & 5 \\
+  \end{pmatrix} \neq
+  \begin{pmatrix}
+  6 & 4 \\
+  4 & 4 \\
+  \end{pmatrix} =
+  \begin{pmatrix}
+  1 & 1 \\
+  0 & 1 \\
+  \end{pmatrix}^2 + 2 \cdot
+  \begin{pmatrix}
+  1 & 1 \\
+  0 & 1 \\
+  \end{pmatrix} \cdot
+  \begin{pmatrix}
+  1 & 0 \\
+  1 & 1 \\
+  \end{pmatrix} +
+  \begin{pmatrix}
+  1 & 0 \\
+  1 & 1 \\
+  \end{pmatrix}^2
+  $$
+
 
 # Matrices TODO
 
-- Matrices cuadradas por bloques
-- Matrices diagonales por bloques
-- Contraejemplos matrices
-  - Conmutatividad en la multiplicación
-  - Divisores de 0
 - Interpretaciones del producto de matrices
   - Por filas
   - Por columnas

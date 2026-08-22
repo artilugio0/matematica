@@ -6,3 +6,6 @@
 - Contraejemplos matrices
   - Conmutatividad en la multiplicación
   - Divisores de 0
+- Interpretaciones del producto de matrices
+  - Por filas
+  - Por columnas

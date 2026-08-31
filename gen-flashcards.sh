@@ -3,6 +3,7 @@
 decks=(
     "teoria_numeros"
     "algebra_lineal"
+    "apuntes"
 )
 
 

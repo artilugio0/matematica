@@ -219,13 +219,91 @@ $\sum\limits_{n = 1}^{\infty} \lvert a_n \rvert$ converge $\Rightarrow \sum\limi
 
 # Series de funciones
 
+## Definición
+
+Sea la famila de funciones $f_n: A \subseteq \mathbb{R} \to \mathbb{R},\ \forall\ n \in \mathbb{N}$.
+
+Se define la serie de funciones como $\sum\limits_{n = 1}^{\infty} f_n(x)$.
+
+Es una serie donde sus términos son funciones.
+
+
+## Dominio de convergencia
+
+Sea $\sum\limits_{n = 1}^{\infty} f_n(x)$ una serie de funciones, donde $f_n: A \subseteq \mathbb{R} \to \mathbb{R}$.
+
+Se define el dominio de convergencia de la serie como:
+
+$DCV = \{x_0 \in A \mid \sum\limits_{n = 1}^{\infty} f_n(x_0) \text{ es convergente} \}$
+
+Nota: en la definición, $\sum\limits_{n = 1}^{\infty} f_n(x_0)$ es una serie numérica.
+
+
+## Suma de la serie de funciones
+
+Sea $\sum\limits_{n = 1}^{\infty} f_n(x)$ una serie de funciones con dominio de convergencia $DCV$.
+
+La suma de la serie de funciones es la funcion $S: DCV \to \mathbb{R} \mid S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$
+
+
+## Resto n-ésimo
+
+Sea $\sum\limits_{n = 1}^{\infty} f_n(x)$ una serie de funciones, tal que su suma es $S(x)$ sobre el dominio de convergencia $DCV$.
+
+Sea $S_n(x)$ la $n$-ésima suma parcial de la serie de funciones, se define al resto $n$-ésimo como:
+
+$R_n(x) = S(x) - S_n(x)$
+
+Y se cumple que $\lim\limits_{n \to \infty} R_n(x) = 0$.
+
+
+## Definición alternativa de la suma de funciones
+
+Sea $\sum\limits_{n = 1}^{\infty} f_n(x)$ una serie de funciones.
+
+Sea $S_n(x)$ la $n$-ésima suma parcial de la serie de funciones, se define la suma de la serie de funciones como:
+
+$S(x) = \lim\limits_{n \to \infty} S_n(x)$
+
+
 ## Serie de funciones mayorante
+
+Sea $\sum\limits_{n = 1}^{\infty} f_n(x)$ una serie de funciones con dominio de convergencia $DCV$.
+
+Se dice que la serie de funciones es mayorante en un intervalo $A \subseteq DCV$ si existe una serie numérica $\sum\limits_{n = 1}^{\infty} a_n$ de términos positivos y convergente tal que $\forall\ x \in A: \lvert f_n(x) \rvert \leq a_n$.
+
+Si una serie de funciones es mayorante, entonces:
+
+- Si las funciones $f_n$ son contínuas $\Rightarrow S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$ es contínua.
+- Si las funciones $f_n$ son derivables $\Rightarrow S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$ es derivable y su derivada es $\sum\limits_{n = 1}^{\infty} f_n'(x)$.
+- Si las funciones $f_n$ son integrables $\Rightarrow S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$ es integrable y $\int\limits_{a}^{b} S(x)dx = \sum\limits_{n = 1}^{\infty} \left[\int\limits_{a}^{b} f_n(x)dx \right]$.
+
 
 ## Serie de potencias
 
-### Definicion
+### Definición
+
+$\sum\limits_{n = 0}^{\infty} a_n \cdot x^n = a_0 + a_1 \cdot x + a_2 \cdot x^2 + \dots + a_n \cdot x^n + \dots$
+
 
 ### Teorema de Abel
+
+Sea la serie de potencias $a_0 + a_1 \cdot x + a_2 \cdot x^2 + \dots + a_n \cdot x^n + \dots$
+ 
+- Si la serie de potencias es convergente en $x_0 \neq 0 \Rightarrow \forall\ x / \lvert x \rvert < \lvert x_0 \rvert$: la serie es absolutamente convergente.
+- Si la serie de potencias es divergente en $x_0 \Rightarrow \forall\ x / \lvert x_0 \rvert < \lvert x \rvert$: la serie es divergente.
+
+
+### Radio e intervalo de convergencia
+
+Sea la serie de potencias $a_0 + a_1 \cdot x + a_2 \cdot x^2 + \dots + a_n \cdot x^n + \dots$.
+
+El radio de convergencia es $R \in \mathbb{R}, r \geq 0 \mid \forall\ x \in (-R, R)$ la serie es absolutamente convergente y $(-\infty, -R) \cup (R, \infty)$ es divergente.
+
+A $(-R, R)$ se le llama intervalo de convergencia ($ICV$).
+
+$ICV \subseteq DCV$. Pueden ser distintos, hay que ver que ocurre en los extremos del $ICV$.
+
 
 ### Propiedades
 

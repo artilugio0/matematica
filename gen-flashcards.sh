@@ -3,14 +3,15 @@
 decks=(
     "teoria_numeros"
     "algebra_lineal"
-    "apuntes"
+    "apuntes/calculo"
+    "apuntes/calculo_numerico"
 )
 
 
 for DECK in ${decks[@]}
 do
     rm -fr "./flashcards/${DECK}"
-    mkdir "./flashcards/${DECK}"
+    mkdir -p "./flashcards/${DECK}"
 
     for F in $(ls "${DECK}"/*.md)
     do

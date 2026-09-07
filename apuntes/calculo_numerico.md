@@ -1,11 +1,12 @@
 # Cálculo numérico
 
 ## TODO
-Límite de una función en un punto
-Límite de una sucesión
-Función continua
-Función diferenciable
-Integral de Riemann
+
+- Límite de una función en un punto
+- Límite de una sucesión
+- Función continua
+- Función diferenciable
+- Integral de Riemann
 
 ## Teorema 1.1
 
@@ -96,3 +97,82 @@ Siendo
 $P_n(x) = \sum\limits_{k = 0}^{n} \frac{f^{(k)}(x_0)}{k!} \cdot (x - x_0)^k$
 
 $R_n(x) = \frac{f^{(n + 1)}(\xi_x)}{(n + 1)!} \cdot (x - x_0)^{n + 1}$
+
+
+## Punto flotante en base 2
+
+Se representa un número real con 64 bits divididos de la siguiente forma:
+
+- $s$: Signo (1 bit)
+- $c$: Característica (11 bits)
+- $f$: Mantisa (52 bits)
+
+$$
+(-1)^{s} \cdot 2^{c - 1023} \cdot (1 +f)
+$$
+
+TODO: agregar metodos de traduccion
+
+
+## Valor mínimo positivo de punto flotante en base 2
+
+- $s = 0$
+- $c = 1$
+- $f = 0$
+
+$(-1)^0 \cdot 2^{1 - 1023} \cdot (1 + 0)$
+
+
+## Punto flotante decimal de k dígitos
+
+### Terminación por truncado
+
+$y = \pm 0.d_1 d_2 \dots d_k d_{k+1} \dots \times 10^{n}$
+
+$fl(y) = \pm 0.d_1 d_2 \dots d_k \times 10^{n}$
+
+
+### Terminación por redondeo
+
+$y = \pm 0.d_1 d_2 \dots d_k d_{k+1} \dots \times 10^{n}$
+
+Se suma $5 \times 10^{n - (k + 1)}$ a $y$, luego se trunca a $k$ digitos del resultado.
+
+Esto es equivalente a:
+
+$$
+\begin{cases}
+d_{k+1} \geq 5 &\Rightarrow \text{se suma 1 a } d_k \text{ y luego se trunca a } k \text{ dígitos}\\
+d_{k+1} < 5    &\Rightarrow \text{se trunca a } k \text{ dígitos} \\
+\end{cases}
+$$
+
+
+## Error de aproximación
+
+Sea $p^{*}$ una aproximación de $p$. El error de aproximación es:
+
+$p - p^{*}$
+
+
+## Error de aproximación absoluto
+
+Sea $p^{*}$ una aproximación de $p$. El error de aproximación absoluto es:
+
+$\lvert p - p^{*} \rvert$
+
+
+## Error de aproximación relativo
+
+Sea $p^{*}$ una aproximación de $p$. El error de aproximación relativo es:
+
+$\frac{\lvert p - p^{*} \rvert}{\lvert p \rvert}$, si $p \neq 0$.
+
+
+## Forma anidada de polinomios
+
+Es conveniente evaluar polinomios en su forma anidada porque reduce la cantidad de operaciones aritméticas.
+
+Ejemplo:
+
+La forma anidada de $x^3 - 6.1 \cdot x^2 + 3.2 \cdot x + 1.5$ es $((x - 6.1) \cdot x + 3.2) \cdot x + 1.5$.

@@ -136,7 +136,7 @@ $fl(y) = \pm 0.d_1 d_2 \dots d_k \times 10^{n}$
 
 $y = \pm 0.d_1 d_2 \dots d_k d_{k+1} \dots \times 10^{n}$
 
-Se suma $5 \times 10^{n - (k + 1)}$ a $y$, luego se trunca a $k$ digitos del resultado.
+Se suma $5 \times 10^{n - (k + 1)}$ a $y$, luego se trunca el resultado a $k$ dígitos.
 
 Esto es equivalente a:
 
@@ -208,3 +208,39 @@ $$
 Sean $x_0, x_1, \dots\ , x_n \in [a, b] \subseteq \mathbb{R}$, $f \in C^{n+1}[a, b]$ y $P(x)$ su polinomio interpolador de Lagrange para $f$ en esos puntos.
 
 $\forall\ x \in [a, b]: \exists\ \xi(x) \in (a, b) \mid f(x) = P(x) + \frac{f^{(n+1)}(\xi(x))}{(n + 1)!} \cdot (x - x_0) \cdot (x - x_1) \cdot\ \dots\ \cdot (x - x_n)$
+
+
+## Interpolador spline cúbico
+
+Sea $f: [a, b] \subseteq \mathbb{R} \to \mathbb{R}$ y los nodos $a = x_0 < x_1 <\ \dots\ < x_n = b$, un interpolador spline cúbico $S$ de $f$ es una función que cumple:
+
+1. $S(x)$ es un polinomio cúbico, denotado por $S_j(x)$, en cada intervalo $[x_j, x_{j+1}]$ para $j = 0, 1,\ \dots\ , n-1$
+2. $S_j(x_j) = f(x_j) \wedge S_{j}(x_{j+1}) = f(x_{j+1})$ para $j = 0, 1,\ \dots\ , n-1$
+3. $S_{j+1}(x_{j+1}) = S_j(x_{j+1})$ para $j = 0, 1,\ \dots\ , n-2$
+4. $S_{j+1}'(x_{j+1}) = S_j'(x_{j+1})$ para $j = 0, 1,\ \dots\ , n-2$
+5. $S_{j+1}''(x_{j+1}) = S_j''(x_{j+1})$ para $j = 0, 1,\ \dots\ , n-2$
+6. Satisface alguna de las siguientes condiciones de frontera:
+    1. $S''(x_0) = S''(x_n) = 0$ (natural (or free) boundary)
+    2. $S'(x_0) = f'(x_0) \wedge S'(x_n) = f'(x_n)$ (clamped boundary)
+
+
+## Teorema 3.1
+
+Sea $f: [a, b] \subseteq \mathbb{R} \to \mathbb{R}$ y los nodos $a = x_0 < x_1 <\ \dots\ < x_n = b$.
+
+$f$ tiene un único interpolador spline cúbico $S$ sobre esos nodos que cumple las condiciones de natural boundary, es decir $S''(x_0) = S''(x_n) = 0$.
+
+
+## Teorema 3.2
+
+Sea $f: [a, b] \subseteq \mathbb{R} \to \mathbb{R}$ diferenciable en $a$ y $b$, y los nodos $a = x_0 < x_1 <\ \dots\ < x_n = b$.
+
+$f$ tiene un único interpolador spline cúbico $S$ sobre esos nodos que cumple las condiciones de clamped boundary, es decir $S'(x_0) = f'(x_0) \wedge S'(x_n) = f'(x_n)$.
+
+
+## Teorema 3.3
+
+Sean $f \in C^4[a, b]$ con $\max\limits_{a \leq x \leq b}\ \lvert f^{(4)}(x) \rvert = M$ y $S$ su interpolador spline cúbico único con clamped boundary en los nodos $a = x_0 < x_1 <\ \dots\ < x_n = b$.
+
+$\forall\ x \in [a, b]: \lvert f(x) - S(x) \rvert \leq \frac{5 \cdot M}{384} \cdot \max\limits_{0 \leq j \leq n-1}\ (x_{j+1} - x_j)^4$
+

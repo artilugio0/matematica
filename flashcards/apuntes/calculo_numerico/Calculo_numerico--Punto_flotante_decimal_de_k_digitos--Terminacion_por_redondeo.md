@@ -3,7 +3,7 @@
 
 $y = \pm 0.d_1 d_2 \dots d_k d_{k+1} \dots \times 10^{n}$
 
-Se suma $5 \times 10^{n - (k + 1)}$ a $y$, luego se trunca a $k$ digitos del resultado.
+Se suma $5 \times 10^{n - (k + 1)}$ a $y$, luego se trunca el resultado a $k$ dígitos.
 
 Esto es equivalente a:
 

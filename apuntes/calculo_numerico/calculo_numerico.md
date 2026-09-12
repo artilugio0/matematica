@@ -176,3 +176,35 @@ Es conveniente evaluar polinomios en su forma anidada porque reduce la cantidad 
 Ejemplo:
 
 La forma anidada de $x^3 - 6.1 \cdot x^2 + 3.2 \cdot x + 1.5$ es $((x - 6.1) \cdot x + 3.2) \cdot x + 1.5$.
+
+
+## Teorema 2.1
+
+Teorema de aproximación de Weierstrass
+
+Sea $f \in C[a,b]$.
+
+$\forall\ \epsilon > 0: \exists\ P(x) \text{ polinomio} \mid \lvert f(x) - P(x) \rvert < \epsilon\ \forall\ x \in [a, b]$
+
+
+## Teorema 2.2
+
+Polinomio interpolador de Lagrange
+
+Sean $x_0, x_1, \dots\ , x_n \in A \subseteq \mathbb{R}$ todos distintos y $f: A \to \mathbb{R}$.
+
+$\exists!\ P(x) \in \mathbb{R}_n[x] \mid f(x_k) = P(x_k)$ para cada $k = 0, 1, \dots\ , n$.
+
+El polinomio está definido por $P(x) = \sum\limits_{k = 0}^n f(x_k) \cdot L_{k,n}(x)$
+
+Siendo
+$$
+L_{k,n}(x) = \prod\limits_{\substack{i = 0 \\ i \neq k}}^n \frac{x - x_i}{x_k - x_i} = \frac{(x - x_0) \cdot (x - x_1) \cdot\ \dots\ \cdot (x - x_{k-1}) \cdot (x - x_{k+1}) \cdot\ \dots\ \cdot (x - x_n)}{(x_k - x_0) \cdot (x_k - x_1) \cdot\ \dots\ \cdot (x_k - x_{k-1}) \cdot (x_k - x_{k+1}) \cdot\ \dots\ \cdot (x_k - x_n)}
+$$
+
+
+## Teorema 2.3
+
+Sean $x_0, x_1, \dots\ , x_n \in [a, b] \subseteq \mathbb{R}$, $f \in C^{n+1}[a, b]$ y $P(x)$ su polinomio interpolador de Lagrange para $f$ en esos puntos.
+
+$\forall\ x \in [a, b]: \exists\ \xi(x) \in (a, b) \mid f(x) = P(x) + \frac{f^{(n+1)}(\xi(x))}{(n + 1)!} \cdot (x - x_0) \cdot (x - x_1) \cdot\ \dots\ \cdot (x - x_n)$

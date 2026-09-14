@@ -244,3 +244,45 @@ Sean $f \in C^4[a, b]$ con $\max\limits_{a \leq x \leq b}\ \lvert f^{(4)}(x) \rv
 
 $\forall\ x \in [a, b]: \lvert f(x) - S(x) \rvert \leq \frac{5 \cdot M}{384} \cdot \max\limits_{0 \leq j \leq n-1}\ (x_{j+1} - x_j)^4$
 
+
+## Polinomios de Hermite cúbicos para curvas paramétricas
+
+Dados los nodos $(x_0, y_0), (x_1, y_1)$. Las ecuaciones paramétricas con polinomios de Hermite que interpolan esos nodos en $t \in [0, 1]$ cumpliendo $x'(0) = \alpha_0,\ x'(1) = \alpha_1,\ y'(0) = \beta_0,\ y'(1) = \beta_1$ son:
+
+$x(t) = [2 \cdot (x_0 - x_1) + (\alpha_0 + \alpha_1)] \cdot t^3 + [-3 \cdot (x_0 - x_1) - (2 \cdot \alpha_0 + \alpha_1)] \cdot t^2 + \alpha_0 \cdot t + x_0$
+
+$y(t) = [2 \cdot (y_0 - y_1) + (\beta_0 + \beta_1)] \cdot t^3 + [-3 \cdot (y_0 - y_1) - (2 \cdot \beta_0 + \beta_1)] \cdot t^2 + \beta_0 \cdot t + y_0$
+
+
+## Diferenciación numérica
+
+### Primera derivada: Fórmulas de 3 puntos
+
+#### Endpoint
+
+$f'(x_0) = \frac{1}{2 \cdot h} \cdot [-3 \cdot f(x_0) + 4 \cdot f(x_0 + h) - f(x_0 + 2 \cdot h)] + \frac{h^2}{3} \cdot f^{(3)}(\xi_0)$
+
+Con $\xi_0$ entre $x_0$ y $x_0 + 2 \cdot h$.
+
+
+#### Midpoint
+
+$f'(x_0) = \frac{1}{2 \cdot h} \cdot [f(x_0 + h) - f(x_0 - h)] - \frac{h^2}{6} \cdot f^{(3)}(\xi_1)$
+
+Con $\xi_1$ entre $x_0 - h$ y $x_0 + h$.
+
+
+#### Cota de error
+
+$\frac{\epsilon}{h} + \frac{h^2}{6} \cdot M$
+
+Siendo $\epsilon > 0$ una cota superior a todos los errores de redondeo, $\frac{\epsilon}{h}$ el error de redondeo y $\frac{h^2}{6} \cdot M$ el error de truncado, donde $M > 0$ es la cota superior de $\lvert f^{(3)}(\xi) \rvert$ con $x_0 - h < \xi < x_0 + h$.
+
+
+### Segunda derivada: Midpoint
+
+$f''(x_0) = \frac{1}{h^2} \cdot [f(x_0 - h) - 2 \cdot f(x_0) + f(x_0 + h)] - \frac{h^2}{24} \cdot [f^{(4)}(\xi_1) + f^{(4)}(\xi_{-1})]$
+
+Con $x_0 - h < \xi_{-1} < x_0 < \xi_1 < x_0 + h$.
+
+Si $f^{(4)}$ es continua en $[x_0 - h, x_0 + h]$, entonces el término de error puede simplificarse a $-\frac{h^2}{12} \cdot f^{(4)}(\xi)$, con $x_0 - h < \xi < x_0 + h$.

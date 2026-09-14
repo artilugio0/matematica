@@ -410,3 +410,163 @@ $a_n = \frac{1}{l} \cdot \int\limits_{-l}^{l} f(x) \cdot cos(\frac{n \cdot \pi}{
 
 $b_n = \frac{1}{l} \cdot \int\limits_{-l}^{l} f(x) \cdot sen(\frac{n \cdot \pi}{l} \cdot x)\ dx$
 
+
+# Cuádricas
+
+## Elipsoide
+
+Tres términos cuadráticos positivos igualados a 1.
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
+$$
+
+
+## Hiperboloide de una hoja
+
+Dos términos cuadráticos positivos y uno negativo igualados a 1.
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1
+$$
+
+Las elipses crecen en la dirección del eje correspondiente a la variable del término negativo.
+
+
+## Hiperboloide de dos hojas
+
+Un término cuadrático positivo y dos negativos igualados a 1.
+
+$$
+\frac{x^2}{a^2} - \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1
+$$
+
+Las elipses crecen en la dirección del eje correspondiente a la variable del término positivo.
+
+
+## Paraboloide elíptico
+
+Un término lineal igualado a dos cuadráticos positivos.
+
+$$
+z = \frac{x^2}{a^2} + \frac{y^2}{b^2}
+$$
+
+Las elipses crecen en la dirección del eje correspondiente a la variable del término lineal.
+
+
+## Paraboloide hiperbólico
+
+Un término lineal igualado a dos cuadráticos, uno positivo y otro negativo.
+
+$$
+z = \frac{x^2}{a^2} - \frac{y^2}{b^2}
+$$
+
+Las parábolas negativas crecen en la dirección del eje correspondiente a la variable cuadrática positiva.
+
+Las parábolas positivas crecen en la dirección del eje correspondiente a la variable cuadrática negativa.
+
+Las hipérbolas crecen en la dirección del eje correspondiente a la variable lineal.
+
+
+## Superficie cónica
+
+Dos términos cuadráticos positivos y uno negativo igualados a 0.
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 0
+$$
+
+Las elipses crecen en la dirección del eje correspondiente a la variable del término negativo.
+
+
+## Entorno
+
+Un entorno del punto $P$ y radio $r > 0$ en $\mathbb{R}^n$:
+
+$$
+E(P, r) = \{ X \in \mathbb{R}^n \mid \lVert \overline{PX} \rVert < r \}
+$$
+
+
+## Entorno reducido
+
+Un entorno reducido del punto $P$ y radio $r > 0$ en $\mathbb{R}^n$:
+
+$$
+E'(P, r) = \{ X \in \mathbb{R}^n \mid 0 < \lVert \overline{PX} \rVert < r \}
+$$
+
+
+## Punto interior
+
+Sea $A \subseteq \mathbb{R}^n$. Un punto $P \in \mathbb{R}^n$ es un punto interior de $A$ si y solo si:
+
+$$
+\exists\ E(P, r) \mid E(P, r) \subseteq A
+$$
+
+
+## Interior de un conjunto
+
+Sea $A \subseteq \mathbb{R}^n$.
+
+$$
+A_i = \{ P \in \mathbb{R}^n \mid P \text{ es punto interior de A} \}
+$$
+
+
+## Conjunto abierto
+
+Sea $A \subseteq \mathbb{R}^n$. $A$ es abierto si y solo si es igual a su interior.
+
+
+## Punto de acumulación
+
+Sea $A \subseteq \mathbb{R}^n$. $P$ es un punto de acumulación de $A$ si y solo si:
+
+$$
+\forall\ E'(P, r): E'(P, r) \cap A \neq \emptyset
+$$
+
+
+## Conjunto derivado
+
+Sea $A \subseteq \mathbb{R}^n$.
+
+$$
+A' = \{ X \mid X \text{ es punto de acumulación de A} \}
+$$
+
+
+## Conjunto cerrado
+
+Sea $A \subseteq \mathbb{R}^n$. $A$ es cerrado si y solo si $A' \subseteq A$.
+
+
+## Punto exterior
+
+Sea $A \subseteq \mathbb{R}^n$. $P$ es un punto exterior de $A$ si y solo si:
+
+$$
+\exists\ E(P, r) \mid E(P, r) \cap A = \emptyset
+$$
+
+
+## Punto aislado
+
+Sea $A \subseteq \mathbb{R}^n$. $P$ es un punto aislado de $A$ si y solo si:
+
+$$
+P \in A \wedge \exists\ E'(P, r) \mid E'(P, r) \cap A = \emptyset
+$$
+
+
+## Punto de frontera
+
+Sea $A \subseteq \mathbb{R}^n$. $P$ es un punto de frontera de $A$ si y solo si:
+
+$$
+\forall\ E(P, r): E(P, r) \not\subseteq A \wedge E(P, r) \cap A \neq \emptyset
+$$

@@ -1,7 +1,7 @@
 # Matriz Nilpotente
 
 
-$A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \mathbb{N} \mid A^p = N$.
+$A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \mathbb{N} \mid A^p = O$.
 
 Ejemplo:
 
@@ -15,3 +15,8 @@ $$
 0 & 0 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -16,3 +16,8 @@ Si $d > \sqrt{a}$, dado que $d \mid a$, existe un $k \in \mathbb{N}$ tal que $a 
 ($\Leftarrow$)
 
 Si $a$ es divisible por un primo menor o igual a $\sqrt{a}$, entonces por definición $a$ no es primo. Por lo tanto $a$ es compuesto.
+
+## Tags
+
+- teoria_numeros
+- primos

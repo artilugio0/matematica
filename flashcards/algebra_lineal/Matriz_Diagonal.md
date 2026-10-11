@@ -13,3 +13,8 @@ A =
 0 & 0 & 3 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

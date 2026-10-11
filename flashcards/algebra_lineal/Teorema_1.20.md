@@ -12,3 +12,8 @@ $\text{tr}(\lambda \cdot A)
 = \sum\limits_{i = 1}^{n} \lambda \cdot (A)_{ii}
 = \lambda \cdot \sum\limits_{i = 1}^{n} (A)_{ii}
 = \lambda \cdot \text{tr}(A)$
+
+## Tags
+
+- algebra_lineal
+- matrices

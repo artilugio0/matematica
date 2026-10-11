@@ -11,3 +11,8 @@ Luego para cada $i \in \mathbb{N}$, usando el _Teorema 1.1_ con los enteros $r_{
 El último resto no nulo será el máximo común divisor de $a$ y $b$: $mcd(a, b) = r_n$.
 
 Nota: El algoritmo siempre finaliza porque el _Teorema 1.1_ garantiza que $0 \leq r_i < \lvert r_{i-1} \rvert$. Por lo que se tiene una sucesión estrictamente decreciente de números enteros no negativos que tendrá como máximo $\lvert b \rvert$ elementos.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

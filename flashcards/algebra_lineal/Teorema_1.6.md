@@ -10,3 +10,8 @@ $1 \cdot A = A$
 $(1 \cdot A)_{ij} = (1 \cdot (A)_{ij}) = (A)_{ij}$
 
 Por lo tanto, $1 \cdot A = A$.
+
+## Tags
+
+- algebra_lineal
+- matrices

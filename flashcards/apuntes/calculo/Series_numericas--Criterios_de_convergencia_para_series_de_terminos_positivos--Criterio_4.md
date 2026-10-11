@@ -4,3 +4,7 @@
 Sea $\{a_n\}$ y $\{b_n\}$ sucesiones tales que $\forall\ n \in \mathbb{N}: a_n \geq 0$  y $b_n > 0$.
 
 Si $\lim\limits_{n \to \infty} \frac{a_n}{b_n} = 0 \wedge \sum\limits_{n = 1}^{\infty} b_n$ converge $\Rightarrow \sum\limits_{n = 1}^{\infty} a_n$ converge.
+
+## Tags
+
+- calculo

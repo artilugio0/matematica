@@ -12,3 +12,8 @@ Si $a \equiv 0\ (mod\ n)$, entonces $n \mid a - 0$, es decir $n \mid a$.
 ($\Leftarrow$)
 
 Si $n \mid a$, entonces $n \mid a - 0$, es decir $a \equiv 0\ (mod\ n)$.
+
+## Tags
+
+- teoria_numeros
+- congruencias

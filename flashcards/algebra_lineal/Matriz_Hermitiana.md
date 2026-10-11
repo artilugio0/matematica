@@ -15,3 +15,8 @@ $$
 1 - i & 2 \\
 \end{pmatrix}^H
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

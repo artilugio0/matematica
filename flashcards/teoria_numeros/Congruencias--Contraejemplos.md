@@ -12,3 +12,8 @@
 
 - $a \cdot c \equiv b \cdot c\ (mod\ n) \not\Rightarrow a \equiv b\ (mod\ n)$
   - $6 \cdot 2 \equiv 2 \cdot 2\ (mod\ 8)$, pero $6 \not\equiv 2\ (mod\ 8)$
+
+## Tags
+
+- teoria_numeros
+- congruencias

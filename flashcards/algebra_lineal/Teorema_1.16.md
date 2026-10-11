@@ -12,3 +12,8 @@ Sean $i \in \mathbb{N}_n,\ j \in \mathbb{N}_m$.
 $((\lambda \cdot A)^T)_{ij} = (\lambda \cdot A)_{ji} = \lambda \cdot (A)_{ji} = \lambda \cdot (A^T)_{ij} = (\lambda \cdot (A^T))_{ij}$
 
 Por lo tanto, $(\lambda \cdot A)^T = \lambda \cdot (A^T)$.
+
+## Tags
+
+- algebra_lineal
+- matrices

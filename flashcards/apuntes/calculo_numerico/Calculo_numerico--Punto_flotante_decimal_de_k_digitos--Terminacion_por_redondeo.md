@@ -13,3 +13,7 @@ d_{k+1} \geq 5 &\Rightarrow \text{se suma 1 a } d_k \text{ y luego se trunca a }
 d_{k+1} < 5    &\Rightarrow \text{se trunca a } k \text{ dígitos} \\
 \end{cases}
 $$
+
+## Tags
+
+- calculo_numerico

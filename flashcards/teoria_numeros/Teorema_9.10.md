@@ -18,3 +18,8 @@ Si $\lvert a \rvert = \lvert b \rvert$, entonces por _Teorema 9.7_, $mcm(a, b) =
 Y por _Teorema 3.7_, $mcd(a, b) = mcd(\lvert a \rvert, \lvert b \rvert) = mcd(\lvert a \rvert, \lvert a \rvert)$. Luego por _Teorema 3.1_, $mcd(a, b) = mcd(\lvert a \rvert, \lvert a \rvert) = \lvert a \rvert$.
 
 Por lo tanto, $mcm(a, b) = mcd(a, b)$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

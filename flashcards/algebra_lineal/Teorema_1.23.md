@@ -34,3 +34,8 @@ Por lo tanto, $A \cdot B$ es triangular superior.
 Se demuestra por inducción sobre el exponente. $A^0 = I_n$ por definición, que es una matriz diagonal y por lo tanto triangular superior. Si se cumple que $A^k$ es triangular superior (con $k \in \mathbb{Z}$, $k \geq 0$), $A^{k+1} = A^k \cdot A$ es un producto de dos matrices triangulares superiores y por lo demostrado anteriormente $A^{k+1}$ es triangular superior. Por lo tanto, $A^{p}$ es triangular superior para todo $p \geq 0$.
 
 Para el caso en el que las matrices $A, B$ son triangulares inferiores, las demostraciones son análogas.
+
+## Tags
+
+- algebra_lineal
+- matrices

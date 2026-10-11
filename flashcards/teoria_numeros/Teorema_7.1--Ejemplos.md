@@ -10,3 +10,8 @@
 - $42 \cdot x + 69 \cdot y = 22$:
 
   No tiene solución, porque $mcd(42, 69) = 3$, y $3 \nmid 22$.  
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_diofanticas_lineales

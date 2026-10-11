@@ -5,3 +5,8 @@
 - $mcm(3, 9) = 9$
 - $mcm(8, 21) = 168$
 - $mcm(6, 6) = 6$
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

@@ -23,3 +23,8 @@ A^H =
 -i     & 3   & 2 - i \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

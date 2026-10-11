@@ -11,3 +11,8 @@ A dicha representación se la llama _forma canónica_.
 Si $a > 1$, por _Teorema 8.5_, puede expresarse de forma única como un producto de números primos. Si los factores se ordenan de menor a mayor y se agrupan los factores iguales como potencias se llega al resultado deseado.
 
 Si $a < -1$, se aplica el mismo procedimiento con $\lvert a \rvert$, luego $a = - \lvert a \rvert = - p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ... \cdot p_k^{\alpha_k}$.
+
+## Tags
+
+- teoria_numeros
+- primos

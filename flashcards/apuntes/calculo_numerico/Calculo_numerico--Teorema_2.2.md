@@ -13,3 +13,7 @@ Siendo
 $$
 L_{k,n}(x) = \prod\limits_{\substack{i = 0 \\ i \neq k}}^n \frac{x - x_i}{x_k - x_i} = \frac{(x - x_0) \cdot (x - x_1) \cdot\ \dots\ \cdot (x - x_{k-1}) \cdot (x - x_{k+1}) \cdot\ \dots\ \cdot (x - x_n)}{(x_k - x_0) \cdot (x_k - x_1) \cdot\ \dots\ \cdot (x_k - x_{k-1}) \cdot (x_k - x_{k+1}) \cdot\ \dots\ \cdot (x_k - x_n)}
 $$
+
+## Tags
+
+- calculo_numerico

@@ -17,3 +17,8 @@ Y el conjunto de todas las clases de equivalencia es
 $$
 \mathbb{Z}/n\mathbb{Z} = \{\overline{a} \mid a \in \mathbb{Z}\}
 $$
+
+## Tags
+
+- teoria_numeros
+- teorema_de_fermat

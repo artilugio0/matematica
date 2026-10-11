@@ -10,3 +10,8 @@ $$
 $$
 
 Demostración fuera del alcance de este documento.
+
+## Tags
+
+- teoria_numeros
+- primos

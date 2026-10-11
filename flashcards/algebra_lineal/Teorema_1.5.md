@@ -16,3 +16,8 @@ $$
 $$
 
 Por lo tanto, $(\lambda \cdot \lambda') \cdot A = \lambda \cdot (\lambda' \cdot A)$.
+
+## Tags
+
+- algebra_lineal
+- matrices

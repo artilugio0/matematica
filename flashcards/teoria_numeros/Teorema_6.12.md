@@ -17,3 +17,8 @@ Si $a^n \mid b^n$, entonces existe $k \in \mathbb{Z}$ tal que $b^n = a^n \cdot k
 ($\Leftarrow$)
 
 Si $a \mid b$, entonces existe $k \in \mathbb{Z}$ tal que $b = a \cdot k$. Multiplicando esta igualdad consigo misma $n$ veces se obtiene $b^n = a^n \cdot k^n$. Por lo tanto $a^n \mid b^n$.
+
+## Tags
+
+- teoria_numeros
+- coprimos

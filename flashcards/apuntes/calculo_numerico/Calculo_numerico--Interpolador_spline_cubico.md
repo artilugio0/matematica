@@ -11,3 +11,7 @@ Sea $f: [a, b] \subseteq \mathbb{R} \to \mathbb{R}$ y los nodos $a = x_0 < x_1 <
 6. Satisface alguna de las siguientes condiciones de frontera:
     1. $S''(x_0) = S''(x_n) = 0$ (natural (or free) boundary)
     2. $S'(x_0) = f'(x_0) \wedge S'(x_n) = f'(x_n)$ (clamped boundary)
+
+## Tags
+
+- calculo_numerico

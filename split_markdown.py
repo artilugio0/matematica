@@ -59,6 +59,50 @@ def find_leaf_sections(sections):
     return leaf_sections
 
 
+TAG_LINE = re.compile(r"^\s*#[^\s#]+(\s+#[^\s#]+)*\s*$")
+
+
+def extract_trailing_tags(content):
+    """Split trailing tag lines ("#tag1 #tag2") off the end of content.
+
+    Returns (content_without_tags, tags). Blank lines between tag lines are
+    ignored.
+    """
+    content = list(content)
+    tag_lines = []
+    while content and (content[-1].strip() == "" or TAG_LINE.match(content[-1])):
+        line = content.pop()
+        if line.strip():
+            tag_lines.insert(0, line)
+    tags = [tag[1:] for line in tag_lines for tag in line.split()]
+    return content, tags
+
+
+def collect_tags(sections):
+    """Strip trailing tags from every section.
+
+    Returns (sections, tag_scopes) where tag_scopes is a list of
+    (scope_stack, tags). Tags apply to the section where they appear and to
+    all of its sub-sections.
+    """
+    stripped = []
+    tag_scopes = []
+    for stack, content in sections:
+        content, tags = extract_trailing_tags(content)
+        stripped.append((stack, content))
+        if tags:
+            tag_scopes.append((stack, tags))
+    return stripped, tag_scopes
+
+
+def tags_for(stack, tag_scopes, default_tags):
+    tags = list(default_tags)
+    for scope, items in tag_scopes:
+        if stack[: len(scope)] == scope:
+            tags.extend(items)
+    return list(dict.fromkeys(tags))
+
+
 def make_heading_text(stack):
     return ": ".join(text for _, text in stack)
 
@@ -96,7 +140,9 @@ def main():
         lines = f.readlines()
 
     sections = split_into_sections(lines)
+    sections, tag_scopes = collect_tags(sections)
     leaf_sections = find_leaf_sections(sections)
+    default_tags = [output_dir.resolve().name, input_path.stem]
 
     for stack, content in leaf_sections:
         heading_text = make_heading_text(stack)
@@ -112,6 +158,10 @@ def main():
             if content:
                 f.write("\n")
                 f.writelines(content)
+
+            tags = tags_for(stack, tag_scopes, default_tags)
+            f.write("\n## Tags\n\n")
+            f.writelines(f"- {tag}\n" for tag in tags)
 
         print(f"Created: {output_path}")
 

@@ -4,7 +4,7 @@
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es diagonal por bloques si los bloques fuera de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k \neq l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k \neq l: A_{kl} = O
 $$
 
 Ejemplo:
@@ -20,3 +20,8 @@ D = \left(
 \end{array}
 \right)
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

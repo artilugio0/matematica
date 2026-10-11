@@ -2,3 +2,8 @@
 
 
 $\cdot: \mathbb{K} \times \mathbb{K}^{m \times n} \to \mathbb{K}^{m \times n} \mid (\lambda \cdot A)_{ij} = \lambda \cdot (A)_{ij}$
+
+## Tags
+
+- algebra_lineal
+- matrices

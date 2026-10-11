@@ -2,3 +2,8 @@
 
 
 Si $a = 0 \wedge b = 0$, $mcd(a, b)$ no está definido.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

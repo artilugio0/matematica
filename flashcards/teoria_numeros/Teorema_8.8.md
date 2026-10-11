@@ -23,3 +23,8 @@ Por lo tanto, todos los divisores primos de $a$ tienen potencias múltiplos de $
 ($\Leftarrow$)
 
 Si $a = \pm p_1^{n \cdot \alpha_1} \cdot p_2^{n \cdot \alpha_2} \cdot\ ... \cdot p_k^{n \cdot \alpha_k}$, entonces $a = \pm (p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ...\ \cdot p_k^{\alpha_k})^n = \pm b^n$.
+
+## Tags
+
+- teoria_numeros
+- primos

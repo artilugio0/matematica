@@ -9,3 +9,7 @@ Si una serie de funciones es mayorante, entonces:
 
 - Si las funciones $f_n$ son contínuas $\Rightarrow S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$ es contínua.
 - Si las funciones $f_n$ son integrables $\Rightarrow S(x) = \sum\limits_{n = 1}^{\infty} f_n(x)$ es integrable y $\int\limits_{a}^{b} S(x)dx = \sum\limits_{n = 1}^{\infty} \left[\int\limits_{a}^{b} f_n(x)dx \right]$.
+
+## Tags
+
+- calculo

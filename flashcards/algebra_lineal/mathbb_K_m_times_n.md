@@ -14,3 +14,8 @@ a_{m1} & a_{m2} & \cdots & a_{mn}
 \mid a_{ij} \in \mathbb{K},\ i \in \mathbb{N}_m,\ j \in \mathbb{N}_n
 \right\}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

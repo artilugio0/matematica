@@ -8,3 +8,8 @@ $a \equiv b\ (mod\ n) \Rightarrow \frac{a}{d} \equiv \frac{b}{d}\ (mod\ \frac{n}
 **Demostración**:
 
 Si $a \equiv b\ (mod\ n)$, entonces $n \mid a - b$. Por _Teorema 2.11_, $\frac{n}{d} \mid \frac{a}{d} - \frac{b}{d}$. Por lo tanto, $\frac{a}{d} \equiv \frac{b}{d}\ (mod\ \frac{n}{d})$.
+
+## Tags
+
+- teoria_numeros
+- congruencias

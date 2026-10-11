@@ -12,3 +12,8 @@ Los divisores positivos de $p$ son $1$ y $\lvert p \rvert$. Por lo tanto $mcd(p,
 ($\Leftarrow$)
 
 Si $mcd(p, a)$ = 1, entonces $p$ no puede ser un divisor de $a$, de otra forma $mcd(p, a) = \lvert p \rvert$, lo cual es un absurdo.
+
+## Tags
+
+- teoria_numeros
+- primos

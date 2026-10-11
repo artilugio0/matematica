@@ -6,3 +6,8 @@ Sea $d = min\ D = a \cdot x_0 + b \cdot y_0$, y $c \in \mathbb{Z}$ tal que $c \m
 Por _Teorema 2.7_, $c \mid (a \cdot x_0 + b \cdot y_0)$. Por lo tanto $c \mid d$. Y por _Teorema 2.6_, $c \leq \lvert c \rvert \leq \lvert d \rvert = d$. Luego, $c \leq d$.
 
 Por lo tanto $d = mcd(a, b)$.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

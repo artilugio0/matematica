@@ -16,3 +16,8 @@ $r_{n-2} = r_{n-1} q_n + r_n$
 $r_{n-1} = r_n q_{n+1} + 0$
 
 Por definición de divisibilidad, $r_n \mid r_{n-1}$. Entonces, por _Teorema 2.3_, $r_n \mid r_{n-1} q_n$. Luego, por _Teorema 2.7_, $r_n \mid r_{n-2}$. Iterando de esta forma sobre todos los $r_i$ decreciendo el valor de $i$, se llega a que $r_n \mid a \wedge r_n \mid b$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

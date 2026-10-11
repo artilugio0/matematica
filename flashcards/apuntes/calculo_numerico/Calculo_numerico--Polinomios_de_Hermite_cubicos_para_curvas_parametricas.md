@@ -6,3 +6,7 @@ Dados los nodos $(x_0, y_0), (x_1, y_1)$. Las ecuaciones paramétricas con polin
 $x(t) = [2 \cdot (x_0 - x_1) + (\alpha_0 + \alpha_1)] \cdot t^3 + [-3 \cdot (x_0 - x_1) - (2 \cdot \alpha_0 + \alpha_1)] \cdot t^2 + \alpha_0 \cdot t + x_0$
 
 $y(t) = [2 \cdot (y_0 - y_1) + (\beta_0 + \beta_1)] \cdot t^3 + [-3 \cdot (y_0 - y_1) - (2 \cdot \beta_0 + \beta_1)] \cdot t^2 + \beta_0 \cdot t + y_0$
+
+## Tags
+
+- calculo_numerico

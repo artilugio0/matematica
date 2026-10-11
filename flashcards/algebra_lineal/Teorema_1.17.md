@@ -20,3 +20,8 @@ $$
 $$
 
 Por lo tanto, $(A \cdot B)^T = B^T \cdot A^T$.
+
+## Tags
+
+- algebra_lineal
+- matrices

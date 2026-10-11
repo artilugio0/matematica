@@ -12,3 +12,7 @@ Entonces, la serie de Fourier de $f$:
 - Converge para todo $x \in \mathbb{R}$
 - Si $f$ es contínua en $c \Rightarrow S(c) = f(c)$ 
 - Si $f$ no es contínua en $c \Rightarrow S(c) = \frac{1}{2} \cdot (\lim\limits_{x \to c^{-}} f(x) + \lim\limits_{x \to c^{+}} f(x))$ 
+
+## Tags
+
+- calculo

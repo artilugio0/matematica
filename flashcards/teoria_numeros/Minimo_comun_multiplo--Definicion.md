@@ -13,3 +13,8 @@ Se suele simbolizar de las siguientes formas:
 - $[a : b]$
 
 Nota: su existencia está garantizada ya que $\lvert a \cdot b \rvert$ es un múltiplo común, y por lo tanto el conjunto de múltiplos comunes no está vacío. Luego, por principio de buen orden de $\mathbb{N}$ debe haber un múltiplo común que sea el menor.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

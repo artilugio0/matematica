@@ -2,3 +2,8 @@
 
 
 Su definición y estudio es importante porque es un concepto utilizado en el estudio de teoría de números, estructuras algebraicas, combinatoria, etc.
+
+## Tags
+
+- teoria_numeros
+- maximo_comun_divisor

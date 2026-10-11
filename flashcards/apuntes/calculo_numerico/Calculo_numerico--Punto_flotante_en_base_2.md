@@ -12,3 +12,7 @@ $$
 $$
 
 TODO: agregar metodos de traduccion
+
+## Tags
+
+- calculo_numerico

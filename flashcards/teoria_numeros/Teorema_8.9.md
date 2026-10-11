@@ -20,3 +20,8 @@ Por lo tanto $d = \pm p_1^{\beta_1} \cdot p_2^{\beta_2} \cdot\ ... \cdot p_k^{\b
 ($\Leftarrow$)
 
 Si $d = \pm p_1^{\beta_1} \cdot p_2^{\beta_2} \cdot\ ... \cdot p_k^{\beta_k}$ con $0 \leq \beta_i \leq \alpha_i$, entonces $a = \pm d \cdot (p_1^{\alpha_1 - \beta_1} \cdot p_2^{\alpha_2 - \beta_2} \cdot\ ...\ \cdot p_k^{\alpha_k - \beta_k})$, y por lo tanto $d \mid a$.
+
+## Tags
+
+- teoria_numeros
+- primos

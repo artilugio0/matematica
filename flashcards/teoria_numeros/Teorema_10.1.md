@@ -12,3 +12,8 @@ Por _Teorema 1.1_, existen $q, q', r, r' \in \mathbb{Z}$ tales que $a = n \cdot 
 ($\Leftarrow$)
 
 Si $a$ y $b$ tienen el mismo resto en la división por $n$, entonces por _Teorema 1.1_, existen $q, q', r \in \mathbb{Z}$ tales que $a = n \cdot q + r$ y $b = n \cdot q' + r$, con $0 \leq r < \lvert n \rvert$. Restando las igualdades se tiene que $a - b = n \cdot (q - q')$. Luego $n \mid a - b$, por lo tanto $a \equiv b\ (mod\ n)$.
+
+## Tags
+
+- teoria_numeros
+- congruencias

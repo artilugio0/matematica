@@ -12,3 +12,8 @@ A =
 0 & 0 & 0 & 7\\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

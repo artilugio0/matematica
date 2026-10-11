@@ -12,3 +12,8 @@ Si $a \mid b \wedge b \mid a$, entonces existen $k_1, k_2 \in \mathbb{Z}$ tales 
 Si $a = \pm b$, entonces $a = b1 \lor a = b(-1)$, lo que implica que $b \mid a$. Por otro lado, si $a = \pm b$, entonces $b = \pm a$, lo que implica que $a \mid b$.
 
 Luego, $a \mid b \wedge b \mid a$.
+
+## Tags
+
+- teoria_numeros
+- divisibilidad

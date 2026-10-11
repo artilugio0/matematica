@@ -25,3 +25,8 @@ a_{21} & a_{22} & \cdots & a_{2n} \\
 a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

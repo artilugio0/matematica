@@ -13,3 +13,8 @@
   $18 = 6 \cdot 3 + 0$
 
   Entonces, $mcd(-66, 18) = 6$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

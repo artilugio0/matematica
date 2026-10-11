@@ -12,3 +12,7 @@ Siendo
 $P_n(x) = \sum\limits_{k = 0}^{n} \frac{f^{(k)}(x_0)}{k!} \cdot (x - x_0)^k$
 
 $R_n(x) = \frac{f^{(n + 1)}(\xi_x)}{(n + 1)!} \cdot (x - x_0)^{n + 1}$
+
+## Tags
+
+- calculo_numerico

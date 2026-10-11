@@ -19,3 +19,8 @@ E^{24} =
 0 & 0 & 0 & 0 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

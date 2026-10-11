@@ -12,3 +12,7 @@ Las parábolas negativas crecen en la dirección del eje correspondiente a la va
 Las parábolas positivas crecen en la dirección del eje correspondiente a la variable cuadrática negativa.
 
 Las hipérbolas crecen en la dirección del eje correspondiente a la variable lineal.
+
+## Tags
+
+- calculo

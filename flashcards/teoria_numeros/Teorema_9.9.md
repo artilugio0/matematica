@@ -14,3 +14,8 @@ Si $mcm(a, b) = b$, por definición $a \mid mcm(a, b)$, entonces $a \mid b$.
 ($\Leftarrow$)
 
 Si $a \mid b$, entonces $b$ es un múltiplo común de $a$ y $b$. Cualquier otro múltiplo común será múltiplo de $b$. Entonces por _Teorema 9.5_, $mcm(a, b) = b$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

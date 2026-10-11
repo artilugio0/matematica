@@ -17,3 +17,8 @@ a = 15,\ b = 5 \\
 15 = 5 \cdot 3 + 0
 \end{aligned}
 $$
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

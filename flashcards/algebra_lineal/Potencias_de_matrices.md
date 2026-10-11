@@ -8,3 +8,8 @@ Se definen:
 $A^0 = I_n$
 
 $A^p = A^{p - 1} \cdot A$
+
+## Tags
+
+- algebra_lineal
+- matrices

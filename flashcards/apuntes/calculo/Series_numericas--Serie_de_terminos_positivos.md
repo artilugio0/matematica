@@ -8,3 +8,7 @@ Sea $\{b_n\}$ una sucesión, su serie de términos positivos se define como:
 $$
 \sum\limits_{n = 1}^{\infty} \lvert b_n \rvert \\
 $$
+
+## Tags
+
+- calculo

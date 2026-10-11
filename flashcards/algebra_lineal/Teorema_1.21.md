@@ -17,3 +17,8 @@ $$
                              &= \text{tr}(B \cdot A) \\
 \end{aligned}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -2,3 +2,8 @@
 
 
 Sea $D = \{ a \cdot x + b \cdot y \mid x,\ y \in \mathbb{Z} \wedge a \cdot x + b \cdot y \geq 1 \}$.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

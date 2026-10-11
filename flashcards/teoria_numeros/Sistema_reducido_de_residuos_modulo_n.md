@@ -8,3 +8,8 @@ $R$ es un sistema reducido de residuos módulo $n$ si:
 - $\forall\ a \in R: mcd(a, n) = 1$
 - $\forall\ c \in \mathbb{Z}$ tal que $mcd(c, n) = 1: \exists\ a \in R \mid a \equiv c\ (mod\ n)$
 - $\forall\ a, b \in R: a \equiv b\ (mod\ n) \Rightarrow a = b$
+
+## Tags
+
+- teoria_numeros
+- teorema_de_fermat

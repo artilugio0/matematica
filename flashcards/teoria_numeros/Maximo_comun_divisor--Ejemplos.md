@@ -5,3 +5,8 @@
 - $mcd(3, 9) = 3$
 - $mcd(8, 21) = 1$
 - $mcd(6, 6) = 6$
+
+## Tags
+
+- teoria_numeros
+- maximo_comun_divisor

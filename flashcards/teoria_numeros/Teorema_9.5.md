@@ -21,3 +21,8 @@ Sea $c \in \mathbb{N}$ tal que $a \mid c \wedge b \mid c$. Por _Teorema 1.1_, ex
 Sea $m \in \mathbb{N}$ tal que $a \mid m \wedge b \mid m$ y $\forall\ c \in \mathbb{N}: a \mid c \wedge b \mid c \Rightarrow m \mid c$.
 
 Sea $c \in \mathbb{N}$ tal que $a \mid c \wedge b \mid c$. Por _Teorema 2.6_, $m = \lvert m \rvert \leq \lvert c \rvert = c$. Por lo tanto, $mcm(a, b) = m$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

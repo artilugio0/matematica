@@ -19,3 +19,8 @@ $$
 Por _Teorema 2.3_, $mcd(a, c)$ divide a los términos de $(1)$, entonces por _Teorema 2.7_, $mcd(a, c) \mid 1$. Y por _Teorema 2.2_, $mcd(a, c) = 1$.
 
 Por _Teorema 2.3_, $mcd(b, c)$ divide a los términos de $(2)$, entonces por _Teorema 2.7_, $mcd(b, c) \mid 1$. Y por _Teorema 2.2_, $mcd(b, c) = 1$.
+
+## Tags
+
+- teoria_numeros
+- coprimos

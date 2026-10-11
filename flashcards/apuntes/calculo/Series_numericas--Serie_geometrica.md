@@ -10,3 +10,7 @@ $$
 \text{diverge}  &\lvert q \rvert \geq 1 \\
 \end{cases}
 $$
+
+## Tags
+
+- calculo

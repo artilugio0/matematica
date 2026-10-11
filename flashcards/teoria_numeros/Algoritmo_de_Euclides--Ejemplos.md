@@ -24,3 +24,8 @@
   $2 = 1 \cdot 2 + 0$
 
   Entonces, $mcd(5, 8) = 1$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

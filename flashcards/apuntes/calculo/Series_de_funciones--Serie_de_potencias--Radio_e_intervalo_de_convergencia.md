@@ -8,3 +8,7 @@ El radio de convergencia es $R \in \mathbb{R} \cup \{\infty\}, R \geq 0 \mid \fo
 A $(-R, R)$ se le llama intervalo de convergencia ($ICV$).
 
 $ICV \subseteq DCV$. Pueden ser distintos, hay que ver que ocurre en los extremos del $ICV$.
+
+## Tags
+
+- calculo

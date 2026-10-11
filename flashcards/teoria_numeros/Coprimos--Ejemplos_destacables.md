@@ -11,3 +11,8 @@ Coprimos
 No coprimos:
 
 - $mcd(7, 0) = 7$
+
+## Tags
+
+- teoria_numeros
+- coprimos

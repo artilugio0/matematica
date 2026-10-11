@@ -25,3 +25,8 @@ $$
 Donde cada $r_i \in R$, y $r_i \neq r_j$ si $i \neq j$, para $1 \leq i \leq p-1$.
 
 Luego, por _Teorema 10.7_, multiplicando las congruencias se tiene que $1 \cdot 2 \cdot\ ...\ \cdot (p-1) \cdot a^{p-1} \equiv r_1 \cdot r_2 \cdot\ ...\ \cdot r_{p-1}\ (mod\ p)$. Como el producto de los $r_i$ es el producto de los primeros $p-1$ enteros positivos, su producto es $(p-1)!$, entonces se obtiene que $(p-1)! \cdot a^{p-1} \equiv (p-1)!\ (mod\ p)$. Y dado que $p$ no divide a ninguno de los factores de $(p-1)!$ por ser menores que $p$, entonces por _Teorema 8.2_, $p \nmid (p-1)!$. Finalmente, por _Teorema 10.15_, $a^{p-1} \equiv 1\ (mod\ p)$.
+
+## Tags
+
+- teoria_numeros
+- teorema_de_fermat

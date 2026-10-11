@@ -20,3 +20,8 @@ A = \left(
 \end{array}
 \right)
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

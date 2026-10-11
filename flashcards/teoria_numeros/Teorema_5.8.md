@@ -9,3 +9,8 @@ Si $d \mid a \wedge d \mid b$, entonces $mcd(\frac{a}{d}, \frac{b}{d}) = \frac{m
 **Demostración**:
 
 Por _Teorema 5.7_, $mcd(a, b) = mcd(d \cdot \frac{a}{d}, d \cdot \frac{b}{d}) = d \cdot mcd(\frac{a}{d}, \frac{b}{d})$. Luego, $mcd(\frac{a}{d}, \frac{b}{d}) = \frac{mcd(a, b)}{d}$.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

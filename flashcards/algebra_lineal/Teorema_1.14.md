@@ -34,3 +34,8 @@ $$
 Por lo tanto, $(\lambda \cdot A) \cdot B = A \cdot (\lambda \cdot B)$.
 
 Luego, $(\lambda \cdot A) \cdot B = \lambda \cdot (A \cdot B) = A \cdot (\lambda \cdot B)$.
+
+## Tags
+
+- algebra_lineal
+- matrices

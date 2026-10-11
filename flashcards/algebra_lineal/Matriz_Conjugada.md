@@ -22,3 +22,8 @@ $$
 -3 & 1     & 1 - i \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

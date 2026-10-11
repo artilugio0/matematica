@@ -2,3 +2,8 @@
 
 Por el principio del buen orden de $\mathbb{N}_0$, existe un elemento mínimo en $R$. Sea $r_0 = a - bq_0$ el elemento mínimo de $R$.
 Por definición de $q_0$ y $r_0$ se tiene que $a = bq_0 + r_0$, y $r_0 \geq 0$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

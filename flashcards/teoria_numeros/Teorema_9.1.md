@@ -8,3 +8,8 @@ $mcm(a, a) = \lvert a \rvert$
 $a \mid \lvert a \rvert$.
 
 Sea $m \in \mathbb{N}$ tal que $a \mid m$. Por _Teorema 2.6_, $\lvert a \rvert \leq m$. Por lo tanto $mcm(a, a) = \lvert a \rvert$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

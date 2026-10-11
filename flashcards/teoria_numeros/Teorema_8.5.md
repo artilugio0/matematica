@@ -28,3 +28,8 @@ Luego, $p_2 \cdot p_3 \cdot\ ...\ \cdot p_\alpha = q_2 \cdot q_3 \cdot\ ...\ \cd
 $\alpha$ y $\beta$ deben ser iguales, sino luego de repetir el procedimiento $\alpha$ veces, se llega a que $1 =\ ...\ \cdot q_{\beta - 1} \cdot q_\beta$, lo cual es un absurdo.
 
 Por lo tanto, todos los factores de ambos productos deben coincidir y la representación de $a$ como un producto de números primos es única.
+
+## Tags
+
+- teoria_numeros
+- primos

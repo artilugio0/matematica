@@ -15,3 +15,7 @@ f(x) = \lim\limits_{n \to \infty} P_n(x) &\Leftrightarrow \lim\limits_{n \to \in
               &\Leftrightarrow \forall\ x \in DCV: \lim\limits_{n \to \infty} \frac{f^{(n+1)}(\theta)}{(n + 1)!} \cdot (x - x_0)^{n + 1} = 0 \\
 \end{aligned}
 $$
+
+## Tags
+
+- calculo

@@ -15,3 +15,7 @@ a_i &= a(i) \\
 \{a_n\} &= a_1, a_2, a_3, ... \\
 \end{aligned}
 $$
+
+## Tags
+
+- calculo

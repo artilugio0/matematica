@@ -36,3 +36,8 @@ Cada paso se justifica de la siguiente forma:
 7. Definición de $C_{kt}$
 
 Por lo tanto, por definición de matriz por bloques, $C$ es una matriz de $p \times s$ bloques donde cada bloque $C_{kt} = \sum\limits_{l = 1}^{q} A_{kl} \cdot B_{lt} \in \mathbb{K}^{m_k \times r_t}$.
+
+## Tags
+
+- algebra_lineal
+- matrices

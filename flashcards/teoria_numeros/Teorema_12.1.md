@@ -14,3 +14,8 @@ Dado que $mcd(a, n) = 1$, por _Teorema 11.2_, existe $x \in \mathbb{Z}$ tal que 
 Sean $a \cdot r_\alpha, a \cdot r_\beta \in R'$ tales que $a \cdot r_\alpha \equiv a \cdot r_\beta\ (mod\ n)$, por _Teorema 10.14_, $r_\alpha \equiv r_\beta\ (mod\ n)$. Como $r_\alpha, r_\beta \in R$, entonces $r_\alpha = r_\beta$, y por lo tanto $a \cdot r_\alpha = a \cdot r_\beta$, cumpliendo la tercera propiedad.
 
 Por lo tanto $R'$ es un sistema reducido de residuos módulo $n$.
+
+## Tags
+
+- teoria_numeros
+- teorema_de_fermat

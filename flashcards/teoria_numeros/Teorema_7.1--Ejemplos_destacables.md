@@ -6,3 +6,8 @@
   Tiene solución dado que $mcd(0, 3) = 3$, y $3 \mid 18$.  
   Una solución es $x_0 = 0,\ y_0 = 6$.  
   Todas las soluciones son: $x = t$, $y = 6$, $t \in \mathbb{Z}$.
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_diofanticas_lineales

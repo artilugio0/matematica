@@ -7,3 +7,8 @@
 - $mcd(\pm 1, a) = 1$:
   - $mcd(1, 21) = 1$
   - $mcd(-1, 21) = 1$
+
+## Tags
+
+- teoria_numeros
+- maximo_comun_divisor

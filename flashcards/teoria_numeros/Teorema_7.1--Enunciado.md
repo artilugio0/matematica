@@ -14,3 +14,8 @@ $$
 &\text{con } t \in \mathbb{Z}
 \end{align}
 $$
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_diofanticas_lineales

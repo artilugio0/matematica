@@ -10,3 +10,8 @@ Reemplazando a $d$ en esta última igualdad, se tiene $a = (a \cdot x_0 + b \cdo
 Como $r = 0$, entonces $a = d \cdot q$. Por lo tanto $d \mid a$.
 
 Utilizando el mismo argumento, se tiene $d \mid b$. Luego $d$ es divisor común de $a$ y $b$.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

@@ -18,3 +18,8 @@ mcd(a, b) \cdot mcd(a, c) &= (a \cdot x_0 + b \cdot y_0) \cdot (a \cdot x_1 + c 
 $$
 
 Por _Teorema 2.3_, $a$ divide a los primeros tres términos de la última suma, y por hipótesis $a \mid b \cdot c$, por lo tanto también divide al último término. Luego por _Teorema 2.7_, $a \mid mcd(a, b) \cdot mcd(a, c)$.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

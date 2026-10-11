@@ -26,3 +26,8 @@ $$
 \frac{1}{2} & \frac{1}{2} \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -6,3 +6,8 @@ Sea $d \in \mathbb{Z}$ tal que $d \mid a \wedge d \mid b$. De $a = b q_1 + r_1$ 
 Como el procedimiento se aplica al caso en que $a \nmid b$ y $b \nmid a$, se tiene $r_1 \neq 0$, luego $n \geq 1$ y por lo tanto $r_n > 0$, es decir $\lvert r_n \rvert = r_n$.
 
 Por _Teorema 2.6_, $d \leq \lvert d \rvert \leq \lvert r_n \rvert = r_n$. Por lo tanto, $d \leq r_n$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

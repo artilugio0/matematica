@@ -9,6 +9,11 @@ $(-1) \cdot A = -A$
 
 $((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
 
-Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
+Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (O)_{ij}$.
 
 Por lo tanto, por el _Teorema 1.3_, $(-1) \cdot A = -A$.
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -16,3 +16,8 @@ $$
 $$
 
 Por lo tanto, $(\lambda + \lambda') \cdot A = \lambda \cdot A + \lambda' \cdot A$.
+
+## Tags
+
+- algebra_lineal
+- matrices

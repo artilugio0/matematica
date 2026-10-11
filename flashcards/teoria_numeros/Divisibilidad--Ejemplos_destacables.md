@@ -8,3 +8,8 @@ Para todo $a \in \mathbb{Z},\ a \neq 0$:
 Para todo $a \in \mathbb{Z}$:
 
 - $\pm 1 \mid a$: $1 \mid 10$, $-1 \mid 10$
+
+## Tags
+
+- teoria_numeros
+- divisibilidad

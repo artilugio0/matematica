@@ -5,3 +5,8 @@ Sean $a, b \in \mathbb{Z},\ b > 0$ y $q_0, r_0 \in \mathbb{Z}$ tales que $a = bq
 Y sean también $q_1, r_1 \in \mathbb{Z}$ tales que $a = bq_1 + r_1$, con $0 \leq r_1 < b$.
 
 Sin pérdida de generalidad, se puede asumir $r_0 \leq r_1$, y por lo tanto, $q_1 \leq q_0$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

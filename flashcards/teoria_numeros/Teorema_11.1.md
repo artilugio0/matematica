@@ -16,3 +16,8 @@ Sean $t, t' \in \mathbb{Z}$ tales que las soluciones a la ecuación de congruenc
 Si se toman $t, t'$ congruentes módulo $mcd(a, n)$, sean $x_t, x_{t'}$ las soluciones asociadas a esos valores. Luego se tiene que $x_t - x_{t'} = (x_0 - \frac{n}{mcd(a, n)} \cdot t) - (x_0 - \frac{n}{mcd(a, n)} \cdot t') = \frac{n}{mcd(a, n)} \cdot (t' - t)$. Y como $mcd(a, n) \mid t' - t$, entonces $x_t - x_{t'} = \frac{n}{mcd(a, n)} \cdot k' \cdot mcd(a, n) = n \cdot k'$, para algún $k' \in \mathbb{Z}$. Por lo tanto $n \mid x_t - x_{t'}$, es decir, $x_t \equiv x_{t'}\ (mod\ n)$.
 
 En conclusión, todas las soluciones incongruentes módulo $n$ se obtienen tomando valores incongruentes de $t$ módulo $mcd(a, n)$. Y dado que todo entero es congruente a algún valor entre $0$ y $mcd(a, n) - 1$, entonces $mcd(a, n)$ es la cantidad total de soluciones incongruentes módulo $n$.
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_de_congruencia_lineales

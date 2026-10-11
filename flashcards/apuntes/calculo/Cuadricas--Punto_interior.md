@@ -6,3 +6,7 @@ Sea $A \subseteq \mathbb{R}^n$. Un punto $P \in \mathbb{R}^n$ es un punto interi
 $$
 \exists\ E(P, r) \mid E(P, r) \subseteq A
 $$
+
+## Tags
+
+- calculo

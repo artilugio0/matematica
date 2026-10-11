@@ -2,3 +2,8 @@
 
 
 Existen $x, y \in \mathbb{Z}$ tales que $a \cdot x + b \cdot y = mcd(a, b)$
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

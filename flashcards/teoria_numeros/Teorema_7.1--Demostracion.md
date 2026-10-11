@@ -39,3 +39,8 @@ $$
 Lo que implica que cualquier par de enteros de esa forma es solución de la ecuación para cualquier valor de $t$.
 
 Por lo tanto, queda demostrado que si hay una solución, entonces hay infinitas soluciones, y todas las soluciones son de la forma anteriormente mencionada.
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_diofanticas_lineales

@@ -10,3 +10,8 @@ Si $a > 0$ , $a = \lvert a \rvert \cdot 1$. Si $a < 0$, $a = \lvert a \rvert \cd
 Si $d \mid a$, por _Teorema 2.6_: $d \leq \lvert d \rvert \leq \lvert a \rvert$.
 
 Por lo tanto $mcd(a, a) = \lvert a \rvert$.
+
+## Tags
+
+- teoria_numeros
+- maximo_comun_divisor

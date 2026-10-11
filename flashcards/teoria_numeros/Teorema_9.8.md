@@ -12,3 +12,8 @@ Sea $m = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ...\ \cdot p_n^{\alpha_n}$ t
 Por _Teorema 8.9_, $a \mid m \wedge b \mid m$.
 
 Sea $m'$ un múltiplo común de $a$ y $b$. Por definición, $p_i^{\alpha_i} \mid a \lor p_i^{\alpha_i} \mid b$. Entonces, por _Teorema 2.4_, $p_i^{\alpha_i} \mid m'$. Y como $mcd(p_i^{\alpha_i}, p_j^{\alpha_j}) = 1$ para $i \neq j$, entonces por _Teorema 6.3_, $p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot\ ...\ \cdot p_n^{\alpha_n} \mid m'$. Por lo tanto $m \mid m'$. Luego, por _Teorema 9.5_, $mcm(a, b) = m$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

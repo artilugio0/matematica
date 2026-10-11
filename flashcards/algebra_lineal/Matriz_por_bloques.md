@@ -68,3 +68,8 @@ A_{23} = \begin{pmatrix}
 12 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

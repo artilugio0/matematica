@@ -28,3 +28,8 @@ Los cuatro términos son enteros dado que $mcd(a, b, c)$ divide a $a$, $b$ y $c$
 $mcd(a, b, c) \mid mcd(b, c)$, entonces por _Teorema 9.6_, $mcd(a, b, c) \cdot k = \frac{\lvert b \cdot c \rvert}{mcm(b, c)}$, por lo tanto, $mcm(b, c) \cdot k = \frac{\lvert b \cdot c \rvert}{mcd(a, b, c)}$, es decir, $mcm(b, c) \mid \frac{\lvert b \cdot c \rvert}{mcd(a, b, c)}$ lo que implica que $mcm(b, c) \mid \frac{b \cdot c}{mcd(a, b, c)}$. Por lo tanto, por _Teorema 2.3_, $mcm(b, c)$ divide al último término.
 
 Dado que $mcd(a, mcm(b, c))$ divide a $a$ y $mcm(b, c)$, por _Teorema 2.4_, $mcd(a, mcm(b, c))$ divide a los cuatro términos. Entonces, por _Teorema 2.7_, $mcd(a, mcm(b, c)) \mid mcm(mcd(a, b), mcd(a, c))$. Luego, por _Teorema 2.5_, $mcd(a, mcm(b, c)) = \pm mcm(mcd(a, b), mcd(a, c))$, y dado que ambos lados de la ecuación son positivos por definición, $mcd(a, mcm(b, c)) = mcm(mcd(a, b), mcd(a, c))$.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

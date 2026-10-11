@@ -3,3 +3,8 @@
 Sean $a, b \in \mathbb{Z}$ con $b > 0$.
 
 Se considera el conjunto $R = \{ a - bq \mid q \in \mathbb{Z} \wedge a - bq \geq 0 \}$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

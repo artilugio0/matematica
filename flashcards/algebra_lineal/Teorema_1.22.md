@@ -11,3 +11,8 @@ $\text{tr}(A^T)
 = \sum\limits_{i = 1}^{n} (A^T)_{ii}
 = \sum\limits_{i = 1}^{n} (A)_{ii}
 = \text{tr}(A)$
+
+## Tags
+
+- algebra_lineal
+- matrices

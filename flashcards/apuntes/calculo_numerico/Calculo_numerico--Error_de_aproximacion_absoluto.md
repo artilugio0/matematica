@@ -4,3 +4,7 @@
 Sea $p^{*}$ una aproximación de $p$. El error de aproximación absoluto es:
 
 $\lvert p - p^{*} \rvert$
+
+## Tags
+
+- calculo_numerico

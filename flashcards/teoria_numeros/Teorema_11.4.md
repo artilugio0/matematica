@@ -58,3 +58,8 @@ Y como $L$ es múltiplo común de $n_i$ y $n_j$, entonces por _Teorema 9.5_, $mc
 Luego, sea $x'$ otra solución al sistema de congruencias, entonces se cumple que $x \equiv a_i\ (mod\ n_i)$ y $x' \equiv a_i\ (mod\ n_i)$, y por _Teorema 10.4_ y _Teorema 10.5_, $x \equiv x' (mod\ n_i)$. Luego por _Teorema 10.13_, $x \equiv x'\ (mod\ mcm(n_1, n_2,\ ...\ , n_k))$. Por lo tanto, la solución es única módulo $mcm(n_1, n_2,\ ...\ , n_k)$.
 
 Finalmente, sea $x$ una solución al sistema de congruencias y $x'$ tal que $x \equiv x'\ (mod\ mcm(n_1, n_2,\ ...\ , n_k))$. Por _Teorema 10.19_, como $n_i \mid mcm(n_1, n_2,\ ...\ , n_k)$ se cumple que $x \equiv x'\ (mod\ n_i)$, y por _Teorema 10.4_ y _Teorema 10.5_, $x' \equiv a_i\ (mod\ n_i)$, y por lo tanto $x'$ es solución al sistema de congruencias.
+
+## Tags
+
+- teoria_numeros
+- ecuaciones_de_congruencia_lineales

@@ -8,3 +8,8 @@ $mcd(a, b)$ es el mínimo entero positivo de la forma $a \cdot x + b \cdot y$, c
 **Demostración**:
 
 Queda demostrado por la demostración del _Teorema 5.1_.
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

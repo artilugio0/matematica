@@ -27,3 +27,8 @@ $$
 0 & 4 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

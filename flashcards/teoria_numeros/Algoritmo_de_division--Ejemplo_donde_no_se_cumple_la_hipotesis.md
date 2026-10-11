@@ -17,3 +17,8 @@ a = 0,\ b = 0 \\
 0 = 0 \cdot 1 + 0
 \end{aligned}
 $$
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

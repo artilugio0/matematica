@@ -3,12 +3,17 @@
 
 Sea $A \in \mathbb{K}^{m \times n}$.
 
-$A + N = N + A = A$
+$A + O = O + A = A$
 
 **Demostración**:
 
-$(A + N)_{ij} = (A)_{ij} + (N)_{ij} = (A)_{ij} + 0 = (A)_{ij}$
+$(A + O)_{ij} = (A)_{ij} + (O)_{ij} = (A)_{ij} + 0 = (A)_{ij}$
 
-$(N + A)_{ij} = (N)_{ij} + (A)_{ij} = 0 + (A)_{ij} = (A)_{ij}$
+$(O + A)_{ij} = (O)_{ij} + (A)_{ij} = 0 + (A)_{ij} = (A)_{ij}$
 
-Por lo tanto, $A + N = N + A = A$.
+Por lo tanto, $A + O = O + A = A$.
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -49,3 +49,8 @@ Luego, como $mcd(a, b) \mid c$, existe $k \in \mathbb{Z}$ tal que $c = mcd(a,b) 
 $c = r_n \cdot k = a \cdot (k \cdot \alpha_n) + b \cdot (k \cdot \beta_n)$
 
 Dejando expresado a $c$ como una combinación lineal entera de $a$ y $b$.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

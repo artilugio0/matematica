@@ -20,3 +20,8 @@ $$
 $$
 
 Por lo tanto, $(A \cdot B) \cdot C = A \cdot (B \cdot C)$.
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -2,3 +2,8 @@
 
 
 $a$ y $b$ no pueden ser $0$, dado que $a$ y $b$ deben dividir al mínimo común múltiplo.
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

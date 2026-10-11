@@ -8,3 +8,7 @@ Sea $S_n(x)$ la $n$-ésima suma parcial de la serie de funciones, se define al r
 $R_n(x) = S(x) - S_n(x)$
 
 Y se cumple que $\lim\limits_{n \to \infty} R_n(x) = 0$.
+
+## Tags
+
+- calculo

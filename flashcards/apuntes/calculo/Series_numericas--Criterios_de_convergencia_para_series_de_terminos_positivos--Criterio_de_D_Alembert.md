@@ -11,3 +11,7 @@ l > 1 \lor +\infty &\Rightarrow \text{diverge} \\
 l = 1              &\Rightarrow \text{no define} \\
 \end{cases}
 $$
+
+## Tags
+
+- calculo

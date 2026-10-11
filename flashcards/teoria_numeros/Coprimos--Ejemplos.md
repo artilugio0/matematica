@@ -10,3 +10,8 @@ Coprimos:
 No coprimos:
 
 - $mcd(9, 12) = 3$
+
+## Tags
+
+- teoria_numeros
+- coprimos

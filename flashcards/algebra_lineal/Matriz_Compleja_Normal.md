@@ -27,3 +27,8 @@ i & -i \\
 0 & 2 \\
 \end{pmatrix}
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

@@ -10,3 +10,8 @@
 - $n = 2$:
   - $10 \equiv 0\ (mod\ 2)$ - 10 es par
   - $11 \equiv 1\ (mod\ 2)$ - 11 es impar
+
+## Tags
+
+- teoria_numeros
+- congruencias

@@ -35,3 +35,8 @@ a = -16,\ b = -3 \\
 -16 = (-3) \cdot 6 + 2
 \end{aligned}
 $$
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_division

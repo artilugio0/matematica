@@ -133,12 +133,12 @@ $$
 
 # Matriz Nula
 
-$N \in \mathbb{K}^{m \times n} \mid (N)_{ij} = 0$
+$O \in \mathbb{K}^{m \times n} \mid (O)_{ij} = 0$
 
 Ejemplo:
 
 $$
-N \in \mathbb{R}^{3 \times 4} \mid N =
+O \in \mathbb{R}^{3 \times 4} \mid O =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
@@ -292,7 +292,7 @@ $$
 
 # Matriz Nilpotente
 
-$A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \mathbb{N} \mid A^p = N$.
+$A \in \mathbb{K}^{n \times n}$ es nilpotente $\Leftrightarrow \exists\ p \in \mathbb{N} \mid A^p = O$.
 
 Ejemplo:
 
@@ -578,20 +578,20 @@ Por lo tanto, $(A + B) + C = A + (B + C)$.
 
 Sea $A \in \mathbb{K}^{m \times n}$.
 
-$A + N = N + A = A$
+$A + O = O + A = A$
 
 **Demostración**:
 
-$(A + N)_{ij} = (A)_{ij} + (N)_{ij} = (A)_{ij} + 0 = (A)_{ij}$
+$(A + O)_{ij} = (A)_{ij} + (O)_{ij} = (A)_{ij} + 0 = (A)_{ij}$
 
-$(N + A)_{ij} = (N)_{ij} + (A)_{ij} = 0 + (A)_{ij} = (A)_{ij}$
+$(O + A)_{ij} = (O)_{ij} + (A)_{ij} = 0 + (A)_{ij} = (A)_{ij}$
 
-Por lo tanto, $A + N = N + A = A$.
+Por lo tanto, $A + O = O + A = A$.
 
 
 # Teorema 1.3
 
-$\forall\ A \in \mathbb{K}^{m \times n}:\ \exists!\ B \in \mathbb{K}^{m \times n} \mid A + B = B + A = N$.
+$\forall\ A \in \mathbb{K}^{m \times n}:\ \exists!\ B \in \mathbb{K}^{m \times n} \mid A + B = B + A = O$.
 
 A la matriz $B$ se la denota por $-A$.
 
@@ -604,11 +604,11 @@ $$
 (A + B)_{ij} &= (A)_{ij} + (B)_{ij} \\
              &= (A)_{ij} + (-(A)_{ij}) \\
              &= 0 \\
-             &= (N)_{ij} \\
+             &= (O)_{ij} \\
 \end{aligned}
 $$
 
-Por lo tanto, $A + B = N$.
+Por lo tanto, $A + B = O$.
 
 $$
 \begin{aligned}
@@ -618,18 +618,18 @@ $$
 \end{aligned}
 $$
 
-Por lo tanto, $B + A = N$.
+Por lo tanto, $B + A = O$.
 
-Sean $B, B' \in \mathbb{K}^{m \times n}$ tales que $A + B = B + A = N \wedge A + B' = B' + A = N$.
+Sean $B, B' \in \mathbb{K}^{m \times n}$ tales que $A + B = B + A = O \wedge A + B' = B' + A = O$.
 
 Entonces
 $$
 \begin{aligned}
-&A + B = N = A + B' \\
+&A + B = O = A + B' \\
 &\Rightarrow A + B = A + B' \\
 &\Rightarrow B + (A + B) = B + (A + B') \\
 &\Rightarrow (B + A) + B = (B + A) + B' \\
-&\Rightarrow N + B       = N + B' \\
+&\Rightarrow O + B       = O + B' \\
 &\Rightarrow B           = B' \\
 \end{aligned}
 $$
@@ -692,13 +692,13 @@ Por lo tanto, $1 \cdot A = A$.
 
 Sean $A \in \mathbb{K}^{m \times n}$ y $0 \in \mathbb{K}$ el neutro aditivo de $\mathbb{K}$.
 
-$0 \cdot A = N$
+$0 \cdot A = O$
 
 **Demostración**:
 
-$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (N)_{ij}$
+$(0 \cdot A)_{ij} = (0 \cdot (A)_{ij}) = 0 = (O)_{ij}$
 
-Por lo tanto, $0 \cdot A = N$.
+Por lo tanto, $0 \cdot A = O$.
 
 
 # Teorema 1.8
@@ -711,7 +711,7 @@ $(-1) \cdot A = -A$
 
 $((-1) \cdot A)_{ij} = ((-1) \cdot (A)_{ij}) = -(A)_{ij}$.
 
-Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (N)_{ij}$.
+Luego, $(A + ((-1) \cdot A))_{ij} = (A)_{ij} + (-(A)_{ij}) = 0 = (O)_{ij}$.
 
 Por lo tanto, por el _Teorema 1.3_, $(-1) \cdot A = -A$.
 
@@ -1164,7 +1164,7 @@ $$
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es diagonal por bloques si los bloques fuera de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k \neq l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k \neq l: A_{kl} = O
 $$
 
 Ejemplo:
@@ -1187,13 +1187,13 @@ $$
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular superior por bloques si los bloques debajo de los bloques de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k > l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k > l: A_{kl} = O
 $$
 
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular inferior por bloques si los bloques sobre los bloques de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k < l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k < l: A_{kl} = O
 $$
 
 Ejemplo:
@@ -1284,7 +1284,7 @@ Por lo tanto, por definición de matriz por bloques, $C$ es una matriz de $p \ti
   \end{pmatrix}
   $$
 
-- $A \cdot B = N \wedge A \neq N \wedge B \neq N$:
+- $A \cdot B = O \wedge A \neq O \wedge B \neq O$:
   $$
   \begin{pmatrix}
   1 & 2 \\

@@ -4,13 +4,13 @@
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular superior por bloques si los bloques debajo de los bloques de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k > l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k > l: A_{kl} = O
 $$
 
 Una matriz cuadrada por bloques $A$ de $p \times p$ bloques es triangular inferior por bloques si los bloques sobre los bloques de la diagonal son matrices nulas:
 
 $$
-\forall\ k, l \in \mathbb{N}_p \mid k < l: A_{kl} = N
+\forall\ k, l \in \mathbb{N}_p \mid k < l: A_{kl} = O
 $$
 
 Ejemplo:
@@ -38,3 +38,8 @@ L = \left(
 \end{array}
 \right)
 $$
+
+## Tags
+
+- algebra_lineal
+- matrices

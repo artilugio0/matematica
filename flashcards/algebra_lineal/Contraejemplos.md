@@ -21,7 +21,7 @@
   \end{pmatrix}
   $$
 
-- $A \cdot B = N \wedge A \neq N \wedge B \neq N$:
+- $A \cdot B = O \wedge A \neq O \wedge B \neq O$:
   $$
   \begin{pmatrix}
   1 & 2 \\
@@ -74,3 +74,8 @@
   1 & 1 \\
   \end{pmatrix}^2
   $$
+
+## Tags
+
+- algebra_lineal
+- matrices

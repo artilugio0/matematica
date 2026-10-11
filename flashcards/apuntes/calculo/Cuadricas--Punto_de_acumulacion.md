@@ -6,3 +6,7 @@ Sea $A \subseteq \mathbb{R}^n$. $P$ es un punto de acumulación de $A$ si y solo
 $$
 \forall\ E'(P, r): E'(P, r) \cap A \neq \emptyset
 $$
+
+## Tags
+
+- calculo

@@ -18,3 +18,8 @@ $$
 $$
 
 Por lo tanto, $\lambda \cdot (A + B) = \lambda \cdot A + \lambda \cdot B$.
+
+## Tags
+
+- algebra_lineal
+- matrices

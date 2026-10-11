@@ -30,3 +30,8 @@ $$
 $$
 
 Por lo tanto, $I_m \cdot A = A \cdot I_n = A$.
+
+## Tags
+
+- algebra_lineal
+- matrices

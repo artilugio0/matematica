@@ -8,3 +8,8 @@
 - $a = 180,\ b = 144$:
 
   $36 = 180 \cdot 1 + 144 \cdot (-1)$
+
+## Tags
+
+- teoria_numeros
+- identidad_de_bezout

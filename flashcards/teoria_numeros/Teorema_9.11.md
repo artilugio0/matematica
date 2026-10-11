@@ -14,3 +14,8 @@ Por _Teorema 9.6_, $\lvert a \cdot b \rvert = mcd(a, b) \cdot mcm(a, b)$. Por lo
 ($\Leftarrow$)
 
 Por _Teorema 9.6_, $\lvert a \cdot b \rvert = mcd(a, b) \cdot mcm(a, b)$. Si $mcd(a, b) = 1$, entonces $\lvert a \cdot b \rvert = mcm(a, b)$. 
+
+## Tags
+
+- teoria_numeros
+- minimo_comun_multiplo

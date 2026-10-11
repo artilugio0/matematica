@@ -8,3 +8,7 @@ $\lim\limits_{n \to \infty} \frac{\lvert a_{n+1} \cdot x^{n+1} \rvert}{\lvert a_
 Despejar $x$ para obtener el $ICV$.
 
 Para obtener el $DCV$ hay que analizar las series numéricas resultantes al evaluar la serie de potencias en los extremos del $ICV$.
+
+## Tags
+
+- calculo

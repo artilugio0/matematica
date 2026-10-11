@@ -37,3 +37,8 @@ $$
 $$
 
 Por lo tanto, $(A + B) \cdot C = A \cdot C + B \cdot C$.
+
+## Tags
+
+- algebra_lineal
+- matrices

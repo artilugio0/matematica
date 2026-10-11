@@ -2,3 +2,8 @@
 
 
 El máximo común divisor está definido cuando $a$ y $b$ no son ambos nulos, y el _Teorema 1.1_ requiere que $b$ no sea nulo.
+
+## Tags
+
+- teoria_numeros
+- algoritmo_de_euclides

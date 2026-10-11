@@ -6,3 +6,7 @@
 - Función continua
 - Función diferenciable
 - Integral de Riemann
+
+## Tags
+
+- calculo_numerico

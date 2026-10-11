@@ -11,3 +11,7 @@ S_2 &= \sum\limits_{k = 1}^{2} a_k = a_1 + a_2 = S_1 + a_2 \\
 S_n &= \sum\limits_{k = 1}^{n} a_k = a_1 + a_2 +\ \dots\ + a_n = S_{n-1} + a_n \\
 \end{aligned}
 $$
+
+## Tags
+
+- calculo

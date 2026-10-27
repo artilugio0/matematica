@@ -1,9 +1,9 @@
 # Combinación lineal
 
 
-Sean $V$ un espacio vectorial y $v_1,\ \dots\ , v_k \in V$.
+Sean $V$ un espacio vectorial, $I$ un conjunto de índices y un conjunto de vectores $G = \{ v_i \in V \mid i \in I \} \subseteq V$
 
-$w$ es una combinación lineal de los vectores $v_1,\ \dots\ , v_k$ si existen $\alpha_1,\ \dots\ , \alpha_k \in \mathbb{K}$ tales que $w = \sum\limits_{i = 1}^k \alpha_i \cdot v_i = \alpha_1 \cdot v_1 +\ \dots\ + \alpha_k \cdot v_k$.
+$w \in V$ es una combinación lineal de los vectores de $G$ si y solo si existen $\alpha_i \in \mathbb{K}$ para todo $i \in I$ tales que $w = \sum\limits_{i \in I} \alpha_i \cdot v_i$, con $\alpha_i = 0$ excepto para una cantidad finita de índices $i \in I$.
 
 ## Tags
 

@@ -286,3 +286,125 @@ $f''(x_0) = \frac{1}{h^2} \cdot [f(x_0 - h) - 2 \cdot f(x_0) + f(x_0 + h)] - \fr
 Con $x_0 - h < \xi_{-1} < x_0 < \xi_1 < x_0 + h$.
 
 Si $f^{(4)}$ es continua en $[x_0 - h, x_0 + h]$, entonces el término de error puede simplificarse a $-\frac{h^2}{12} \cdot f^{(4)}(\xi)$, con $x_0 - h < \xi < x_0 + h$.
+
+
+## Cuadratura Gaussiana
+
+### Polinomios de Legendre
+
+#### $P_0(x)$
+
+$1$
+
+#### $P_1(x)$
+
+$x$
+
+#### $P_2(x)$
+
+$x^2 - \frac{1}{3}$
+
+#### $P_3(x)$
+
+$x^3 - \frac{3}{5} \cdot x$
+
+#### $P_4(x)$
+
+$x^4 - \frac{6}{7} \cdot x^2 + \frac{3}{35}$
+
+
+### Fórmula de cuadratura
+
+$\int\limits_{-1}^1 f(x)dx \approx \sum\limits_{i = 1}^{n} c_i \cdot f(x_i)$
+
+- $c_i$: integral de $L_i(x)$
+- $x_i$: raíces del polinomio de Legendre de grado $n$
+
+
+### Fórmula de $c_i$
+
+$$
+c_i = \int\limits_{-1}^1 \prod\limits_{\substack{j = 1 \\ j \neq i}}^{n} \frac{(x - x_j)}{(x_i - x_j)}dx
+$$
+
+
+### Cambio de variables para integral de $a$ a $b$
+
+$$
+\begin{aligned}
+t &= \frac{2 \cdot x - a - b}{b - a} \\
+x &= \frac{(b - a) \cdot t + a + b}{2} \\
+\int\limits_{a}^b f(x)dx &= \int\limits_{-1}^1 f \left(\frac{(b - a) \cdot t + a + b}{2} \right) \cdot \frac{b - a}{2} dt
+\end{aligned}
+$$
+
+
+## Métodos de diferencias finitas
+
+### Problemas lineales
+
+#### Condiciones para solución única
+
+- Ecuación: $y'' = p(x) \cdot y' + q(x) \cdot y + r(x)$
+- Límites: $y(a) = \alpha$, $y(b) = \beta$
+
+1. $p(x), q(x), r(x)$ continuas en $[a, b]$
+2. $q(x) > 0$ en $[a, b]$
+
+
+#### Pasos para resolución de ejercicios
+
+1. Escribir la ecuación diferencial en la forma $y'' = f(x, y, y') = p(x) \cdot y' + q(x) \cdot y + r(x)$.
+2. Dar dominio de $x$ $[a, b]$, y $\alpha, \beta$ tales que $y(a) = \alpha$, $y(b) = \beta$.
+3.
+   1. Probar que $p(x)$, $q(x)$ y $r(x)$ son continuas en $[a, b]$. 
+   2. Probar que $q(x) > 0$.
+4. Si se cumple todo decir que hay solución única. Si no se cumple alguna decir cuál y por qué.
+5. Plantear el sistema matricial
+
+
+#### Ecuaciones
+
+$$
+\begin{aligned}
+&\left(-1 - \frac{h}{2} \cdot p(x_i) \right) \cdot w_{i-1} + \left(2 + h^2 \cdot q(x_i) \right) \cdot w_i + \left(\frac{h}{2} \cdot p(x_i) - 1 \right) \cdot w_{i+1} = -h^2 \cdot r(x_i) \\
+&h = \frac{b - a}{N + 1} \\
+&x_i = a + i \cdot h \\
+&w_0 = \alpha, \quad w_{N+1} = \beta \\
+\end{aligned}
+$$
+
+
+### Problemas NO lineales
+
+#### Condiciones para solución única
+
+- Ecuación: $y'' = f(x, y, y')$
+- Límites: $y(a) = \alpha$, $y(b) = \beta$
+
+1. $f$ y sus derivadas parciales $f_y$ y $f_{y'}$ son continuas en el dominio $a \leq x \leq b$ y $-\infty < y, y' < \infty$.
+2. $f_y(x, y, y') > 0$.
+3. $f_{y'}(x, y, y')$ acotada.
+
+
+#### Pasos para resolución de ejercicios
+
+1. Escribir la ecuación diferencial en la forma $y'' = f(x, y, y')$.
+2. Dar dominio de $x$ $[a, b]$, y $\alpha, \beta$ tales que $y(a) = \alpha$, $y(b) = \beta$. $D = [a,b] \times \mathbb{R} \times \mathbb{R}$.
+3. Probar que $f(x, y, y')$, $f_y(x, y, y')$ y $f_{y'}(x, y, y')$ son continuas en $D$
+4. Probar que $f_y(x, y , y') > 0$ en $D$.
+5. Probar que $f_{y'}(x, y, y')$ es acotada en $D$.
+6. Si se cumple todo decir que hay solución única. Si no se cumple alguna decir cuál y por qué.
+7. Plantear el sistema de ecuaciones
+
+
+#### Ecuaciones
+
+$$
+\begin{aligned}
+&w_{i-1} - 2 \cdot w_i + w_{i+1} = h^2 \cdot f \left(x_i, w_i, \frac{w_{i+1} - w_{i-1}}{2 \cdot h} \right) \\
+&h = \frac{b - a}{N + 1} \\
+&x_i = a + i \cdot h \\
+&w_0 = \alpha, \quad w_{N+1} = \beta \\
+\end{aligned}
+$$

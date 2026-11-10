@@ -408,3 +408,55 @@ $$
 &w_0 = \alpha, \quad w_{N+1} = \beta \\
 \end{aligned}
 $$
+
+
+## Método de Rayleigh-Ritz
+
+### Problema a resolver
+
+- Ecuación diferencial: $-(p(x) \cdot y'(x))' + q(x) \cdot y = f(x)$
+- $0 \leq x \leq 1$
+- $y(0) = y(1) = 0$
+
+
+### Solución aproximada
+
+$$
+y(x) \approx \phi(x) = \sum\limits_{i=1}^n c_i \cdot \phi_i(x)
+$$
+
+
+### Condiciones para solución única
+
+- $p \in C^1[0, 1]$ y $q, f \in C[0, 1]$
+- $\exists\ \delta > 0 \mid \forall\ x \in [0, 1]: p(x) \geq \delta$
+- $q(x) \geq 0\ \forall\ x \in [0, 1]$
+
+### Ecuaciones normales
+
+$$
+\begin{aligned}
+&A \cdot c = b \quad (A)_{ij} = a_{ij} \\
+&a_{ij} = \int\limits_0^1 \left[p(x) \cdot \phi_i'(x) \cdot \phi_j'(x) + q(x) \cdot \phi_i(x) \cdot \phi_j(x) \right] dx \\
+&b_i = \int\limits_0^1 f(x) \cdot \phi_i(x)dx
+\end{aligned}
+$$
+
+
+### Base de funciones lineales a trozos
+
+Nodos: 
+
+$$
+\begin{aligned}
+&0 = x_0 < x_1 <\ \dots\ < x_n < x_{n+1} = 1 \\
+&\phi_i(x) =
+\begin{cases}
+0 &0 \leq x < x_{i-1} \\
+\frac{x - x_{i-1}}{x_i - x_{i-1}} &x_{i-1} \leq x < x_i \\
+\frac{x - x_{i+1}}{x_i - x_{i+1}} &x_i \leq x < x_{i+1} \\
+0 &x_{i+1} \leq x \leq 1 \\
+\end{cases} \\
+&i \in \{1,\ \dots\ , n\}
+\end{aligned}
+$$
